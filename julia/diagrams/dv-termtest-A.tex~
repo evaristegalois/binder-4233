@@ -1,0 +1,52 @@
+% dv-termtest-A.tex
+
+\documentclass[11pt]{article}
+\usepackage{alltt}
+\usepackage{enumerate}
+\usepackage{syllogism} 
+\usepackage{october}
+\usepackage[table]{xcolor}
+\pagestyle{empty}
+
+\newcounter{aufg}
+\setcounter{aufg}{0}
+\newcommand{\aufgabe}[1]{\refstepcounter{aufg}\textbf{(\arabic{aufg})} [#1 points]}
+
+\begin{document}
+
+\textbf{Term Test A}
+
+Show your work. There are no points for results without calculations.
+
+\aufgabe{5} A rocket, fired from rest at time $t=0$, has an initial
+mass of $m_0$ (including its fuel). Assuming that the fuel is consumed
+at a constant rate $k$, the mass $m$ of the rocket, while fuel is being
+burned, will be given by $m(t)=m_{0}-kt$. It can be shown that if air resistance
+is neglected and the fuel gases are expelled at a constant speed $c$
+relative to the rocket, then the velocity $v$ of the rocket will satisfy
+the equation
+\begin{equation}
+  \label{eq:fcgupphi}
+  m\frac{dv}{dt}=ck-mg\notag
+\end{equation}
+is the acceleration due to gravity.
+
+(a) Find v(t)
+keeping in mind that the mass m is a function of t
+
+.
+
+v(t)
+
+= m/sec
+
+(b) Suppose that the fuel accounts for 70% of the initial mass of the rocket and that all of the fuel is consumed at 60 s. Find the velocity of the rocket in meters per second at the instant the fuel is exhausted. [ Note: Take g=9.8m/s2
+and c=2500m/s
+
+.]
+
+v(60)
+= m/sec [ Round to nearest whole number ] 
+
+
+\end{document}

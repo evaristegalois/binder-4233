@@ -1,0 +1,36 @@
+% dv-lab-03.tex
+
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+\usepackage{syllogism} 
+\usepackage{october}
+\usepackage[table]{xcolor}
+
+\newcounter{aufg}
+\setcounter{aufg}{0}
+\newcommand{\aufgabe}[0]{\refstepcounter{aufg}\textbf{(\arabic{aufg})}}
+
+\begin{document}
+
+\textbf{First Order Differential Equations}
+
+{\aufgabe} Suppose that an airplane departs from the point $(a,0)$
+located due east of its intended destination---an airport located at
+the origin $(0,0)$. The plane travels with constant speed $v_{0}$
+relative to the wind, which is blowing due north with constant speed
+$w$. As indicated in the diagram, we assume that the plane's pilot
+maintains its heading directly toward the origin.
+
+\begin{figure}[h]
+  \includegraphics[scale=.3]{./diagrams/flighttrajectory.png}
+\end{figure}
+
+Find $\frac{dy}{dx}=\frac{dy/dt}{dx/dt}$ in terms of $x$ and $y$,
+solve the differential equation and determine what happens with
+$\lim_{x\rightarrow{}0^{+}}f(x)$ depending on whether $w<v_{0}$,
+$w=v_{0}$, or $w>v_{0}$.
+
+{\aufgabe}
+
+  
+\end{document}

@@ -1,0 +1,30 @@
+% dv-05-vibrations.tex
+
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{teachbeamer}
+
+\title{Vibrations}
+\subtitle{{\CourseNumber}, BCIT}
+
+\author{\CourseName}
+
+\date{February 10, 2022}
+
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{End of Lesson}
+Next Lesson: Systems of Differential Equations
+\end{frame}
+
+\end{document}

@@ -1,0 +1,1282 @@
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ [K]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ cd ..
+]0;~/jupyter[01;34m~/jupyter[00m$ git pull
+remote: Enumerating objects: 6, done.[K
+remote: Counting objects:  16% (1/6)[Kremote: Counting objects:  33% (2/6)[Kremote: Counting objects:  50% (3/6)[Kremote: Counting objects:  66% (4/6)[Kremote: Counting objects:  83% (5/6)[Kremote: Counting objects: 100% (6/6)[Kremote: Counting objects: 100% (6/6), done.[K
+remote: Compressing objects:  25% (1/4)[Kremote: Compressing objects:  50% (2/4)[Kremote: Compressing objects:  75% (3/4)[Kremote: Compressing objects: 100% (4/4)[Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  25% (1/4)Unpacking objects:  50% (2/4)Unpacking objects:  75% (3/4)Unpacking objects: 100% (4/4)Unpacking objects: 100% (4/4), 1.25 KiB | 63.00 KiB/s, done.
+From gitlab.com:pra2a4ha/wemumoom-1652
+   3ec66ac..a81fcaa  master     -> origin/master
+Updating 3ec66ac..a81fcaa
+Fast-forward
+ .2019-10-10-134908.term-0.term                           |   96 [31m------[m
+ .2019-11-20-172944.term-0.term                           |  155 [31m---------[m
+ .2019-11-20-223458.term-0.term                           |    1 [31m-[m
+ .2020-02-19-124116.term-0.term                           |  577 [31m--------------------------------[m
+ .2021-10-23-210630.term-0.term                           |  114 [31m-------[m
+ .2021-10-24-202517.term-0.term                           | 2611 [31m------------------------------------------------------------------------------------------------------------------------------------------------[m
+ .cbeps-solutions-201910.ipynb.sage-jupyter2              |   42 [31m---[m
+ .cbeps-temp.ipynb.sage-jupyter2                          |   95 [31m------[m
+ .fs-lab-01-supplement-solutions.ipynb.sage-jupyter2      |   17 [31m-[m
+ .ft-termtest-A-solutions.ipynb.sage-jupyter2             |   44 [31m---[m
+ .gc-lab-03-and-04-combined-solutions.ipynb.sage-jupyter2 |   36 [31m--[m
+ .la-lab-06-solutions.ipynb.sage-jupyter2                 |   17 [31m-[m
+ .la-lab-10-solutions.ipynb.sage-jupyter2                 |  122 [31m-------[m
+ .la-lab-solutions-02.ipynb.sage-jupyter2                 |    0
+ .la-lab-solutions-03.ipynb.sage-jupyter2                 |    0
+ .la-lab-solutions-04.ipynb.sage-jupyter2                 |   26 [31m--[m
+ .la-lab-solutions.ipynb.sage-jupyter2                    |  169 [31m----------[m
+ .la-termtest-A-mock.ipynb.sage-jupyter2                  |   35 [31m--[m
+ .la-termtest-A-solutions.ipynb.sage-jupyter2             |  151 [31m---------[m
+ .matrixsagecode.ipynb.sage-jupyter2                      |   21 [31m--[m
+ julia/LinearAlgebraSample.ipynb                          |  266 [32m+++++++++++++++[m
+ 21 files changed, 266 insertions(+), 4329 deletions(-)
+ delete mode 100644 .2019-10-10-134908.term-0.term
+ delete mode 100644 .2019-11-20-172944.term-0.term
+ delete mode 100644 .2019-11-20-223458.term-0.term
+ delete mode 100644 .2020-02-19-124116.term-0.term
+ delete mode 100644 .2021-10-23-210630.term-0.term
+ delete mode 100644 .2021-10-24-202517.term-0.term
+ delete mode 100644 .cbeps-solutions-201910.ipynb.sage-jupyter2
+ delete mode 100644 .cbeps-temp.ipynb.sage-jupyter2
+ delete mode 100644 .fs-lab-01-supplement-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .ft-termtest-A-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .gc-lab-03-and-04-combined-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .la-lab-06-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .la-lab-10-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .la-lab-solutions-02.ipynb.sage-jupyter2
+ delete mode 100644 .la-lab-solutions-03.ipynb.sage-jupyter2
+ delete mode 100644 .la-lab-solutions-04.ipynb.sage-jupyter2
+ delete mode 100644 .la-lab-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .la-termtest-A-mock.ipynb.sage-jupyter2
+ delete mode 100644 .la-termtest-A-solutions.ipynb.sage-jupyter2
+ delete mode 100644 .matrixsagecode.ipynb.sage-jupyter2
+ create mode 100755 julia/LinearAlgebraSample.ipynb
+]0;~/jupyter[01;34m~/jupyter[00m$ cd julia/
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ ls
+2021-11-15-120930.term  DiffEq01.ipynb  DiffEq02.ipynb  [0m[01;32mLinearAlgebraSample.ipynb[0m  SimpsonsRule.ipynb  SimpsonsRuleAstericus.ipynb  SimpsonsRuleEvodius.ipynb
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ ls -l
+total 107
+-rw-r--r-- 1 user user      0 Nov 15 20:09 2021-11-15-120930.term
+-rw-r--r-- 1 user user  86606 Nov 15 07:40 DiffEq01.ipynb
+-rw-r--r-- 1 user user 117654 Nov 15 07:32 DiffEq02.ipynb
+-rwxr-xr-x 1 user user   5083 Nov 15 20:09 [0m[01;32mLinearAlgebraSample.ipynb[0m
+-rw-r--r-- 1 user user  29991 Nov 15 06:32 SimpsonsRule.ipynb
+-rw-r--r-- 1 user user   1830 Nov 15 19:44 SimpsonsRuleAstericus.ipynb
+-rw-r--r-- 1 user user   9595 Nov 15 03:01 SimpsonsRuleEvodius.ipynb
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ ff
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1079-aws x86_64)
+*** System restart required ***
+       ___ _ _                   _
+      | _ |_) |_ _ _  __ _ _ __ (_)
+      | _ \ |  _| ' \/ _` | '  \| |
+      |___/_|\__|_|_|\__,_|_|_|_|_|
+
+  *** Welcome to the Bitnami LAMP 7.1.28-0 ***
+  *** Documentation:  https://docs.bitnami.com/aws/infrastructure/lamp/ ***
+  ***                 https://docs.bitnami.com/aws/ ***
+  *** Bitnami Forums: https://community.bitnami.com/ ***
+Last login: Mon Nov 15 16:49:37 2021 from 142.232.88.186
+]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ sutt
+'/home/bitnami/muttrc-sediomyle' -> '/home/bitnami/.muttrc'
+[?1049h[1;35r(B[m[4l[?7h[39;49m[?1h=[39;49m[37m[40m[H[2J[39;49m[37m[40m[35d[K[35;1H[?1049l[?1l>[39;49m[37m[40m[K[35;1H[?1049l[?1l>[?1049h[1;35r[39;49m(B[m[4l[?7h[39;49m[37m[40m[37m[40m[H[2J[35d(B[m[39;49m[37m[40mReading imaps://imap.gmail.com:993/INBOX...Looking up imap.gmail.com...[37m[40m[K(B[m[39;49m[37m[40mConnecting to imap.gmail.com...SSL/TLS connection using TLS1.2 (ECDHE-RSA/AES-128-GCM/AEAD)Authenticating (PLAIN)...[37m[40m[K(B[m[39;49m[37m[40mSelecting INBOX...[37m[40m[K(B[m[39;49m[37m[40mEvaluating cache... 0/4174 (0%)[35;21H10/4174 (0%)[35;21H2602/4174 (62%)Fetching message headers... 0/4174 (0%)[35;29H4171/4174 (99%)Sorting mailbox...[37m[40m[K(B[m[39;49m[37m[40m[?25l[?12l[?25h[?25l[37m[40m[J[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group  ?:Help[K
+(B[0m[30m[46m   1 N + Nov 15 Deena Verappan  ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[4G[37m[40m2 N   Nov 15 Nigel Pollock   ( 20K) An Update from Pioneer Camp Pacific
+   3 N + Nov 15 Sherry Lukits   ( 60K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+   4 N + Nov 15 Sherry Lukits   ( 75K) Fwd: Updated IEP
+   5 N + Nov 15 Sherry Lukits   (5.6K) Re: COVID rent freeze until the end of December?
+   6     Nov 15 Google Calendar ( 12K) Notification: cancel Apple TV & Apple Arcade subscription @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+   7 r + Nov 15 Sherry Lukits   (  12) COVID rent freeze until the end of December?
+   8     Nov 15 Google Calendar (  88) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)
+   9     Nov 15 Google Calendar (  88) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)
+  10   + Nov 15 Dieter Hagmülle ( 109) Re: aller Erdkreis ist Österreich untertan ?
+  11   + Nov 15 Lukits, Stefan  (  27) pay chase
+  12   + Nov 15 VAFC U15 GIRLS  ( 787) Event Reminder: Practice, November 16, 6:30 PM
+  13     Nov 14 Karen MacDonald (   5) Referee cheques
+  14   + Nov 14 Sherry Lukits   (  27) App login
+  15   + Nov 14 Evelyn-Olivia L (4.4K)
+  16   + Nov 14 Sherry Lukits   (4.4K) Josephine passport
+  17   + Nov 14 Wendy Weeber    ( 61K) Left jersey #3
+  18   + Nov 14 Gil Rinas[33G( 60K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  19   + Nov 14 Wendy Weeber    ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  20     Nov 14 Google Calendar ( 12K) Notification: pay Sherry's cellphone bill at Telus @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+  21   + Nov 14 SageMath, Inc.  (112K) Your receipt from SageMath, Inc. #2913-6193
+  22     Nov 13 karen255@telus. ( 15K) Games Available Tomorrow
+  23   + Nov 13 TeamLinkt[33G( 71K) Are you going?  vs NWSC Crush
+  24   + Nov 13 Sherry Lukits   (4.9K) Christmas present for Magaly
+  25     Nov 13 Dropbox[26;33H( 22K) Updates to our Terms of Service and Privacy Policy
+  26     Nov 13 Google Calendar ( 13K) Notification: Blueshore's pay-as-you-go account fee waiving expires @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  27     Nov 13 Google Calendar ( 12K) Notification: check and PAY Chase @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  28   + Nov 13 Susie Ly[29;33H( 61K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  29   + Nov 13 Susie Ly[30;33H( 62K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  30 r T Nov 13 David Strilchuk (  93) RE: Fwd: Reminder: Investia - Signature of your documents
+  31   + Nov 12 Sherry Lukits   (  33) Re: tonight
+  32   + Nov 12 Sherry Lukits   (  39) Re: restaurant tonight
+(B[0;1m[32m[44m---Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4174 New:5 454M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?1h=[?12l[?25h[?25l[37m[40m   1 N + Nov 15 Deena Verappan  ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[30m[46m   2 N   Nov 15 Nigel Pollock   ( 20K) An Update from Pioneer Camp Pacific[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2 N   Nov 15 Nigel Pollock   ( 20K) An Update from Pioneer Camp Pacific[K
+[30m[46m   3 N + Nov 15 Sherry Lukits   ( 60K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3 N + Nov 15 Sherry Lukits   ( 60K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[30m[46m   4 N + Nov 15 Sherry Lukits   ( 75K) Fwd: Updated IEP[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4 N + Nov 15 Sherry Lukits   ( 75K) Fwd: Updated IEP[K
+[30m[46m   5 N + Nov 15 Sherry Lukits   (5.6K) Re: COVID rent freeze until the end of December?[K[210G(B[m[39;49m[37m[40m[?12l[?25h[35dFetching message... 0K/6.1K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[H(B[0;1m[32m[44mi:Exit  -:PrevPg  <Space>:NextPg v:View Attachm.  d:Del  r:Reply  j:Next ?:Help
+(B[0m[36m[40mDate: Mon, 15 Nov 2021 09:25:28 -0800[K
+From: Sherry Lukits <sklukits@gmail.com>[K
+To: Stefan Lukits <sediomyle@gmail.com>[K
+Subject: Re: COVID rent freeze until the end of December?[K
+[37m[40m[K
+(B[0;1m[33m[40m[-- Autoview using /usr/bin/lynx -nolist -dump '/tmp/mutt.html' --][K
+[4G(B[0m[37m[40mhttps://www2.gov.bc.ca/gov/content/housing-tenancy/residential-tenancie[K
+   s/during-a-tenancy/rent-increases[K
+[K
+   On Mon, Nov 15, 2021 at 9:09 AM Stefan Lukits <sediomyle@gmail.com>[K
+   wrote:[K
+[K
+     I'll research it.[K
+     Stefan[K
+     On Mon, Nov 15, 2021 at 09:06:21AM -0800, Sherry Lukits wrote:
+[5G[32m[40m[1K >    --[K
+[5G[1K >[K
+[1K >    Sherry[K
+[37m[40m[K
+   --[K
+[K
+   Sherry[K
+[34m[40m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[C(B[0;1m[32m[44mN +- 5/4174: Sherry Lukits          Re: COVID rent freeze until the end of December?[117X[203G-- (all)[34;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/75K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;24H[36m[40m11:32:57[5;10HFwd: Updated IEP[K
+
+[6G(B[0;1m[33m[40mttachment #1 --][K
+[-- Type: multipart/alternative, Encoding: 7bit, Size: 3.0K --][K
+(B[0m[37m[40m[K
+(B[0;1m[33m[40m[-- Autoview using /usr/bin/lynx -nolist -dump '/tmp/mutt.html' --][K
+[4G(B[0m[37m[40mJosephine and I met with the new Resource Support teacher last week.
+   Her is her updated IEP.
+   ---------- Forwarded message ---------
+   From: Kevin Hampson <khampson@vsb.bc.ca>
+   Date: Mon, Nov 15, 2021 at 11:27 AM
+   Subject: Updated IEP[K
+   To: sklukits@gmail.com <sklukits@gmail.com>[K
+[K
+   Hi Sherry,[K
+
+[K
+   Pursuant to our IEP meeting, I added a curriculum goal for French
+   Immersion for Josephine. Please see her attacked IEP.
+[K
+[K
+   Let me know if you have any questions.[K
+[K
+[K
+[K
+   All the best,[K
+[K
+[K
+   Kevin[K
+(B[0;1m[32m[44m4[34;38HFwd: Updated IEP[32X[207G78%(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/61K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[5;11r[11;1H[37m[40m[3S[1;35r[35;1H[J[2;25H[36m[40m9:35:16 +00[3;22H435908b27bf31317ec94f9f91_443090@messages.teamlinkt.com>
+
+Subject: RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K[8;4H[37m[40mTeamLinkt[K
+
+New Message
+
+   Evelyn: Large: EOL[K
+[K[14;36H[1K Login[K
+[K
+      You've received this message because you're a member of U18 Lions
+[K
+
+     * TeamLinkt is free for teams and leagues. Learn more
+
+[6G* [fb_icon.png]
+     * [twitter_icon.png][K
+     * [instagram_icon.png][K
+[6G* [youtube_icon.png]
+
+     * hello@teamlinkt.com[K
+[6G* |
+* www.teamlinkt.com
+[6G* |
+     * Update Preferences
+
+   © 2021 Teamlinkt
+[34m[40m[K
+[7G(B[0;1m[32m[44m3[34;38HRE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[207Gall(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/21K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;28H[36m[40m6:43
+[7GNigel Pollock <npollock@ivcf.ca>[K
+[5GNigel Pollock <npollock@ivcf.ca>[K[5;10HAn Update from Pioneer Camp Pacific[K[8;4H[37m[40mDear friends,
+
+[K
+   We are writing to share with you news of changes we are making as we
+   reset our ministry in British Columbia. These changes reflect our goal
+   to become more joined-up in our approach to ministry so we can walk
+   with young people through major transitions in life.
+
+[K
+   At the end of November, Brian Burtchett will finish his time as
+   Executive Director of Pioneer Pacific Camp. We are very thankful to
+   Brian for his 13 years of leadership. His wife, Kaycie, and their
+   children -- Kyle and his wife, Stephanie, Jordan, Alisha, Chelsey and
+   Mikayla -- have all been integral to the ministry and have loved and
+   cared well for camp, campers and families. We deeply appreciate the
+   many ways they have led the ministry through the years and we wish them
+   the very best in the future.
+
+[K
+   Through the next months of transition, Alex Meeking, Pioneer Pacific
+   Program Director, will lead the camp staff team. We are confident Alex,
+   along with colleagues Harrison Berg, and John and Andrea Gall, will
+   steward the camp well.
+
+[K
+   As part of this restructuring process, we will be appointing a British[K
+[4G(B[0;1m[32m[44m - 2[15GNigel Pollock[34;38HAn Update from Pioneer Camp Pacific[61X[207G55%(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/61K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;24H[36m[40m20:05:46
+[7GDeena Verappan <435908d90abefae447558225f_443143@messages.teamlinkt.com>
+[5GStefan Lukits <sediomyle@gmail.com>[5;10HRe: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[8;4H[37m[40mTeamLinkt[K
+
+New Message
+[K
+   Are we doing numbers as well? The girls have asked to have their[K
+   numbers included[K
+   Nisha - AXL[K
+   Rosh - AXL
+   Deena - AL
+[K[18;36H[1K Login[K
+[K
+      You've received this message because you're a member of U18 Lions[K
+[K
+[K
+     * TeamLinkt is free for teams and leagues. Learn more[K
+[K
+[6G* [fb_icon.png]
+[6G* [twitter_icon.png]
+     * [instagram_icon.png][K
+     * [youtube_icon.png][K
+[K
+     * hello@teamlinkt.com
+[6G* |
+* www.teamlinkt.com
+     * |[K
+[4G(B[0;1m[32m[44m+- 1[15GDeena Verappan[34;38HRe: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[207G94%(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;24H[36m[40m19:36:43
+[7GNigel Pollock <npollock@ivcf.ca>[K
+[5GNigel Pollock <npollock@ivcf.ca>[K[5;10HAn Update from Pioneer Camp Pacific[K[8;4H[37m[40mDear friends,
+
+[K
+   We are writing to share with you news of changes we are making as we
+   reset our ministry in British Columbia. These changes reflect our goal
+   to become more joined-up in our approach to ministry so we can walk
+   with young people through major transitions in life.
+[K
+[K
+   At the end of November, Brian Burtchett will finish his time as
+   Executive Director of Pioneer Pacific Camp. We are very thankful to
+   Brian for his 13 years of leadership. His wife, Kaycie, and their
+   children -- Kyle and his wife, Stephanie, Jordan, Alisha, Chelsey and
+   Mikayla -- have all been integral to the ministry and have loved and
+   cared well for camp, campers and families. We deeply appreciate the
+   many ways they have led the ministry through the years and we wish them
+   the very best in the future.
+[K
+[K
+   Through the next months of transition, Alex Meeking, Pioneer Pacific
+   Program Director, will lead the camp staff team. We are confident Alex,
+   along with colleagues Harrison Berg, and John and Andrea Gall, will
+   steward the camp well.[K
+[K
+[K
+   As part of this restructuring process, we will be appointing a British
+[C(B[0;1m[32m[44m   - 2[15GNigel Pollock [34;38HAn Update from Pioneer Camp Pacific[60X[207G55%(B[m[39;49m[37m[40m[?12l[?25h[?25l[H
+[37m[40m   Columbia Regional Director to oversee all ministries in the province.[K
+   In the past year, we have appointed several regional directors across[K
+   Canada, recognizing that in some parts of the country this seems the[K
+   best way to grow high school, camp, campus and workplace ministries.[K
+
+[K
+   In January, we plan to hold community meetings in both Vancouver and
+   Victoria to share more about our plans and hopes for ministry in
+   British Columbia. We will send you more information about these
+   meetings soon and do hope you will be able to attend.[K
+[K
+   Thank you so much for your partnership in our ministry in British[K
+   Columbia and across Canada. We appreciate all the ways you support our
+   efforts to bring the Gospel into the lives of young people.
+
+[K
+   Please continue to pray for Brian and his family and for our BC staff
+   team as they navigate the days ahead. I welcome your emails and calls
+   if you would like to chat about any of this further.[K
+[K
+[K
+   Sincerely,[K
+[K
+   NIGEL POLLOCK
+
+   President & CEO[K
+[K
+[K
+   1 International Boulevard
+   Toronto, ON M9W 6H3
+
+   P: 416.443.1170 ext. 610[K
+[207G(B[0;1m[32m[44m98%(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[H
+[36m[40mDate: Mon, 15 Nov 2021 20:05:46 +0000[K
+From: Deena Verappan <435908d90abefae447558225f_443143@messages.teamlinkt.com>[K
+To: Stefan Lukits <sediomyle@gmail.com>[K
+Subject: Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+
+(B[0;1m[33m[40m[-- Autoview using /usr/bin/lynx -nolist -dump '/tmp/mutt.html' --][K
+[4G(B[0m[37m[40mTeamLinkt[K
+[K
+New Message[K
+[K
+   Are we doing numbers as well? The girls have asked to have their
+   numbers included[K
+   Nisha - AXL[K
+   Rosh - AXL[K
+   Deena - AL[18;36H[1K Login[K
+[K
+      You've received this message because you're a member of U18 Lions
+
+
+     * TeamLinkt is free for teams and leagues. Learn more
+
+     * [fb_icon.png]
+[6G* [twitter_icon.png]
+     * [instagram_icon.png]
+[6G* [youtube_icon.png]
+
+     * hello@teamlinkt.com[K
+     * |[K
+* www.teamlinkt.com
+     * |[K
+[4G(B[0;1m[32m[44m+- 1[15GDeena Verappan[34;38HRe: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[208G4%(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h
+You are on the first message.[?25l[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group [15P
+(B[0m[30m[46m   1   + Nov 15 Deena Verappan  ( 947) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[37m[40m   2     Nov 15 Nigel Pollock   ( 214) An Update from Pioneer Camp Pacific[K
+   3   + Nov 15 Sherry Lukits   ( 937) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+   4   + Nov 15 Sherry Lukits   ( 992) Fwd: Updated IEP[K
+   5   + Nov 15 Sherry Lukits   (  43) Re: COVID rent freeze until the end of December?
+   6     Nov 15 Google Calendar ( 12K) Notification: cancel Apple TV & Apple Arcade subscription @ Tue Nov 16, 2021 (zeimiewo@gmail.com)[K
+   7 r + Nov 15 Sherry Lukits   (  12) COVID rent freeze until the end of December?
+   8     Nov 15 Google Calendar (  88) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)
+   9     Nov 15 Google Calendar (  88) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)
+  10   + Nov 15 Dieter Hagmülle ( 109) Re: aller Erdkreis ist Österreich untertan ?
+  11   + Nov 15 Lukits, Stefan  (  27) pay chase[K
+  12   + Nov 15 VAFC U15 GIRLS  ( 787) Event Reminder: Practice, November 16, 6:30 PM
+  13     Nov 14 Karen MacDonald (   5) Referee cheques
+  14   + Nov 14 Sherry Lukits   (  27) App login
+  15   + Nov 14 Evelyn-Olivia L (4.4K)
+  16   + Nov 14 Sherry Lukits   (4.4K) Josephine passport
+  17   + Nov 14 Wendy Weeber    ( 61K) Left jersey #3
+  18   + Nov 14 Gil Rinas[33G( 60K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  19   + Nov 14 Wendy Weeber    ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  20     Nov 14 Google Calendar ( 12K) Notification: pay Sherry's cellphone bill at Telus @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+  21   + Nov 14 SageMath, Inc.  (112K) Your receipt from SageMath, Inc. #2913-6193
+  22     Nov 13 karen255@telus. ( 15K) Games Available Tomorrow
+  23   + Nov 13 TeamLinkt[33G( 71K) Are you going?  vs NWSC Crush
+  24   + Nov 13 Sherry Lukits   (4.9K) Christmas present for Magaly
+  25     Nov 13 Dropbox  [33G( 22K) Updates to our Terms of Service and Privacy Policy
+  26     Nov 13 Google Calendar ( 13K) Notification: Blueshore's pay-as-you-go account fee waiving expires @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  27     Nov 13 Google Calendar ( 12K) Notification: check and PAY Chase @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  28   + Nov 13 Susie Ly[29;33H( 61K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  29   + Nov 13 Susie Ly  [33G( 62K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  30 r T Nov 13 David Strilchuk (  93) RE: Fwd: Reminder: Investia - Signature of your documents
+  31   + Nov 12 Sherry Lukits   (  33) Re: tonight
+  32   + Nov 12 Sherry Lukits   (  39) Re: restaurant tonight
+[C(B[0;1m[32m[44m*-Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4174 454M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?12l[?25h[35dInvoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[H(B[0;1m[32m[44mi:Exit  -:PrevPg  <Space>:NextPg v:View Attachm.  d:Del  r:Reply  j:Next ?:Help
+(B[0m[36m[40mDate: Mon, 15 Nov 2021 20:05:46 +0000[K
+From: Deena Verappan <435908d90abefae447558225f_443143@messages.teamlinkt.com>[K
+To: Stefan Lukits <sediomyle@gmail.com>[K
+Subject: Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[37m[40m[K
+(B[0;1m[33m[40m[-- Autoview using /usr/bin/lynx -nolist -dump '/tmp/mutt.html' --][K
+[4G(B[0m[37m[40mTeamLinkt[K
+[K
+New Message[K
+[K
+   Are we doing numbers as well? The girls have asked to have their
+   numbers included[K
+   Nisha - AXL[K
+   Rosh - AXL[K
+   Deena - AL[K
+[K[18;36H[1K Login[K
+[K
+      You've received this message because you're a member of U18 Lions[K
+[K
+[K
+     * TeamLinkt is free for teams and leagues. Learn more[K
+[K
+     * [fb_icon.png][K
+     * [twitter_icon.png][K
+     * [instagram_icon.png][K
+     * [youtube_icon.png][K
+[K
+     * hello@teamlinkt.com[K
+     * |[K
+     * www.teamlinkt.com[K
+     * |[K
+[C(B[0;1m[32m[44m  +- 1/4174: Deena Verappan         Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[70X[203G-- (94%)[34;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group [15P
+(B[0m[30m[46m   1   + Nov 15 Deena Verappan  ( 947) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[37m[40m   2     Nov 15 Nigel Pollock   ( 214) An Update from Pioneer Camp Pacific[K
+   3   + Nov 15 Sherry Lukits   ( 937) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+   4   + Nov 15 Sherry Lukits   ( 992) Fwd: Updated IEP[K
+   5   + Nov 15 Sherry Lukits   (  43) Re: COVID rent freeze until the end of December?
+   6     Nov 15 Google Calendar ( 12K) Notification: cancel Apple TV & Apple Arcade subscription @ Tue Nov 16, 2021 (zeimiewo@gmail.com)[K
+   7 r + Nov 15 Sherry Lukits   (  12) COVID rent freeze until the end of December?
+   8     Nov 15 Google Calendar (  88) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)
+   9     Nov 15 Google Calendar (  88) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)
+  10   + Nov 15 Dieter Hagmülle ( 109) Re: aller Erdkreis ist Österreich untertan ?
+  11   + Nov 15 Lukits, Stefan  (  27) pay chase[K
+  12   + Nov 15 VAFC U15 GIRLS  ( 787) Event Reminder: Practice, November 16, 6:30 PM
+  13     Nov 14 Karen MacDonald (   5) Referee cheques
+  14   + Nov 14 Sherry Lukits   (  27) App login
+  15   + Nov 14 Evelyn-Olivia L (4.4K)
+  16   + Nov 14 Sherry Lukits   (4.4K) Josephine passport
+  17   + Nov 14 Wendy Weeber    ( 61K) Left jersey #3
+  18   + Nov 14 Gil Rinas[33G( 60K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  19   + Nov 14 Wendy Weeber    ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  20     Nov 14 Google Calendar ( 12K) Notification: pay Sherry's cellphone bill at Telus @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+  21   + Nov 14 SageMath, Inc.  (112K) Your receipt from SageMath, Inc. #2913-6193
+  22     Nov 13 karen255@telus. ( 15K) Games Available Tomorrow
+  23   + Nov 13 TeamLinkt[33G( 71K) Are you going?  vs NWSC Crush
+  24   + Nov 13 Sherry Lukits   (4.9K) Christmas present for Magaly
+  25     Nov 13 Dropbox  [33G( 22K) Updates to our Terms of Service and Privacy Policy
+  26     Nov 13 Google Calendar ( 13K) Notification: Blueshore's pay-as-you-go account fee waiving expires @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  27     Nov 13 Google Calendar ( 12K) Notification: check and PAY Chase @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  28   + Nov 13 Susie Ly[29;33H( 61K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  29   + Nov 13 Susie Ly  [33G( 62K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  30 r T Nov 13 David Strilchuk (  93) RE: Fwd: Reminder: Investia - Signature of your documents
+  31   + Nov 12 Sherry Lukits   (  33) Re: tonight
+  32   + Nov 12 Sherry Lukits   (  39) Re: restaurant tonight
+[C(B[0;1m[32m[44m*-Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4174 454M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   1   + Nov 15 Deena Verappan  ( 947) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[30m[46m   2     Nov 15 Nigel Pollock   ( 214) An Update from Pioneer Camp Pacific[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2     Nov 15 Nigel Pollock   ( 214) An Update from Pioneer Camp Pacific[K
+[30m[46m   3   + Nov 15 Sherry Lukits   ( 937) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3   + Nov 15 Sherry Lukits   ( 937) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+[30m[46m   4   + Nov 15 Sherry Lukits   ( 992) Fwd: Updated IEP[K[210G(B[m[39;49m[37m[40m[?12l[?25h[35dBounce message to: [37m[40mb(B[m[39;49m[37m[40m[37m[40mc(B[m[39;49m[37m[40m[37m[40mi(B[m[39;49m[37m[40m[37m[40mt(B[m[39;49m[37m[40m[18G Stefan Lukits BCIT <slukits@bcit.ca>? ([yes]/no): [37m[40myes(B[m[39;49m[37m[40mLooking up smtp.gmail.com...[37m[40m[K(B[m[39;49m[37m[40mConnecting to smtp.gmail.com...SSL/TLS connection using TLS1.2 (ECDHE-ECDSA/AES-128-GCM/AEAD)Authenticating (LOGIN)...[37m[40m[K(B[m[39;49m[37m[40mSending message... 0K/74K (0%)Message bounced.[37m[40m[K(B[m[39;49m[37m[40m[?25l[5;210H[?12l[?25h[35d4174 kept, 0 deleted.Closing connection to imap.gmail.com...[37m[40m[J(B[m[39;49m[37m[40m[39;49m[37m[40m[K[35;1H[?1049l[?1l>]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ exit
+logout
+Connection to 34.219.211.15 closed.
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ clear
+[H[2J[3J]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ ff
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1079-aws x86_64)
+*** System restart required ***
+       ___ _ _                   _
+      | _ |_) |_ _ _  __ _ _ __ (_)
+      | _ \ |  _| ' \/ _` | '  \| |
+      |___/_|\__|_|_|\__,_|_|_|_|_|
+
+  *** Welcome to the Bitnami LAMP 7.1.28-0 ***
+  *** Documentation:  https://docs.bitnami.com/aws/infrastructure/lamp/ ***
+  ***                 https://docs.bitnami.com/aws/ ***
+  *** Bitnami Forums: https://community.bitnami.com/ ***
+Last login: Mon Nov 15 20:10:52 2021 from 34.139.5.125
+]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ sutt
+'/home/bitnami/muttrc-sediomyle' -> '/home/bitnami/.muttrc'
+[?1049h[1;35r(B[m[4l[?7h[39;49m[?1h=[39;49m[37m[40m[H[2J[39;49m[37m[40m[35d[K[35;1H[?1049l[?1l>[39;49m[37m[40m[K[35;1H[?1049l[?1l>[?1049h[1;35r[39;49m(B[m[4l[?7h[39;49m[37m[40m[37m[40m[H[2J[35d(B[m[39;49m[37m[40mReading imaps://imap.gmail.com:993/INBOX...Looking up imap.gmail.com...[37m[40m[K(B[m[39;49m[37m[40mConnecting to imap.gmail.com...SSL/TLS connection using TLS1.2 (ECDHE-RSA/AES-128-GCM/AEAD)Authenticating (PLAIN)...[37m[40m[K(B[m[39;49m[37m[40mSelecting INBOX...[37m[40m[K(B[m[39;49m[37m[40mEvaluating cache... 0/4175 (0%)[35;21H10/4175 (0%)[35;21H2802/4175 (67%)Fetching message headers... 0/4175 (0%)Sorting mailbox...[37m[40m[K(B[m[39;49m[37m[40m[?25l[?12l[?25h[?25l[37m[40m[J[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group  ?:Help[K
+(B[0m[30m[46m   1 N T Nov 15 David Strilchuk ( 20K) RE: Fwd: Reminder: Investia - Signature of your documents[K
+[4G[37m[40m2   + Nov 15 Deena Verappan  ( 947) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+   3     Nov 15 Nigel Pollock   ( 214) An Update from Pioneer Camp Pacific
+   4   + Nov 15 Sherry Lukits   ( 937) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+   5   + Nov 15 Sherry Lukits   ( 992) Fwd: Updated IEP
+   6   + Nov 15 Sherry Lukits   (  43) Re: COVID rent freeze until the end of December?
+   7     Nov 15 Google Calendar ( 12K) Notification: cancel Apple TV & Apple Arcade subscription @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+   8 r + Nov 15 Sherry Lukits   (  12) COVID rent freeze until the end of December?
+   9     Nov 15 Google Calendar (  88) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)
+  10     Nov 15 Google Calendar (  88) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)
+  11   + Nov 15 Dieter Hagmülle ( 109) Re: aller Erdkreis ist Österreich untertan ?
+  12   + Nov 15 Lukits, Stefan  (  27) pay chase
+  13   + Nov 15 VAFC U15 GIRLS  ( 787) Event Reminder: Practice, November 16, 6:30 PM
+  14     Nov 14 Karen MacDonald (   5) Referee cheques
+  15   + Nov 14 Sherry Lukits   (  27) App login
+  16   + Nov 14 Evelyn-Olivia L (4.4K)
+  17   + Nov 14 Sherry Lukits   (4.4K) Josephine passport
+  18   + Nov 14 Wendy Weeber    ( 61K) Left jersey #3
+  19   + Nov 14 Gil Rinas[33G( 60K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  20   + Nov 14 Wendy Weeber    ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  21     Nov 14 Google Calendar ( 12K) Notification: pay Sherry's cellphone bill at Telus @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+  22   + Nov 14 SageMath, Inc.  (112K) Your receipt from SageMath, Inc. #2913-6193
+  23     Nov 13 karen255@telus. ( 15K) Games Available Tomorrow
+  24   + Nov 13 TeamLinkt[33G( 71K) Are you going?  vs NWSC Crush
+  25   + Nov 13 Sherry Lukits   (4.9K) Christmas present for Magaly
+  26     Nov 13 Dropbox[27;33H( 22K) Updates to our Terms of Service and Privacy Policy
+  27     Nov 13 Google Calendar ( 13K) Notification: Blueshore's pay-as-you-go account fee waiving expires @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  28     Nov 13 Google Calendar ( 12K) Notification: check and PAY Chase @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  29   + Nov 13 Susie Ly[30;33H( 61K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  30   + Nov 13 Susie Ly[31;33H( 62K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  31 r T Nov 13 David Strilchuk (  93) RE: Fwd: Reminder: Investia - Signature of your documents
+  32   + Nov 12 Sherry Lukits   (  33) Re: tonight
+(B[0;1m[32m[44m---Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4175 New:1 454M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?1h=[?12l[?25h[35dFetching message... 0K/21K (0%)[?25l[37m[40m[J[H(B[0;1m[32m[44mi:Exit  -:PrevPg  <Space>:NextPg v:View Attachm.  d:Del  r:Reply  j:Next ?:Help
+(B[0m[36m[40mDate: Mon, 15 Nov 2021 20:14:29 +0000[K
+From: David Strilchuk <dstrilchuk@shastagroup.com>[K
+To: Stefan Lukits <sediomyle@gmail.com>[K
+CC: Sherry Lukits <sklukits@gmail.com>[K
+Subject: RE: Fwd: Reminder: Investia - Signature of your documents[K
+[37m[40m[K
+Hi Stefan and Sherry,[K
+Your RRSP contributions have been received and invested.  Thanks.[K
+[K
+David Strilchuk, CFP[K
+Investment Fund Advisor |Insurance Advisor[K
+Investia Financial Services Inc.[K
+PPI Management Inc.[K
+[32m[40m#304-100 E. Esplanade Ave[K
+[37m[40mNorth Vancouver BC V7L 4V1[K
+604-987-8175[K
+cell: 778-839-4922[K
+Fax: 604-990-1338[K
+dstrilchuk@shastagroup.com[K
+[K
+-----Original Message-----[K
+From: Stefan Lukits <sediomyle@gmail.com>[K
+Sent: Friday, November 12, 2021 5:16 PM[K
+To: David Strilchuk <dstrilchuk@shastagroup.com>[K
+Cc: Sherry Lukits <sklukits@gmail.com>[K
+Subject: Re: Fwd: Reminder: Investia - Signature of your documents[K
+[K
+David,[K
+[K
+I just did it.[K
+[K
+Stefan[K
+[C(B[0;1m[32m[44mN T- 1/4175: David Strilchuk        RE: Fwd: Reminder: Investia - Signature of your documents[108X[203G-- (14%)[34;210H(B[m[39;49m[37m[40m[?12l[?25h
+To: [37m[40mDavid Strilchuk <dstrilchuk@shastagroup.com>(B[m[39;49m[37m[40mSubject: [37m[40m[K(B[m[39;49m[37m[40m[37m[40mRe: Fwd: Reminder: Investia - Signature of your documents(B[m[39;49m[37m[40mInclude message in reply? ([yes]/no): [37m[40m[K(B[m[39;49m[37m[40m[37m[40myes(B[m[39;49m[37m[40m[7Ging quoted message...[37m[40m[K(B[m[39;49m[37m[40m[37m[40m[J(B[m[39;49m[37m[40m[39;49m[37m[40m[K[35;1H[?1049l[?1l>[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H[1;35r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[35;1H"/tmp/mutt-ip-172-26-6-179-1000-14202-15191301911590154567" 127L, 6653C[>c[1;1H[38;5;121mFrom: Stefan Lukits [m[38;5;224m<sediomyle@gmail.com>[m
+[38;5;121mTo: David Strilchuk [m[38;5;224m<dstrilchuk@shastagroup.com>[m
+[38;5;121mCc: 
+Bcc: [m
+[38;5;225mSubject: Re: Fwd: Reminder: Investia - Signature of your documents[m
+[38;5;121mReply-To: [m
+[93mIn-Reply-To: [m[38;5;224m<YT2PR01MB42070943D98F7BD8C48B9216D7989@YT2PR01MB4207.CANPRD01.PROD.OUTLOOK.COM>[m
+
+On Mon, Nov 15, 2021 at 08:14:29PM +0000, David Strilchuk wrote:
+[96m> Hi Stefan and Sherry,
+> Your RRSP contributions have been received and invested.  Thanks.
+> 
+> David Strilchuk, CFP 
+> Investment Fund Advisor |Insurance Advisor 
+> Investia Financial Services Inc. 
+> PPI Management Inc.  
+> #304-100 E. Esplanade Ave 
+> North Vancouver BC V7L 4V1 
+> 604-987-8175
+> cell: 778-839-4922 
+> Fax: 604-990-1338 
+> [m[38;5;224mdstrilchuk@shastagroup.com[m
+[96m> 
+> -----Original Message-----
+> [m[38;5;121mFrom: Stefan Lukits [m[38;5;224m<sediomyle@gmail.com>[m[38;5;121m [m
+[96m> [m[93mSent: Friday, November 12, 2021 5:16 PM[m
+[96m> [m[38;5;121mTo: David Strilchuk [m[38;5;224m<dstrilchuk@shastagroup.com>[m
+[96m> [m[38;5;121mCc: Sherry Lukits [m[38;5;224m<sklukits@gmail.com>[m
+[96m> [m[38;5;225mSubject: Re: Fwd: Reminder: Investia - Signature of your documents[m
+[96m> 
+> David,
+> 
+> I just did it.[m
+[1m[7m/tmp/mutt-ip-172-26-6-179-1000-14202-15191301911590154567                                                                                                                                       1,1            Top[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[m[35;1H[K[35;1H/\n\n[34;193H[1m[7m7,93[7;93H[?12l[?25h[?25l[m[35;1H[K[8;33r[8;1H[2L[1;35r[9;1HStefan[34;59H[1m[7m[+][131C9,6  [9;6H[?12l[?25h[?25l[9;33r[m[9;1H[2L[1;35r[34;193H[1m[7m10,0-1[10;1H[?12l[?25h[?25l[34;193H9,0-1  [9;1H[?12l[?25h[?25l[m[35;200Hi[9;1H[35;200H [9;1H[35;1H[1m-- INSERT --[m[34;195H[1m[7m1   [9;1H[?12l[?25h[?25l[mD[34;195H[1m[7m2 [9;2H[?12l[?25h[?25l[ma[34;195H[1m[7m3 [9;3H[?12l[?25h[?25l[mv[34;195H[1m[7m4 [9;4H[?12l[?25h[?25l[mi[34;195H[1m[7m5 [9;5H[?12l[?25h[?25l[md[34;195H[1m[7m6 [9;6H[?12l[?25h[?25l[m,[34;195H[1m[7m7 [9;7H[?12l[?25h[?25l[10;33r[m[10;1H[L[1;35r[34;193H[1m[7m10,1[10;1H[?12l[?25h[?25l[11;33r[m[11;1H[L[1;35r[34;194H[1m[7m1,[11;1H[?12l[?25h[?25l[mI[34;196H[1m[7m2 [11;2H[?12l[?25h[?25l[34;196H3 [11;3H[?12l[?25h[?25l[mt[34;196H[1m[7m4 [11;4H[?12l[?25h[?25l[mh[34;196H[1m[7m5 [11;5H[?12l[?25h[?25l[mi[34;196H[1m[7m6 [11;6H[?12l[?25h[?25l[mn[34;196H[1m[7m7 [11;7H[?12l[?25h[?25l[mk[34;196H[1m[7m8 [11;8H[?12l[?25h[?25l[m[11;7H[K[34;196H[1m[7m7 [11;7H[?12l[?25h[?25l[m[11;6H[K[34;196H[1m[7m6 [11;6H[?12l[?25h[?25l[m[11;5H[K[34;196H[1m[7m5 [11;5H[?12l[?25h[?25l[m[11;4H[K[34;196H[1m[7m4 [11;4H[?12l[?25h[?25l[m[11;3H[K[34;196H[1m[7m3 [11;3H[?12l[?25h[?25l[mh[34;196H[1m[7m4 [11;4H[?12l[?25h[?25l[ma[34;196H[1m[7m5 [11;5H[?12l[?25h[?25l[mv[34;196H[1m[7m6 [11;6H[?12l[?25h[?25l[me[34;196H[1m[7m7 [11;7H[?12l[?25h[?25l[34;196H8 [11;8H[?12l[?25h[?25l[ms[34;196H[1m[7m9 [11;9H[?12l[?25h[?25l[mo[34;196H[1m[7m10[11;10H[?12l[?25h[?25l[mm[34;197H[1m[7m1 [11;11H[?12l[?25h[?25l[me[34;197H[1m[7m2 [11;12H[?12l[?25h[?25l[34;197H3 [11;13H[?12l[?25h[?25l[mt[34;197H[1m[7m4 [11;14H[?12l[?25h[?25l[ma[34;197H[1m[7m5 [11;15H[?12l[?25h[?25l[mx[34;197H[1m[7m6 [11;16H[?12l[?25h[?25l[34;197H7 [11;17H[?12l[?25h[?25l[md[34;197H[1m[7m8 [11;18H[?12l[?25h[?25l[mi[34;197H[1m[7m9 [11;19H[?12l[?25h[?25l[m[11;18H[K[34;197H[1m[7m8 [11;18H[?12l[?25h[?25l[me[34;197H[1m[7m9 [11;19H[?12l[?25h[?25l[md[34;196H[1m[7m20 [11;20H[?12l[?25h[?25l[mu[34;197H[1m[7m1 [11;21H[?12l[?25h[?25l[mc[34;197H[1m[7m2 [11;22H[?12l[?25h[?25l[mt[34;197H[1m[7m3 [11;23H[?12l[?25h[?25l[mi[34;197H[1m[7m4 [11;24H[?12l[?25h[?25l[mo[34;197H[1m[7m5 [11;25H[?12l[?25h[?25l[mn[34;197H[1m[7m6 [11;26H[?12l[?25h[?25l[ms[34;197H[1m[7m7 [11;27H[?12l[?25h[?25l[34;197H8 [11;28H[?12l[?25h[?25l[mf[34;197H[1m[7m9 [11;29H[?12l[?25h[?25l[mo[34;196H[1m[7m30 [11;30H[?12l[?25h[?25l[mr[34;197H[1m[7m1 [11;31H[?12l[?25h[?25l[34;197H2 [11;32H[?12l[?25h[?25l[mt[34;197H[1m[7m3 [11;33H[?12l[?25h[?25l[mh[34;197H[1m[7m4 [11;34H[?12l[?25h[?25l[mi[34;197H[1m[7m5 [11;35H[?12l[?25h[?25l[ms[34;197H[1m[7m6 [11;36H[?12l[?25h[?25l[34;197H7 [11;37H[?12l[?25h[?25l[my[34;197H[1m[7m8 [11;38H[?12l[?25h[?25l[me[34;197H[1m[7m9 [11;39H[?12l[?25h[?25l[ma[34;196H[1m[7m40 [11;40H[?12l[?25h[?25l[mr[34;197H[1m[7m1 [11;41H[?12l[?25h[?25l[m.[34;197H[1m[7m2 [11;42H[?12l[?25h[?25l[34;197H3 [11;43H[?12l[?25h[?25l[mN[34;197H[1m[7m4 [11;44H[?12l[?25h[?25l[me[34;197H[1m[7m5 [11;45H[?12l[?25h[?25l[mx[34;197H[1m[7m6 [11;46H[?12l[?25h[?25l[mt[34;197H[1m[7m7 [11;47H[?12l[?25h[?25l[34;197H8 [11;48H[?12l[?25h[?25l[my[34;197H[1m[7m9 [11;49H[?12l[?25h[?25l[me[34;196H[1m[7m50 [11;50H[?12l[?25h[?25l[ma[34;197H[1m[7m1 [11;51H[?12l[?25h[?25l[mr[34;197H[1m[7m2 [11;52H[?12l[?25h[?25l[34;197H3 [11;53H[?12l[?25h[?25l[mi[34;197H[1m[7m4 [11;54H[?12l[?25h[?25l[mt[34;197H[1m[7m5 [11;55H[?12l[?25h[?25l[34;197H6 [11;56H[?12l[?25h[?25l[mm[34;197H[1m[7m7 [11;57H[?12l[?25h[?25l[ma[34;197H[1m[7m8 [11;58H[?12l[?25h[?25l[my[34;197H[1m[7m9 [11;59H[?12l[?25h[?25l[34;196H60 [11;60H[?12l[?25h[?25l[mb[34;197H[1m[7m1 [11;61H[?12l[?25h[?25l[me[34;197H[1m[7m2 [11;62H[?12l[?25h[?25l[34;197H3 [11;63H[?12l[?25h[?25l[ma[34;197H[1m[7m4 [11;64H[?12l[?25h[?25l[34;197H5 [11;65H[?12l[?25h[?25l[mg[34;197H[1m[7m6 [11;66H[?12l[?25h[?25l[mo[34;197H[1m[7m7 [11;67H[?12l[?25h[?25l[mo[34;197H[1m[7m8 [11;68H[?12l[?25h[?25l[md[34;197H[1m[7m9 [11;69H[?12l[?25h[?25l[34;196H70 [11;70H[?12l[?25h[?25l[mi[34;197H[1m[7m1 [11;71H[?12l[?25h[?25l[12;33r[m[12;1H[L[1;35r[11;70H[K[12;1Hid[34;194H[1m[7m2,3  [12;3H[?12l[?25h[?25l[me[34;196H[1m[7m4 [12;4H[?12l[?25h[?25l[ma[34;196H[1m[7m5 [12;5H[?12l[?25h[?25l[34;196H6 [12;6H[?12l[?25h[?25l[mt[34;196H[1m[7m7 [12;7H[?12l[?25h[?25l[mo[34;196H[1m[7m8 [12;8H[?12l[?25h[?25l[34;196H9 [12;9H[?12l[?25h[?25l[mg[34;196H[1m[7m10[12;10H[?12l[?25h[?25l[me[34;197H[1m[7m1 [12;11H[?12l[?25h[?25l[mt[34;197H[1m[7m2 [12;12H[?12l[?25h[?25l[34;197H3 [12;13H[?12l[?25h[?25l[mt[34;197H[1m[7m4 [12;14H[?12l[?25h[?25l[mh[34;197H[1m[7m5 [12;15H[?12l[?25h[?25l[me[34;197H[1m[7m6 [12;16H[?12l[?25h[?25l[mm[34;197H[1m[7m7 [12;17H[?12l[?25h[?25l[34;197H8 [12;18H[?12l[?25h[?25l[mf[34;197H[1m[7m9 [12;19H[?12l[?25h[?25l[mr[34;196H[1m[7m20 [12;20H[?12l[?25h[?25l[mo[34;197H[1m[7m1 [12;21H[?12l[?25h[?25l[mm[34;197H[1m[7m2 [12;22H[?12l[?25h[?25l[34;197H3 [12;23H[?12l[?25h[?25l[mR[34;197H[1m[7m4 [12;24H[?12l[?25h[?25l[mR[34;197H[1m[7m5 [12;25H[?12l[?25h[?25l[mS[34;197H[1m[7m6 [12;26H[?12l[?25h[?25l[mP[34;197H[1m[7m7 [12;27H[?12l[?25h[?25l[34;197H8 [12;28H[?12l[?25h[?25l[mc[34;197H[1m[7m9 [12;29H[?12l[?25h[?25l[mo[34;196H[1m[7m30 [12;30H[?12l[?25h[?25l[mn[34;197H[1m[7m1 [12;31H[?12l[?25h[?25l[mt[34;197H[1m[7m2 [12;32H[?12l[?25h[?25l[mr[34;197H[1m[7m3 [12;33H[?12l[?25h[?25l[mi[34;197H[1m[7m4 [12;34H[?12l[?25h[?25l[mb[34;197H[1m[7m5 [12;35H[?12l[?25h[?25l[mu[34;197H[1m[7m6 [12;36H[?12l[?25h[?25l[mt[34;197H[1m[7m7 [12;37H[?12l[?25h[?25l[mi[34;197H[1m[7m8 [12;38H[?12l[?25h[?25l[mo[34;197H[1m[7m9 [12;39H[?12l[?25h[?25l[mn[34;196H[1m[7m40 [12;40H[?12l[?25h[?25l[ms[34;197H[1m[7m1 [12;41H[?12l[?25h[?25l[m.[34;197H[1m[7m2 [12;42H[?12l[?25h[?25l[34;197H3 [12;43H[?12l[?25h[?25l[mC[34;197H[1m[7m4 [12;44H[?12l[?25h[?25l[ma[34;197H[1m[7m5 [12;45H[?12l[?25h[?25l[mn[34;197H[1m[7m6 [12;46H[?12l[?25h[?25l[34;197H7 [12;47H[?12l[?25h[?25l[mw[34;197H[1m[7m8 [12;48H[?12l[?25h[?25l[me[34;197H[1m[7m9 [12;49H[?12l[?25h[?25l[34;196H50 [12;50H[?12l[?25h[?25l[ms[34;197H[1m[7m1 [12;51H[?12l[?25h[?25l[me[34;197H[1m[7m2 [12;52H[?12l[?25h[?25l[mt[34;197H[1m[7m3 [12;53H[?12l[?25h[?25l[34;197H4 [12;54H[?12l[?25h[?25l[mu[34;197H[1m[7m5 [12;55H[?12l[?25h[?25l[mp[34;197H[1m[7m6 [12;56H[?12l[?25h[?25l[34;197H7 [12;57H[?12l[?25h[?25l[ma[34;197H[1m[7m8 [12;58H[?12l[?25h[?25l[34;197H9 [12;59H[?12l[?25h[?25l[m1[34;196H[1m[7m60 [12;60H[?12l[?25h[?25l[m0[34;197H[1m[7m1 [12;61H[?12l[?25h[?25l[m0[34;197H[1m[7m2 [12;62H[?12l[?25h[?25l[m0[34;197H[1m[7m3 [12;63H[?12l[?25h[?25l[34;197H4 [12;64H[?12l[?25h[?25l[md[34;197H[1m[7m5 [12;65H[?12l[?25h[?25l[mo[34;197H[1m[7m6 [12;66H[?12l[?25h[?25l[ml[34;197H[1m[7m7 [12;67H[?12l[?25h[?25l[ml[34;197H[1m[7m8 [12;68H[?12l[?25h[?25l[ma[34;197H[1m[7m9 [12;69H[?12l[?25h[?25l[mr[34;196H[1m[7m70 [12;70H[?12l[?25h[?25l[ms[34;197H[1m[7m1 [12;71H[?12l[?25h[?25l[34;197H2 [12;72H[?12l[?25h[?25l[13;33r[m[13;1H[L[1;35r[13;1Ha[34;194H[1m[7m3,2  [13;2H[?12l[?25h[?25l[34;196H3 [13;3H[?12l[?25h[?25l[mm[34;196H[1m[7m4 [13;4H[?12l[?25h[?25l[mo[34;196H[1m[7m5 [13;5H[?12l[?25h[?25l[mn[34;196H[1m[7m6 [13;6H[?12l[?25h[?25l[mt[34;196H[1m[7m7 [13;7H[?12l[?25h[?25l[mh[34;196H[1m[7m8 [13;8H[?12l[?25h[?25l[34;196H9 [13;9H[?12l[?25h[?25l[md[34;196H[1m[7m10[13;10H[?12l[?25h[?25l[me[34;197H[1m[7m1 [13;11H[?12l[?25h[?25l[md[34;197H[1m[7m2 [13;12H[?12l[?25h[?25l[mu[34;197H[1m[7m3 [13;13H[?12l[?25h[?25l[mc[34;197H[1m[7m4 [13;14H[?12l[?25h[?25l[mt[34;197H[1m[7m5 [13;15H[?12l[?25h[?25l[mi[34;197H[1m[7m6 [13;16H[?12l[?25h[?25l[mo[34;197H[1m[7m7 [13;17H[?12l[?25h[?25l[mn[34;197H[1m[7m8 [13;18H[?12l[?25h[?25l[34;197H9 [13;19H[?12l[?25h[?25l[mf[34;196H[1m[7m20 [13;20H[?12l[?25h[?25l[mo[34;197H[1m[7m1 [13;21H[?12l[?25h[?25l[mr[34;197H[1m[7m2 [13;22H[?12l[?25h[?25l[34;197H3 [13;23H[?12l[?25h[?25l[mm[34;197H[1m[7m4 [13;24H[?12l[?25h[?25l[me[34;197H[1m[7m5 [13;25H[?12l[?25h[?25l[34;197H6 [13;26H[?12l[?25h[?25l[ms[34;197H[1m[7m7 [13;27H[?12l[?25h[?25l[mt[34;197H[1m[7m8 [13;28H[?12l[?25h[?25l[ma[34;197H[1m[7m9 [13;29H[?12l[?25h[?25l[mr[34;196H[1m[7m30 [13;30H[?12l[?25h[?25l[mt[34;197H[1m[7m1 [13;31H[?12l[?25h[?25l[mi[34;197H[1m[7m2 [13;32H[?12l[?25h[?25l[mn[34;197H[1m[7m3 [13;33H[?12l[?25h[?25l[mg[34;197H[1m[7m4 [13;34H[?12l[?25h[?25l[34;197H5 [13;35H[?12l[?25h[?25l[mi[34;197H[1m[7m6 [13;36H[?12l[?25h[?25l[mn[34;197H[1m[7m7 [13;37H[?12l[?25h[?25l[34;197H8 [13;38H[?12l[?25h[?25l[mJ[34;197H[1m[7m9 [13;39H[?12l[?25h[?25l[man[34;196H[1m[7m41 [13;41H[?12l[?25h[?25l[mu[34;197H[1m[7m2 [13;42H[?12l[?25h[?25l[ma[34;197H[1m[7m3 [13;43H[?12l[?25h[?25l[mr[34;197H[1m[7m4 [13;44H[?12l[?25h[?25l[my[34;197H[1m[7m5 [13;45H[?12l[?25h[?25l[m?[34;197H[1m[7m6 [13;46H[?12l[?25h[m[35;1H[K[13;45H[?25l[35;200H^[[13;45H[?12l[?25h[?25l[35;200H  [13;46H[34;197H[1m[7m5 [13;45H[?12l[?25h[?25l[m[35;200Hk[13;45H[35;200H [12;45H[34;194H[1m[7m2,[12;45H[?12l[?25h[?25l[m[35;200Hk[12;45H[35;200H [11;45H[34;194H[1m[7m1,[11;45H[?12l[?25h[?25l[m[35;200HO[11;45H[35;200H [11;1H[35;1H[1m-- INSERT --[11;33r[m[11;1H[L[1;35r[34;196H[1m[7m1  [11;1H[?12l[?25h[?25l[mT[34;196H[1m[7m2 [11;2H[?12l[?25h[?25l[mh[34;196H[1m[7m3 [11;3H[?12l[?25h[?25l[ma[34;196H[1m[7m4 [11;4H[?12l[?25h[?25l[mn[34;196H[1m[7m5 [11;5H[?12l[?25h[?25l[mk[34;196H[1m[7m6 [11;6H[?12l[?25h[?25l[34;196H7 [11;7H[?12l[?25h[?25l[my[34;196H[1m[7m8 [11;8H[?12l[?25h[?25l[mo[34;196H[1m[7m9 [11;9H[?12l[?25h[?25l[mu[34;196H[1m[7m10[11;10H[?12l[?25h[?25l[m.[34;197H[1m[7m1 [11;11H[?12l[?25h[?25l[12;33r[m[12;1H[L[1;35r[34;194H[1m[7m2,1  [12;1H[?12l[?25h[m[35;1H[K[12;1H[?25l[35;200H^[[12;1H[?12l[?25h[?25l[35;200H  [12;1H[34;196H[1m[7m0-1[12;1H[?12l[?25h[?25l[m[35;200H:[12;1H[35;200H[K[35;1H:[?12l[?25hx[?25l[?12l[?25h[?25l"/tmp/mutt-ip-172-26-6-179-1000-14202-15191301911590154567" 137L, 6868C written
+[?1l>[?12l[?25h[?1049l[?1h=[?25l[?1h=[?1049h[1;35r[?25l[39;49m(B[m[4l[?7h[39;49m[37m[40m[37m[40m[H[2J(B[0;1m[32m[44my:Send  q:Abort  t:To  c:CC  s:Subj  a:Attach file  d:Descrip  ?:Help[K
+[5G(B[0m[37m[40mFrom: Stefan Lukits <sediomyle@gmail.com>
+[7GTo: David Strilchuk <dstrilchuk@shastagroup.com>
+[7GCc:
+Bcc:
+ Subject: Re: Fwd: Reminder: Investia - Signature of your documents
+Reply-To:
+Fcc: ~/mail/Sent
+[6GMix: <no chain defined>
+Security: None
+
+(B[0;1m[32m[44m-- Attachments[K
+(B[0m[30m[46m- I     1 /tmp/mutt-ip-172-26-6-179-1000-14202-453[128X[13;179H[text/plain, 8bit, utf-8, 6.4K][K[34d(B[0;1m[32m[44m-- Mutt: Compose  [Approx. msg size: 6.4K   Atts: 1]--------------------------------------------------------------------------------------------------------------------------------------------------------------[13;210H(B[m[39;49m[37m[40m[?12l[?25h[35dSending message...Looking up smtp.gmail.com...Connecting to smtp.gmail.com...SSL/TLS connection using TLS1.2 (ECDHE-ECDSA/AES-128-GCM/AEAD)Authenticating (LOGIN)...[37m[40m[K(B[m[39;49m[37m[40mSending message... 0K/7.5K (0%)Mail sent.[37m[40m[K(B[m[39;49m[37m[40m[?25l[H(B[0;1m[32m[44mi:Exit  -:PrevPg  <Space>:NextPg v:View Attachm.  d:Del  r:Reply  j:Next ?:Help
+(B[0m[36m[40mDate: Mon, 15 Nov 2021 20:14:29 +0000[K
+From: David Strilchuk <dstrilchuk@shastagroup.com>[K
+To: Stefan Lukits <sediomyle@gmail.com>[K
+CC: Sherry Lukits <sklukits@gmail.com>[K
+Subject: RE: Fwd: Reminder: Investia - Signature of your documents[K
+[37m[40m[K
+Hi Stefan and Sherry,
+Your RRSP contributions have been received and invested.  Thanks.
+[K
+David Strilchuk, CFP
+Investment Fund Advisor |Insurance Advisor[K
+Investia Financial Services Inc.[K
+PPI Management Inc.
+[32m[40m#304-100 E. Esplanade Ave[K
+[37m[40mNorth Vancouver BC V7L 4V1
+604-987-8175
+cell: 778-839-4922
+Fax: 604-990-1338
+dstrilchuk@shastagroup.com
+
+-----Original Message-----
+From: Stefan Lukits <sediomyle@gmail.com>
+Sent: Friday, November 12, 2021 5:16 PM
+To: David Strilchuk <dstrilchuk@shastagroup.com>
+Cc: Sherry Lukits <sklukits@gmail.com>
+Subject: Re: Fwd: Reminder: Investia - Signature of your documents
+
+David,
+
+I just did it.
+
+Stefan
+[C(B[0;1m[32m[44mN T- 1/4175: David Strilchuk        RE: Fwd: Reminder: Investia - Signature of your documents[108X[203G-- (14%)[34;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l
+[37m[40m[J[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group [15P
+(B[0m[30m[46m   1 r T Nov 15 David Strilchuk ( 109) RE: Fwd: Reminder: Investia - Signature of your documents[K
+[37m[40m   2   + Nov 15 Deena Verappan  ( 947) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+   3     Nov 15 Nigel Pollock   ( 214) An Update from Pioneer Camp Pacific[K
+   4   + Nov 15 Sherry Lukits   ( 937) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)[K
+   5   + Nov 15 Sherry Lukits   ( 992) Fwd: Updated IEP[K
+   6   + Nov 15 Sherry Lukits   (  43) Re: COVID rent freeze until the end of December?
+   7     Nov 15 Google Calendar ( 12K) Notification: cancel Apple TV & Apple Arcade subscription @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+   8 r + Nov 15 Sherry Lukits   (  12) COVID rent freeze until the end of December?
+   9     Nov 15 Google Calendar (  88) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)
+  10     Nov 15 Google Calendar (  88) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)
+  11   + Nov 15 Dieter Hagmülle ( 109) Re: aller Erdkreis ist Österreich untertan ?
+  12   + Nov 15 Lukits, Stefan  (  27) pay chase
+  13   + Nov 15 VAFC U15 GIRLS  ( 787) Event Reminder: Practice, November 16, 6:30 PM
+  14     Nov 14 Karen MacDonald (   5) Referee cheques[K
+  15   + Nov 14 Sherry Lukits   (  27) App login
+  16   + Nov 14 Evelyn-Olivia L (4.4K)
+  17   + Nov 14 Sherry Lukits   (4.4K) Josephine passport
+  18   + Nov 14 Wendy Weeber    ( 61K) Left jersey #3
+  19   + Nov 14 Gil Rinas [33G( 60K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  20   + Nov 14 Wendy Weeber    ( 61K) Re: U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  21     Nov 14 Google Calendar ( 12K) Notification: pay Sherry's cellphone bill at Telus @ Tue Nov 16, 2021 (zeimiewo@gmail.com)
+  22   + Nov 14 SageMath, Inc.  (112K) Your receipt from SageMath, Inc. #2913-6193
+  23     Nov 13 karen255@telus. ( 15K) Games Available Tomorrow
+  24   + Nov 13 TeamLinkt       ( 71K) Are you going?  vs NWSC Crush
+  25   + Nov 13 Sherry Lukits   (4.9K) Christmas present for Magaly
+  26     Nov 13 Dropbox         ( 22K) Updates to our Terms of Service and Privacy Policy
+  27     Nov 13 Google Calendar ( 13K) Notification: Blueshore's pay-as-you-go account fee waiving expires @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  28     Nov 13 Google Calendar ( 12K) Notification: check and PAY Chase @ Sun Nov 14, 2021 (zeimiewo@gmail.com)
+  29   + Nov 13 Susie Ly[30;33H( 61K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  30   + Nov 13 Susie Ly[31;33H( 62K) RE:  U18 Lions - VAFC Hoodies - need size details and payment (please respond by Sunday, Nov 14)
+  31 r T Nov 13 David Strilchuk (  93) RE: Fwd: Reminder: Investia - Signature of your documents
+  32   + Nov 12 Sherry Lukits   (  33) Re: tonight
+[C(B[0;1m[32m[44m*-Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4175 454M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?12l[?25h[35d4175 kept, 0 deleted.Closing connection to imap.gmail.com...[37m[40m[J(B[m[39;49m[37m[40m[39;49m[37m[40m[K[35;1H[?1049l[?1l>]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ tutt
+'/home/bitnami/muttrc-taihoole' -> '/home/bitnami/.muttrc'
+[?1049h[1;35r(B[m[4l[?7h[39;49m[?1h=[39;49m[37m[40m[H[2J[39;49m[37m[40m[35d[K[35;1H[?1049l[?1l>[39;49m[37m[40m[K[35;1H[?1049l[?1l>[?1049h[1;35r[39;49m(B[m[4l[?7h[39;49m[37m[40m[37m[40m[H[2J[35d(B[m[39;49m[37m[40mReading imaps://imap.gmail.com:993/INBOX...Looking up imap.gmail.com...[37m[40m[K(B[m[39;49m[37m[40mConnecting to imap.gmail.com...SSL/TLS connection using TLS1.2 (ECDHE-RSA/AES-128-GCM/AEAD)Authenticating (PLAIN)...[37m[40m[K(B[m[39;49m[37m[40mSelecting INBOX...[37m[40m[K(B[m[39;49m[37m[40mEvaluating cache... 0/4413 (0%)[35;21H10/4413 (0%)[35;21H4002/4413 (90%)Fetching message headers... 0/4413 (0%)[35;29H4410/4413 (99%)Sorting mailbox...[37m[40m[K(B[m[39;49m[37m[40m[?25l[?12l[?25h[?25l[37m[40m[J[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group  ?:Help[K
+(B[0m[30m[46m   1 N   Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[4G[37m[40m2 N   Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)
+   3 N + Nov 15 Stefan Lukits   (4.7K) pay chase
+   4 N   Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?
+   5 N   Nov 14 Sherry Lukits   (7.6K) Josephine passport
+   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)
+   7     Nov 11 Sherry Lukits   (7.9K) Chase redemption
+   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides
+   9   ! Nov 09 Stefan Lukits   (4.7K) check on petplan
+  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit
+  11   ! Nov 09 Dieter Hagmülle ( 10K) aller Erdkreis ist Österreich untertan ?
+  12   + Nov 08 Stefan Lukits   (4.7K) $90 Shaw Cable
+  13     Nov 04 Sherry Lukits   ( 124) Fwd: Your Payment With Better Care Home Services
+  14     Nov 04 Sherry Lukits   ( 122) Fwd: Your Payment With Better Care Home Services
+  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)
+  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser
+  17   + Nov 03 Lukits, Stefan  (7.6K) make LTS ubuntu dvd
+  18   + Nov 03 Lukits, Stefan  (7.5K) incitement quiz doris sun 4/4
+  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime
+  20   + Nov 02 Stefan Lukits   ( 11K) email Lelonde
+  21     Nov 02 Google Calendar ( 14K) Notification: check on TREK information session @ Wed Nov 3, 2021 (zeimiewo@gmail.com)
+  22   + Nov 02 Stefan Lukits   (4.6K) publish Excel project
+  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife
+  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList
+  25   + Oct 31 Lawrence Fields (  70) Beuge mich
+  26     Oct 31 Google Calendar ( 14K) Notification: pay off Home Buyer's RRSP @ Mon Nov 1, 2021 (xootesei@gmail.com)
+  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)
+  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558
+  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022
+  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim
+  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article
+  32     Oct 25 Google Calendar ( 14K) Notification: check PC credit card 4952 @ Tue Oct 26, 2021 (zeimiewo@gmail.com)
+(B[0;1m[32m[44m---Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4413 New:5 Flag:39 223M]---(reverse-date/date)-------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?1h=[?12l[?25h[35dSearch for: [37m[40mn(B[m[39;49m[37m[40m[37m[40mn(B[m[39;49m[37m[40m[37m[40mn(B[m[39;49m[37m[40m[37m[40m^[(B[m[39;49m[37m[40m[?25l[37m[40m[J[2;210H(B[m[39;49m[37m[40m[?12l[?25h[35dSearch for: [?25l[37m[40m[J[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   1     Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[30m[46m   2 N   Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K[34;2H(B[0;1m[32m[44m*[34;58H4[3;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2     Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+[30m[46m   3 N + Nov 15 Stefan Lukits   (4.7K) pay chase[K[34;58H(B[0;1m[32m[44m3[4;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3   + Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[30m[46m   4 N   Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[34;58H(B[0;1m[32m[44m2[5;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4     Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K
+[30m[46m   5 N   Nov 14 Sherry Lukits   (7.6K) Josephine passport[K[34;58H(B[0;1m[32m[44m1[6;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   5     Nov 14 Sherry Lukits   (7.6K) Josephine passport[K
+[30m[46m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K[34;54H(B[0;1m[32m[44mFlag:39 223M]---(reverse-date/date)------[7;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   5     Nov 14 Sherry Lukits   (7.6K) Josephine passport[K
+[37m[40m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K[6;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   4     Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K
+[37m[40m   5     Nov 14 Sherry Lukits   (7.6K) Josephine passport[K[5;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   3   + Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[37m[40m   4     Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[4;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   2     Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+[37m[40m   3   + Nov 15 Stefan Lukits   (4.7K) pay chase[K[3;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   1     Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[37m[40m   2     Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[30m[46m   2     Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K[34;59H(B[0;1m[32m[44m40[3;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2   ! Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+[30m[46m   3   + Nov 15 Stefan Lukits   (4.7K) pay chase[K[34;60H(B[0;1m[32m[44m1[4;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[30m[46m   4     Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[34;60H(B[0;1m[32m[44m2[5;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K
+[30m[46m   5     Nov 14 Sherry Lukits   (7.6K) Josephine passport[K[34;60H(B[0;1m[32m[44m3[6;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   5   ! Nov 14 Sherry Lukits   (7.6K) Josephine passport[K
+[30m[46m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K[34;60H(B[0;1m[32m[44m4[7;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[7;12r[12;1H[37m[40m
+[1;35r[2;1H[30m[46m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K[7;4H[37m[40m6   ![15G2 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[12;3H15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)
+  16   ![15G3[13;34H 10K) pentagram in atranser
+  19   ![15G2 Stefan[14;36H1K) order xmas using prime[K
+  23   ![15G1 Stefan[15;34H4.7K) Pacific Blue Cross and Manulife[K
+  24[16;15H1 Stefan Lukits   (4.8K) Tischer House ToDoList[K
+  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)
+  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558
+  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022[K
+  30   ! Oct 29[20;34H4.7K) submit BCIT PD fund claim
+  31   ! Oct 28[21;35H43K) FW: research article
+  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body[K
+  39   ! Oct 2[23;36H7K) trek and prelude for Josephine
+  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)
+  6[10GSep 29[25;36H7K) begin Evelyn college research Amiens
+  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project
+  78   ! Sep 19 Dieter Hagmülle[27;40HRe:[K
+  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup[K
+  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)
+  87   ! Sep 16 Margit Philipp[30;40HGrüße aus dem Salzburger Land
+  98   ! Sep 13[31;36H6K) bicycle bike serial numbers Evelyn
+ 123   ! Sep 04 Google Calendar ( 14K) Notification: Revise Kafka paper for GLL by September 25 @ Sat Sep 25, 2021 (zeimiewo@gmail.com)
+ 142   ! Aug 30[33;54HGuitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[34;51H(B[0;1m[32m[44m/4413 Flag:44 223M]---(reverse-date/date)[203G(72[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[30m[46m   2   ! Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2   ! Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+[30m[46m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3   + Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[30m[46m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[34;63H(B[0;1m[32m[44m3[5;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   3   + Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[37m[40m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[4;210H(B[m[39;49m[37m[40m[?12l[?25h[35dPOP host is not defined.[?25l[4;210H[?12l[?25h[?25l[35d[37m[40m[J[4d   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[30m[46m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[34;63H(B[0;1m[32m[44m4[5;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[37m[40m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[4;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   2   ! Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+[37m[40m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K[3;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2     Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+[30m[46m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K[34;63H(B[0;1m[32m[44m3[4;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[30m[46m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K
+[30m[46m   5   ! Nov 14 Sherry Lukits   (7.6K) Josephine passport[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   5   ! Nov 14 Sherry Lukits   (7.6K) Josephine passport[K
+[30m[46m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K
+[30m[46m   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides[K
+[30m[46m   9   ! Nov 09 Stefan Lukits   (4.7K) check on petplan[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   9   ! Nov 09 Stefan Lukits   (4.7K) check on petplan[K
+[30m[46m  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit[K
+[30m[46m  11   ! Nov 09 Dieter Hagmülle ( 10K) aller Erdkreis ist Österreich untertan ?[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  11     Nov 09 Dieter Hagmülle ( 10K) aller Erdkreis ist Österreich untertan ?[K
+[30m[46m  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)[K[34;63H(B[0;1m[32m[44m2[12;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)[K
+[30m[46m  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser[K
+[30m[46m  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime[K
+[30m[46m  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife[K
+[30m[46m  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList[K
+[30m[46m  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)[K
+[30m[46m  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558[K
+[30m[46m  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022[K
+[30m[46m  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim[K
+[30m[46m  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article[K
+[30m[46m  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body[K
+[30m[46m  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine[K
+[30m[46m  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)[K
+[30m[46m  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K
+[30m[46m  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K
+[37m[40m  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K[25;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K
+[30m[46m  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K
+[30m[46m  78   ! Sep 19 Dieter Hagmülle ( 14K) Re:[K[210G(B[m[39;49m[37m[40m[?12l[?25h[35dFetching message... 0K/15K (0%)[?25l[37m[40m[J[H(B[0;1m[32m[44mi:Exit  -:PrevPg  <Space>:NextPg v:View Attachm.  d:Del  r:Reply  j:Next ?:Help
+(B[0m[36m[40mDate: Sun, 19 Sep 2021 18:07:52 +0200[K
+From: Dieter Hagmüller <dieter.hagmueller@gmx.at>[K
+To: Stefan Lukits <sediomyle@gmail.com>[K
+Subject: Re:[K
+X-Mailer: iPhone Mail (18G82)[K
+[37m[40m[K
+Oje, Stefan, wos is denn do los?![K
+Es gibt maunchmoi so Zeidn, do scheißz am amfoch eine. Und wauns scho amoi dikk dahea kummt, daun gez nuu dikka.
+„Des Le‘m is a Misthauffm“, wia da oide Steiner-Opa oiwei xogt hod.[K
+I winsch eich auf jedn Foi oiss guade, dass olle wida xund weaz. Und dawei amoi moch des Beste draus, leg de Fiass hoch, moch da an schee koidn Hopfmtee und geniess de Rue dahaam ohne dei Fraual. „Schena Wonen“[12;1H(B[0;1m[31m[40m+(B[0m[37m[40mnennt ma des do bei uns herobm im Müüviadl, „no woman, no cry“ song de Leid in Tschamaika.[K
+A so a kloane, feine Schtozgrenz dazwischn is jo maunchmoi a ned des ollaschlechtaste. Und daun nochad, waun dea Schpas mid na Kwarantene wida vabei is, waunz eich wida segz, na daun hallo, Bussibussi und so
+(B[0;1m[31m[40m+(B[0m[37m[40mund eh scho wissn. Willst du gelten, komme selten. Des güüt voa oim a fian Sex 😘
+Oiso, Kopf hoch, nochm Regn kumt wida d Sun und nochm Kipferl  gibz iagndwaun a wida amoi Baguette   Kennst di aus 😉?
+[K
+An schen Gruas,[K
+Dita[K
+[K
+P.S.: de Uasi und i haum uns gestan Obnd im Posthof in Linz des neiche Program vom Hader augschaut (Hader on ice). Tiafsta Zünismus auf hextm Nivoo. A echta Hader, hoid. De Kombi gibz sunst niagnds! Genial!
+[K
+[K
+Gesendet von +43 699 81247514[K
+[K
+[32m[40m> Am 19.09.2021 um 10:28 schrieb Stefan Lukits <sediomyle@gmail.com>:[K
+>[K
+> Dieter,[K
+>[K
+> Just a bit of an update, in English as I am still only slowly settling[K
+> down after one of the most stressful weeks of my life.[K
+>[K
+> When Anderson's symptoms started, we'd lost all of our passports and[K
+> weren't able to schedule covid tests so we could return to Canada. I[K
+[C(B[0;1m[32m[44m  !- 78/4413: Dieter Hagmüller       Re:[161X[203G-- (31%)[34;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group [15P
+(B[0m[37m[40m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+   2     Nov 15 Google Calendar ( 14K) Notification: cancel Prime on amazon.ca @ Thu Nov 18, 2021 (zeimiewo@gmail.com)[K
+   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K
+   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K
+   5   ! Nov 14 Sherry Lukits   (7.6K) Josephine passport[K
+   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)
+   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides
+   9   ! Nov 09 Stefan Lukits   (4.7K) check on petplan[K
+  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit
+  11     Nov 09 Dieter Hagmülle ( 10K) aller Erdkreis ist Österreich untertan ?[K
+  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)
+  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser[K
+  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime[K
+  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife[K
+  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList
+  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)
+  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558
+  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022
+  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim[K
+  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article
+  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body
+  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine
+  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)
+  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K
+  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K
+[30m[46m  78   ! Sep 19 Dieter Hagmülle ( 153) Re:[K
+[37m[40m  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup[K
+  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)[K
+  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land[K
+  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn[K
+ 123   ! Sep 04 Google Calendar ( 14K) Notification: Revise Kafka paper for GLL by September 25 @ Sat Sep 25, 2021 (zeimiewo@gmail.com)[K
+ 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[K
+[C(B[0;1m[32m[44m*-Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:44/4413 Flag:42 223M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------(72%)---[27;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  78     Sep 19 Dieter Hagmülle ( 153) Re:[K
+[30m[46m  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup[K[34d(B[0;1m[32m[44m1[28;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup[K
+[30m[46m  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)[K
+[30m[46m  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land[K
+[30m[46m  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn[K
+[30m[46m 123   ! Sep 04 Google Calendar ( 14K) Notification: Revise Kafka paper for GLL by September 25 @ Sat Sep 25, 2021 (zeimiewo@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 123     Sep 04 Google Calendar ( 14K) Notification: Revise Kafka paper for GLL by September 25 @ Sat Sep 25, 2021 (zeimiewo@gmail.com)[K
+[30m[46m 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[K[34;63H(B[0;1m[32m[44m0[33;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[2;10r[10;1H[37m[40m
+[1;35r[10;26r[26;1H[2S[1;35r[25;31r[31;1H[3S[1;35r[2;1H[30m[46m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K[29;2H[37m[40m142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)
+ 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card
+ 203   ! Jul 13 Lukits, Stefan  ( 99K) Fw: Mandatory safety training for faculty and staff, new UBCO excellence funds, meet Michael Coughtrie
+ 215   ! Jul 05[32;54Hmake Zelle work and order cheques in the US @ Tue Jul 6[32;117Hxootesei
+ 245   ! Jun 16 Google Calendar ( 14K) Notification: use Wiener Philharmoniker for Europe expenses @ Thu Jun 17, 2021 (xootesei@gmail.com)[K[34;50H(B[0;1m[32m[44m0[204G80[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[30m[46m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3   ! Nov 15 Stefan Lukits   (4.7K) pay chase[K
+[30m[46m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?[K
+[30m[46m   5   ! Nov 14 Sherry Lukits   (7.6K) Josephine passport[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   5   ! Nov 14 Sherry Lukits   (7.6K) Josephine passport[K
+[30m[46m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K
+[30m[46m   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides[K
+[30m[46m   9   ! Nov 09 Stefan Lukits   (4.7K) check on petplan[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   9   ! Nov 09 Stefan Lukits   (4.7K) check on petplan[K
+[30m[46m  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit[K
+[30m[46m  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)[K
+[30m[46m  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser[K
+[30m[46m  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime[K
+[30m[46m  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife[K
+[30m[46m  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList[K
+[30m[46m  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)[K
+[30m[46m  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558[K
+[30m[46m  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022[K
+[30m[46m  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim[K
+[30m[46m  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article[K
+[30m[46m  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body[K
+[30m[46m  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine[K
+[30m[46m  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)[K
+[30m[46m  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens[K
+[30m[46m  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project[K
+[30m[46m  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup[K
+[30m[46m  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)[K
+[30m[46m  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land[K
+[30m[46m  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn[K
+[30m[46m 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[K
+[30m[46m 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[K
+[37m[40m 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card[K[29;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)[K
+[30m[46m 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card[K
+[30m[46m 203   ! Jul 13 Lukits, Stefan  ( 99K) Fw: Mandatory safety training for faculty and staff, new UBCO excellence funds, meet Michael Coughtrie[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 203   + Jul 13 Lukits, Stefan  ( 99K) Fw: Mandatory safety training for faculty and staff, new UBCO excellence funds, meet Michael Coughtrie[K
+[30m[46m 215   ! Jul 05 Google Calendar ( 14K) Notification: make Zelle work and order cheques in the US @ Tue Jul 6, 2021 (xootesei@gmail.com)[K[34;62H(B[0;1m[32m[44m39[32;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 215   ! Jul 05 Google Calendar ( 14K) Notification: make Zelle work and order cheques in the US @ Tue Jul 6, 2021 (xootesei@gmail.com)[K
+[30m[46m 245   ! Jun 16 Google Calendar ( 14K) Notification: use Wiener Philharmoniker for Europe expenses @ Thu Jun 17, 2021 (xootesei@gmail.com)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[H
+[30m[46m 255   ! Jun 07 Stefan Lukits   (4.7K) use ToolKit at bcit for UBC social connections[K
+[C[37m[40m256   ! Jun 07[3;40Hcrowdmark
+ 263   ! Jun 02 Craig Shepherd  ( 30K) RE: Magnolia Crescent Window Quote[K
+ 280   ! May 16 Stefan[5;34H4.7K) fix grandfather clock
+ 360   ! Feb 06 Stefan Lukits   (4.7K) sherry call 1-800-663-8823 for Pension BC to reset online account access
+ 382   ! Jan 12 Lukits, Stefan  (6.5K) make hermpod available to interview partners
+ 38[10GJan 05 Sherry[8;34H7.8K) Set up schedule for a and a drain cleaners
+ 427   ! Dec 15[9;40Hinterview with Thompson et al
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[204G(B[0;1m[32m[44mend[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+   3   ! Nov 15[3;40Hpay chase
+   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?
+   5   ! Nov 14 Sherry[5;34H7.6K) Josephine passport[K
+   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K
+   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides[K
+   [10GNov 09 Stefan[8;34H4.7K) check on petplan[K
+  10   ! Nov 09[9;40Hcall City about Jenish permit
+  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)
+  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser
+  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime
+  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife
+  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList
+  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)
+  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558
+  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022
+  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim
+  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article
+  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body
+  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine
+  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)
+  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens
+  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project
+  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup
+  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)
+  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land
+  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn
+ 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)
+ 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card
+ 203   + Jul 13 Lukits, Stefan  ( 99K) Fw: Mandatory safety training for faculty and staff, new UBCO excellence funds, meet Michael Coughtrie
+ 215   ! Jul 05 Google Calendar ( 14K) Notification: make Zelle work and order cheques in the US @ Tue Jul 6, 2021 (xootesei@gmail.com)
+[30m[46m 245   ! Jun 16 Google Calendar ( 14K) Notification: use Wiener Philharmoniker for Europe expenses @ Thu Jun 17, 2021 (xootesei@gmail.com)[K
+[204G(B[0;1m[32m[44m80%[33;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[H
+[30m[46m 255   ! Jun 07 Stefan Lukits   (4.7K) use ToolKit at bcit for UBC social connections[K
+[C[37m[40m256   ! Jun 07[3;40Hcrowdmark
+ 263   ! Jun 02 Craig Shepherd  ( 30K) RE: Magnolia Crescent Window Quote[K
+ 280   ! May 16 Stefan[5;34H4.7K) fix grandfather clock
+ 360   ! Feb 06 Stefan Lukits   (4.7K) sherry call 1-800-663-8823 for Pension BC to reset online account access
+ 382   ! Jan 12 Lukits, Stefan  (6.5K) make hermpod available to interview partners
+ 38[10GJan 05 Sherry[8;34H7.8K) Set up schedule for a and a drain cleaners
+ 427   ! Dec 15[9;40Hinterview with Thompson et al
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[34;63H(B[0;1m[32m[44m8[204Gend[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 255   ! Jun 07 Stefan Lukits   (4.7K) use ToolKit at bcit for UBC social connections[K
+[30m[46m 256   ! Jun 07 Stefan Lukits   (4.7K) crowdmark[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m 255   ! Jun 07 Stefan Lukits   (4.7K) use ToolKit at bcit for UBC social connections[K
+[37m[40m 256   ! Jun 07 Stefan Lukits   (4.7K) crowdmark[K[2;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 255   + Jun 07 Stefan Lukits   (4.7K) use ToolKit at bcit for UBC social connections[K
+[30m[46m 256   ! Jun 07 Stefan Lukits   (4.7K) crowdmark[K[34;63H(B[0;1m[32m[44m7[3;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 256   + Jun 07 Stefan Lukits   (4.7K) crowdmark[K
+[30m[46m 263   ! Jun 02 Craig Shepherd  ( 30K) RE: Magnolia Crescent Window Quote[K[34;63H(B[0;1m[32m[44m6[4;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 263   ! Jun 02 Craig Shepherd  ( 30K) RE: Magnolia Crescent Window Quote[K
+[30m[46m 280   ! May 16 Stefan Lukits   (4.7K) fix grandfather clock[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 280   ! May 16 Stefan Lukits   (4.7K) fix grandfather clock[K
+[30m[46m 360   ! Feb 06 Stefan Lukits   (4.7K) sherry call 1-800-663-8823 for Pension BC to reset online account access[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 360   + Feb 06 Stefan Lukits   (4.7K) sherry call 1-800-663-8823 for Pension BC to reset online account access[K
+[30m[46m 382   ! Jan 12 Lukits, Stefan  (6.5K) make hermpod available to interview partners[K[34;63H(B[0;1m[32m[44m5[7;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 382   ! Jan 12 Lukits, Stefan  (6.5K) make hermpod available to interview partners[K
+[30m[46m 389   ! Jan 05 Sherry Lukits   (7.8K) Set up schedule for a and a drain cleaners[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m 382   ! Jan 12 Lukits, Stefan  (6.5K) make hermpod available to interview partners[K
+[37m[40m 389   ! Jan 05 Sherry Lukits   (7.8K) Set up schedule for a and a drain cleaners[K[7;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 382   + Jan 12 Lukits, Stefan  (6.5K) make hermpod available to interview partners[K
+[30m[46m 389   ! Jan 05 Sherry Lukits   (7.8K) Set up schedule for a and a drain cleaners[K[34;63H(B[0;1m[32m[44m4[8;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m 389   ! Jan 05 Sherry Lukits   (7.8K) Set up schedule for a and a drain cleaners[K
+[30m[46m 427   ! Dec 15 Stefan Lukits   (4.7K) interview with Thompson et al[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[8G[30m[46m+[34;63H(B[0;1m[32m[44m3[9;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[H
+[30m[46m   1   ! Nov 15 Google Calendar ( 14K) Notification: increase rents @ Tue Nov 16, 2021 (xootesei@gmail.com)[K
+[C[37m[40m  3   ! Nov 15[3;40Hpay chase
+   4   ! Nov 15 Dieter Hagmülle ( 13K) Re: aller Erdkreis ist Österreich untertan ?
+   5   ! Nov 14 Sherry[5;34H7.6K) Josephine passport[K
+   6   ! Nov 12 Google Calendar ( 14K) Notification: do bills @ Mon Nov 15, 2021 (zeimiewo@gmail.com)[K
+   8   ! Nov 10 Stefan Lukits   (4.6K) organize hermeneutics slides[K
+   [10GNov 09 Stefan[8;34H4.7K) check on petplan[K
+  10   ! Nov 09 Stefan Lukits   (4.7K) call City about Jenish permit[K
+  15   ! Nov 04 Google Calendar ( 14K) Notification: BCIT 10 carried over vacations days -- carry over again? @ Fri Nov 5, 2021 (zeimiewo@gmail.com)
+  16   ! Nov 03 Stefan Lukits   ( 10K) pentagram in atranser
+  19   ! Nov 02 Stefan Lukits   ( 11K) order xmas using prime
+  23   ! Nov 01 Stefan Lukits   (4.7K) Pacific Blue Cross and Manulife
+  24   ! Nov 01 Stefan Lukits   (4.8K) Tischer House ToDoList
+  27   ! Oct 31 Google Calendar ( 14K) Notification: call Darsh at APNA for fire inspection at Tischer House @ Mon Nov 1, 2021 (xootesei@gmail.com)
+  28   ! Oct 30 Stefan Lukits   (4.7K) call Group Retirement Services at 1-800-724-3402 with policy number 43558
+  29   ! Oct 29 Sherry Lukits   ( 15K) Re: Fwd: The Year 12,022
+  30   ! Oct 29 Stefan Lukits   (4.7K) submit BCIT PD fund claim
+  31   ! Oct 28 Stefan Lukits   ( 43K) FW: research article
+  37   ! Oct 23 Stefan Lukits   (4.9K) Bier with Upper Austrians see Kafka quote in email body
+  39   ! Oct 22 Stefan Lukits   (4.7K) trek and prelude for Josephine
+  55   ! Oct 09 Google Calendar ( 14K) Notification: Sherry's Permanent Residence Card Expires @ Sat Nov 6, 2021 (xootesei@gmail.com)
+  64   ! Sep 29 Stefan Lukits   (4.7K) begin Evelyn college research Amiens
+  72   ! Sep 23 Stefan Lukits   (4.6K) finish webwork project
+  79   ! Sep 18 Stefan Brunhoff ( 12K) Re: Its ready for pickup
+  86   ! Sep 17 Google Calendar ( 14K) Notification: call Chase and TD about Credit Card Rewards (repeats ever... @ Sat Sep 18, 2021 (xootesei@gmail.com)
+  87   ! Sep 16 Margit Philipp  ( 15K) Grüße aus dem Salzburger Land
+  98   ! Sep 13 Stefan Lukits   (4.6K) bicycle bike serial numbers Evelyn
+ 142   ! Aug 30 Google Calendar ( 14K) Notification: Guitar Lessons for Josephine @ Tue Aug 31, 2021 (xootesei@gmail.com)
+ 166   ! Aug 10 Stefan Lukits   (4.7K) need a copy of Evelyns final Q4 report card
+ 215   ! Jul 05 Google Calendar ( 14K) Notification: make Zelle work and order cheques in the US @ Tue Jul 6, 2021 (xootesei@gmail.com)
+ 263   ! Jun 02 Craig Shepherd  ( 30K) RE: Magnolia Crescent Window Quote
+ 280   ! May 16 Stefan Lukits   (4.7K) fix grandfather clock[34;49H(B[0;1m[32m[44m33[204G96%[2;210H(B[m[39;49m[37m[40m[?12l[?25h[35d4413 kept, 0 deleted.Closing connection to imap.gmail.com...[37m[40m[J(B[m[39;49m[37m[40m[39;49m[37m[40m[K[35;1H[?1049l[?1l>]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ exit
+logout
+Connection to 34.219.211.15 closed.
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ ]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ ff
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1079-aws x86_64)
+*** System restart required ***
+       ___ _ _                   _
+      | _ |_) |_ _ _  __ _ _ __ (_)
+      | _ \ |  _| ' \/ _` | '  \| |
+      |___/_|\__|_|_|\__,_|_|_|_|_|
+
+  *** Welcome to the Bitnami LAMP 7.1.28-0 ***
+  *** Documentation:  https://docs.bitnami.com/aws/infrastructure/lamp/ ***
+  ***                 https://docs.bitnami.com/aws/ ***
+  *** Bitnami Forums: https://community.bitnami.com/ ***
+Last login: Mon Dec  6 22:12:33 2021 from 142.232.88.186
+]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ sutt
+'/home/bitnami/muttrc-sediomyle' -> '/home/bitnami/.muttrc'
+[?1049h[1;40r(B[m[4l[?7h[39;49m[?1h=[39;49m[37m[40m[H[2J[39;49m[37m[40m[40d[K[40;1H[?1049l[?1l>[39;49m[37m[40m[K[40;1H[?1049l[?1l>[?1049h[1;40r[39;49m(B[m[4l[?7h[39;49m[37m[40m[37m[40m[H[2J[40d(B[m[39;49m[37m[40mReading imaps://imap.gmail.com:993/INBOX...Looking up imap.gmail.com...[37m[40m[K(B[m[39;49m[37m[40mConnecting to imap.gmail.com...SSL/TLS connection using TLS1.2 (ECDHE-RSA/AES-128-GCM/AEAD)Authenticating (PLAIN)...[37m[40m[K(B[m[39;49m[37m[40mSelecting INBOX...[37m[40m[K(B[m[39;49m[37m[40mEvaluating cache... 0/4478 (0%)[40;21H10/4478 (0%)[40;21H2532/4478 (56%)Fetching message headers... 0/4478 (0%)Sorting mailbox...[37m[40m[K(B[m[39;49m[37m[40m[?25l[?12l[?25h[?25l[37m[40m[J[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group  ?:Help[K
+(B[0m[30m[46m   1 N + Dec 07 Churchill Atten (5.7K) Attendance - Churchill[K
+[4G[37m[40m2 N + Dec 07 Susie Ly[3;33H( 63K) U18 Lions - Kudoboards for the coaches (by Saturday, Dec 18th)
+   3 N + Dec 06 Apple[4;33H( 18K) Two-factor authentication enabled for your Apple ID
+   4 N + Dec 06 Michelle Vega   ( 26K) [VAFC U15 GIRLS FLAMES] Practices is on for this week
+   5 N + Dec 06 VAFC U15 GIRLS  ( 42K) Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM
+   6     Dec 06 craigslist 7403 ( 253) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)
+   7 r   Dec 06 craigslist 7403 ( 208) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)
+   8     Dec 06 Google[9;33H( 153) Learn more about our updated Terms of Service
+   9   T Dec 06 Evelyn-Olivia L ( 242) Fwd: Thank You for Applying to UBC!
+  10   T Dec 06 Evelyn-Olivia L ( 236) Fwd: Your UBC Application - Next Steps
+  11 r + Dec 06 Sherry Lukits   (29029) Fwd: Order confirmation - Sherry Lukits
+  12 r + Dec 06 Anderson Lukits ( 755) Re: chess
+  13     Dec 06 Google Calendar (  87) Notification: Kim Final Exam backup [Stefan, BCIT] @ Tue Dec 7, 2021 10:30am - 11:30am (PST) (xootesei@gmail.com)
+  14   + Dec 06 Sherry Lukits   (  45) Re: You made it :)
+  15 r + Dec 06 Sherry Lukits   (  14) You made it :)
+  16 r + Dec 06 Sherry Lukits   (  74) Re: Beeping
+  17     Dec 06 Google Calendar (  95) Notification: MATH 3503 Final Exam [Stefan, BCIT] @ Tue Dec 7, 2021 10am - 12pm (PST) (xootesei@gmail.com)
+  18     Dec 06 Google Calendar (  88) Notification: pay TD credit card @ Thu Dec 9, 2021 (zeimiewo@gmail.com)
+  19     Dec 06 Google Calendar (  89) Notification: American Airlines? 1: refund 2: expiry 3: access @ Tue Dec 7, 2021 (zeimiewo@gmail.com)
+  20     Dec 06 Google[21;33H( 153) Learn more about our updated Terms of Service
+  21   + Dec 06 Josephine Lukit (  11) Money
+  22 r T Dec 06 Desaree Wynter  (  30) Beeping
+  23   + Dec 06 VAFC U15 GIRLS  ( 721) Event Reminder: Practice, December  7, 6:30 PM
+  24   + Dec 06 UBC Canvas[33G( 158) Recent Canvas Notifications
+  25     Dec 06 Google Calendar (  86) Notification: Math Final Exam [Evelyn, VSB] @ Wed Dec 8, 2021 4:30pm - 6:30pm (PST) (xootesei@gmail.com)
+  26     Dec 05 Google Calendar (  96) Notification: MATH 3512 Final Exam [Stefan, BCIT] backup: Maryam D @ Mon Dec 6, 2021 3:30pm - 5:30pm (PST) (xootesei@gmail.com)
+  27     Dec 05 Google Calendar (  87) Notification: Final Exam Backup for Paul [Stefan, BCIT] @ Mon Dec 6, 2021 1pm - 2pm (PST) (xootesei@gmail.com)
+  28     Dec 05 Google Calendar (  86) Notification: Invigilator for Goran [Stefan, BCIT] @ Mon Dec 6, 2021 1pm - 3pm (PST) (xootesei@gmail.com)
+  29     Dec 05 Google Calendar (  96) Notification: MATH 1441 Final Exam [Stefan, BCIT] backup: Joseph @ Mon Dec 6, 2021 10:30am - 12:30pm (PST) (xootesei@gmail.com)
+  30   + Dec 05 Sherry Lukits   (  49) this morning
+  31   + Dec 05 Aryan Mehan     (1852) INTERAC e-Transfer: A money transfer from Aryan Mehan has been automatically deposited.
+  32 r   Dec 04 craigslist 7403 ( 161) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)
+  33 r + Dec 04 Anderson Lukits (  46) Re: chess
+  34   + Dec 04 Anderson Lukits (  40) Re: rent holland
+  35   + Dec 05 TeamLinkt[33G(1111) Are you going?  at WVFC Wildcats
+  36 r   Dec 04 craigslist 7403 ( 119) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)
+  37 r   Dec 04 craigslist 7403 (  78) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)
+(B[0;1m[32m[44m---Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4478 New:5 478M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?1h=[?12l[?25h[?25l[37m[40m   1 N + Dec 07 Churchill Atten (5.7K) Attendance - Churchill[K
+[30m[46m   2 N + Dec 07 Susie Ly        ( 63K) U18 Lions - Kudoboards for the coaches (by Saturday, Dec 18th)[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   2 N + Dec 07 Susie Ly        ( 63K) U18 Lions - Kudoboards for the coaches (by Saturday, Dec 18th)[K
+[30m[46m   3 N + Dec 06 Apple           ( 18K) Two-factor authentication enabled for your Apple ID[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   3 N + Dec 06 Apple           ( 18K) Two-factor authentication enabled for your Apple ID[K
+[30m[46m   4 N + Dec 06 Michelle Vega   ( 26K) [VAFC U15 GIRLS FLAMES] Practices is on for this week[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4 N + Dec 06 Michelle Vega   ( 26K) [VAFC U15 GIRLS FLAMES] Practices is on for this week[K
+[30m[46m   5 N + Dec 06 VAFC U15 GIRLS  ( 42K) Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM[K[210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[A[30m[46m   4 N + Dec 06 Michelle Vega   ( 26K) [VAFC U15 GIRLS FLAMES] Practices is on for this week[K
+[37m[40m   5 N + Dec 06 VAFC U15 GIRLS  ( 42K) Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM[K[5;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[37m[40m   4 N + Dec 06 Michelle Vega   ( 26K) [VAFC U15 GIRLS FLAMES] Practices is on for this week[K
+[30m[46m   5 N + Dec 06 VAFC U15 GIRLS  ( 42K) Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM[K[210G(B[m[39;49m[37m[40m[?12l[?25h[40dFetching message... 0K/43K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[H(B[0;1m[32m[44mi:Exit  -:PrevPg  <Space>:NextPg v:View Attachm.  d:Del  r:Reply  j:Next ?:Help
+(B[0m[36m[40mDate: Mon, 06 Dec 2021 22:15:51 +0000 (UTC)[K
+From: VAFC U15 GIRLS FLAMES <donotreply@email.teamsnap.com>[K
+To: sediomyle@gmail.com[K
+Subject: Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM[K
+[37m[40m[K
+(B[0;1m[33m[40m[-- Autoview using /usr/bin/lynx -nolist -dump '/tmp/mutt.html' --][K
+[4G(B[0m[37m[40mEvent updated[K
+[K
+   The new VAFC U15 GIRLS FLAMES event details are below:[K
+   Scrimmage with the silver team for practice![K
+   Thursday, December 9, 2021[K
+   6:00 PM–7:00 PM[K
+   [location-icon.png][K
+   LOCATION[K
+   Van Tech Turf, 2501 Slocan St, Vancouver, BC V5K 3Y2 View map
+   [notes-icon.png][K
+   NOTES[K
+   Please dress for the weather, bring water bottle, wear cleats and shin[K
+   pads[K
+[K
+Availability[K
+[K
+   Josephine hasn't replied.[K
+[K[26;24H[1K Add Josephine's Availability[K
+[K
+Assignments[K
+[K
+   Don't forget to volunteer to bring snacks, drinks, or help with other[K
+   tasks.[K
+[K[33;31H[1K Add Assignment[K
+[K
+Do More with the App[K
+[K
+   Chat with teammates, manage availability, assignments, schedule and[K
+   more in the mobile app:[K
+[C(B[0;1m[32m[44mN +- 5/4478: VAFC U15 GIRLS FLAME   Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM[84X[203G-- (74%)[39;210H(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/26K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;27H[36m[40m50:06
+[7GMichelle Vega[8P[5;10H[VAFC U15 GIRLS FLAMES] Practices is on for this week[K[8;4H[37m[40mMichelle Vega has sent a message on TeamSnap.
+
+   Looks like all the practices are on for this week, even with snow.
+   Empire is still open. If there is any changes I'll let the team know as
+   soon as I can,[K
+[K
+   Michelle[K
+[K[16;32H[1K View Message[K
+[K
+Do More with the App
+[K
+   Chat with teammates, manage availability, assignments, schedule and
+   more in the mobile app:
+[K[23;36HSign In
+[K
+    If you prefer not to receive email from VAFC U15 GIRLS FLAMES, update[26;24Hyour communication preferences.
+[6GCopyright � 2021 TeamSnap, all rights reserved. View our Privacy[28;35H[1K Policy.[29;12HTeamSnap World HQ, 2040 14th Street, Boulder, CO 80302
+[34m[40m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7G(B[0;1m[32m[44m4[15GMichelle Vega          [VAFC U15 GIRLS FLAMES] Practices is on for this week[28X[207Gall(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/18K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;12H[36m[40m6 Dec 2021 23:08:35 +0000 (GMT)[K
+[7GApple <noreply@apple.com>[K[5;10HTwo-factor authentication enabled for your Apple ID[K[8;4H[37m[40mApple[K
+
+Two-factor authentication enabled for your Apple ID[K
+[K
+   Dear Stefan Lukits,
+
+   Two-factor authentication for your Apple ID, c•••••@gmail.com, was
+   enabled on 6 December 2021 at 23:08:34 GMT.
+[K
+   Two-factor authentication is an additional layer of security designed
+   to ensure that you are the only person who can access your account,
+   even if someone else knows your password. This helps protect the
+   photos, documents, backups and other personal information that you[K
+   store with Apple.[K
+
+   If you did not enable two-factor authentication and believe that an
+   unauthorised person has access to your account, you can return to your
+   previous security settings and regain control of your account.[K
+[K
+   This link and the recovery process will be available for your account
+   until December 20, 2021.[K
+[K
+   Sincerely,[K
+[K
+   Apple Support[K
+   Apple ID | Support | Privacy Policy[K
+   Copyright © 2021[K
+   Apple Canada 120 Bremner Blvd., suite 1600, Toronto, ON M5J 0A8� All[K
+   rights reserved.[K[39;7H(B[0;1m[32m[44m3[15GApple        [39;38HTwo-factor authentication enabled for your Apple ID  [210G(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/63K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;7H[36m[40mTue, 7[2;23H01:07:42[37G[K
+[7GSusie Ly <467654939dfbc604977be522f_467654@messages.teamlinkt.com>
+[5GStefan Lukits <sediomyle@gmail.com>[5;10HU18 Lions - Kudoboards for the coaches (by Saturday, Dec 18th)[8;4H[37m[40mTeamLinkt
+
+New Message[K
+
+   Hello Lions (I've excluded our 2 coaches and their players in this
+   communication):
+[K
+   Similar to last year, I've created 2 Kudoboards for the coaches because
+   each one is limited to 10 free contributions. I'd like to invite each
+   player (and/or family) to contribute towards one of the Kudoboards.[K
+   Please feel free to be creative with pictures and videos. Appreciate it
+   if you can contribute to the Kudoboards by Saturday, Dec 18th.[K
+[K
+   As for holiday coaches' gifts, it is optional. If you'd like to
+   contribute, I'll collect a nominal amount (e.g. $5) and will get our
+   coaches a small gift. Please e-transfer to my e-mail address by Dec
+   18th the latest: van2002@yahoo.com[K
+[K
+   1) Kudobaord #1 - https://www.kudoboard.com/boards/YzNLkwyH
+[K
+   2) Kudoboard #2 - https://www.kudoboard.com/boards/d21eLV6f
+
+   Please reach out if you have any questions.
+
+   Thanks,[K
+[K
+   Susie[K
+[K
+   Cell 604-352-4534
+[K[38;36H[1K Login[K
+[7G(B[0;1m[32m[44m2[15GSusie Ly[39;38HU18 Lions - Kudoboards for the coaches (by Saturday, Dec 18th)[207G78%(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h
+Fetching message... 0K/6.1K (0%)Invoking autoview command: /usr/bin/lynx -nolist -dump '/tmp/mutt.html'[?25l[37m[40m[J[2;12H[36m[40m07 Dec 2021 01:10:09 +0000
+[7GChurchill Attendance <attendance@schoolmessengermail.com>[K
+[5Gsediomyle@gmail.com[K[5;10HAttendance - Churchill[K[8;4H[37m[40mDear Parent/Guardian,
+
+   This is a message from the attendance office at Churchill to inform you
+   that there was an absence recorded for Evelyn-Olivia Lukits on . For
+   more information about the class or classes missed, please refer to the
+   MyEd Family Portal (https://www.myeducation.gov.bc.ca/aspen/logon.do).
+
+   Please DO NOT 'reply' to this email. Please have your child contact[K
+   their teacher if you have a concern.[K
+[K
+   Thank you.[K
+     __________________________________________________________________
+
+   Vancouver School District 39 would like to continue connecting with you
+   via email. If you prefer to be removed from our list, please contact
+   Vancouver School District 39 directly. To stop receiving all email[K
+   messages distributed through our SchoolMessenger service, follow this
+   link and confirm: Unsubscribe
+[K
+   SchoolMessenger is a notification service used by the nation's leading
+   school systems to connect with parents, students and staff through
+   voice, SMS text, email, and social media.
+[34m[40m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7G(B[0;1m[32m[44m1[15GChurchill Attendance   Attendance - Churchill[40X[207Gall(B[m[39;49m[37m[40m[?12l[?25h[?25l[?12l[?25h
+You are on the first message.[?25l[H(B[0;1m[32m[44mq:Quit  d:Del  u:Undel  s:Save  m:Mail  r:Reply  g:Group [15P
+(B[0m[30m[46m   1   + Dec 07 Churchill Atten (  17) Attendance - Churchill[K
+[37m[40m   2   + Dec 07 Susie Ly        ( 971) U18 Lions - Kudoboards for the coaches (by Saturday, Dec 18th)[K
+   3   + Dec 06 Apple           ( 491) Two-factor authentication enabled for your Apple ID[K
+   4   + Dec 06 Michelle Vega   ( 541) [VAFC U15 GIRLS FLAMES] Practices is on for this week[K
+   5   + Dec 06 VAFC U15 GIRLS  ( 860) Updated Event: Scrimmage  with the silver team for practice!, December 9, 6:00 PM
+   6     Dec 06 craigslist 7403 ( 253) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)[K
+   7 r   Dec 06 craigslist 7403 ( 208) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)
+   8     Dec 06 Google[9;33H( 153) Learn more about our updated Terms of Service
+   9   T Dec 06 Evelyn-Olivia L ( 242) Fwd: Thank You for Applying to UBC!
+  10   T Dec 06 Evelyn-Olivia L ( 236) Fwd: Your UBC Application - Next Steps
+  11 r + Dec 06 Sherry Lukits   (29029) Fwd: Order confirmation - Sherry Lukits
+  12 r + Dec 06 Anderson Lukits ( 755) Re: chess[K
+  13     Dec 06 Google Calendar (  87) Notification: Kim Final Exam backup [Stefan, BCIT] @ Tue Dec 7, 2021 10:30am - 11:30am (PST) (xootesei@gmail.com)
+  14   + Dec 06 Sherry Lukits   (  45) Re: You made it :)[K
+  15 r + Dec 06 Sherry Lukits   (  14) You made it :)
+  16 r + Dec 06 Sherry Lukits   (  74) Re: Beeping
+  17     Dec 06 Google Calendar (  95) Notification: MATH 3503 Final Exam [Stefan, BCIT] @ Tue Dec 7, 2021 10am - 12pm (PST) (xootesei@gmail.com)
+  18     Dec 06 Google Calendar (  88) Notification: pay TD credit card @ Thu Dec 9, 2021 (zeimiewo@gmail.com)
+  19     Dec 06 Google Calendar (  89) Notification: American Airlines? 1: refund 2: expiry 3: access @ Tue Dec 7, 2021 (zeimiewo@gmail.com)
+  20     Dec 06 Google          ( 153) Learn more about our updated Terms of Service
+  21   + Dec 06 Josephine Lukit (  11) Money[K
+  22 r T Dec 06 Desaree Wynter  (  30) Beeping[K
+  23   + Dec 06 VAFC U15 GIRLS  ( 721) Event Reminder: Practice, December  7, 6:30 PM
+  24   + Dec 06 UBC Canvas      ( 158) Recent Canvas Notifications
+  25     Dec 06 Google Calendar (  86) Notification: Math Final Exam [Evelyn, VSB] @ Wed Dec 8, 2021 4:30pm - 6:30pm (PST) (xootesei@gmail.com)
+  26     Dec 05 Google Calendar (  96) Notification: MATH 3512 Final Exam [Stefan, BCIT] backup: Maryam D @ Mon Dec 6, 2021 3:30pm - 5:30pm (PST) (xootesei@gmail.com)
+  27     Dec 05 Google Calendar (  87) Notification: Final Exam Backup for Paul [Stefan, BCIT] @ Mon Dec 6, 2021 1pm - 2pm (PST) (xootesei@gmail.com)
+  28     Dec 05 Google Calendar (  86) Notification: Invigilator for Goran [Stefan, BCIT] @ Mon Dec 6, 2021 1pm - 3pm (PST) (xootesei@gmail.com)
+  29     Dec 05 Google Calendar (  96) Notification: MATH 1441 Final Exam [Stefan, BCIT] backup: Joseph @ Mon Dec 6, 2021 10:30am - 12:30pm (PST) (xootesei@gmail.com)[K
+  30   + Dec 05 Sherry Lukits   (  49) this morning[K
+  31   + Dec 05 Aryan Mehan     (1852) INTERAC e-Transfer: A money transfer from Aryan Mehan has been automatically deposited.[K
+  32 r   Dec 04 craigslist 7403 ( 161) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)[K
+  33 r + Dec 04 Anderson Lukits (  46) Re: chess[K
+  34   + Dec 04 Anderson Lukits (  40) Re: rent holland[K
+  35   + Dec 05 TeamLinkt       (1111) Are you going?  at WVFC Wildcats[K
+  36 r   Dec 04 craigslist 7403 ( 119) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)[K
+  37 r   Dec 04 craigslist 7403 (  78) Re: Schecter Diamond Series 5 String Bass Guitar - $700 (North Burnaby)[K
+[C(B[0;1m[32m[44m*-Mutt: imaps://imap.gmail.com:993/INBOX [Msgs:4478 478M]---(reverse-date/date)---------------------------------------------------------------------------------------------------------------------------(0%)---[2;210H(B[m[39;49m[37m[40m[?12l[?25h[40d4478 kept, 0 deleted.[37m[40m[K(B[m[39;49m[37m[40mClosing connection to imap.gmail.com...[37m[40m[J(B[m[39;49m[37m[40m[39;49m[37m[40m[K[40;1H[?1049l[?1l>]0;bitnami@ip-172-26-6-179: ~/atransfer[01;32mbitnami@ip-172-26-6-179[00m:[01;34m~/atransfer[00m$ exit
+logout
+Connection to 34.219.211.15 closed.
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ clear
+[H[2J[3J]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ 

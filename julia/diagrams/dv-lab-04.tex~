@@ -1,0 +1,80 @@
+% dv-lab-03.tex
+
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+\usepackage{syllogism} 
+\usepackage{october}
+\usepackage[table]{xcolor}
+
+\newcounter{aufg}
+\setcounter{aufg}{0}
+\newcommand{\aufgabe}[0]{\refstepcounter{aufg}\textbf{(\arabic{aufg})}}
+
+\begin{document}
+
+\textbf{First Order and Reducible Second Order Differential Equations}
+
+{\aufgabe} Find the general solutions for the following two
+differential equations. You may have to assume that $x,y,y'$ are
+positive.
+% EPC 69:48--49
+\begin{align*}
+  x^{2}y''+3xy'&=2\\
+  yy''+\left(y'\right)^{2}&=yy'\\
+\end{align*}
+
+{\aufgabe} Suppose that an airplane departs from the point $(a,0)$
+located due east of its intended destination---an airport located at
+the origin $(0,0)$. The plane travels with constant speed $v_{0}$
+relative to the wind, which is blowing due north with constant speed
+$w$. As indicated in the diagram, we assume that the plane's pilot
+maintains its heading directly toward the origin.
+
+\begin{figure}[h]
+  \includegraphics[scale=.3]{./diagrams/flighttrajectory.png}
+\end{figure}
+
+Find $\frac{dy}{dx}=\frac{dy/dt}{dx/dt}$ in terms of $x$ and $y$,
+solve the differential equation and determine what happens with
+$\lim_{x\rightarrow{}0^{+}}f(x)$ depending on whether $w<v_{0}$,
+$w=v_{0}$, or $w>v_{0}$.
+
+\newpage
+
+{\aufgabe} Each of the following differential equations is of two
+different types---separable, linear, homogeneous, Bernoulli, exact,
+etc. Hence, derive general solutions for each of these equations in
+two different ways; then reconcile your results.
+\begin{enumerate}[(i)]
+\item $\displaystyle \frac{dy}{dx}=3(y+7)x^{2}$
+\item $\displaystyle \frac{dy}{dx}=xy^{3}-xy$
+\item $\displaystyle \frac{dy}{dx}=\frac{3x^{2}+2y^{2}}{4xy}$
+\item $\displaystyle \frac{dy}{dx}=\frac{x+3y}{y-3x}$
+\item $\displaystyle \frac{dy}{dx}=\frac{2xy+2x}{x^{2}+1}$
+\item $\displaystyle \frac{dy}{dx}=\frac{\sqrt{y}-y}{\tan{}x}$
+\end{enumerate}
+
+{\aufgabe} Even before taking into account the effect of air
+resistance, the velocity of a falling hailstone can be substantially
+slowed by other factors. Consider, for instance, a spherical hailstone
+falling through a uniform mist under the influence of gravity alone.
+As the hailstone falls through the fog, it collects moisture to itself
+from the mist, gaining mass in a manner that affects its velocity. In
+a coordinate system in which the positive direction is upward, the
+hailstone's vertical displacement $y$ is then governed by a non-linear
+second-order differential equation:
+\begin{equation}
+  \label{eq:qwfoltta}
+  \frac{d^{2}y}{dt^{2}}=-g-\frac{3}{y}\left(\frac{dy}{dt}\right)^{2}\notag
+\end{equation}
+\begin{enumerate}[(i)]
+\item Use appropriate substitution methods to determine a general
+  solution for $v(y)$, the vertical
+velocity $v$ as a function of vertical displacement $y$.
+\item Apply the initial condition $v=0$ at $y=0$ to determine a particular solution for $v(y)$. For
+this particular solution, find $y(t)$ using the fact that $v=dy/dt$.
+\item What is the acceleration (expressed as a function of time $t$) experienced by the hailstone for
+the particular solution found above?
+\end{enumerate}
+
+\end{document}

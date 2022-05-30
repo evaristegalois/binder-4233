@@ -1,0 +1,55 @@
+% dv-07-linsys.tex
+
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{teachbeamer}
+
+\title{Linear Systems of Differential Equations}
+\subtitle{{\CourseNumber}, BCIT}
+
+\author{\CourseName}
+
+\date{March 7, 2022}
+
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Using Matrix Exponentials}
+% Library/AlfredUniv/diffeq/constantcoefficient/constant6.pg
+  If you have a computer algebra system that can calculate matrix
+  exponentials, it makes solving systems of linear differential
+  equations or higher order linear equations quite simple. Consider
+  the IVP
+  \begin{equation}
+    \label{eq:neihbrcg}
+    y'''+2y''-39'+72y=0\qquad{}y(0)=-5,y'(0)=-5,y''(0)=6\notag
+  \end{equation}
+  Convert to
+  \begin{equation}
+    \label{eq:saourgzg}
+    x=\left[\begin{array}{ccc}0&1&0\\0&0&1\\-72&39&-2\end{array}
+      \right]\notag
+    \end{equation}
+    and conclude (code on next slide)
+    \begin{equation}
+      \label{eq:smczedaj}
+      x(t)=\frac{101}{11}te^{3t}-\frac{596}{121}e^{3t}-\frac{9}{121}e^{-8t}\notag
+    \end{equation}
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Using Matrix Exponentials}
+    %
+\begin{figure}[h]
+\includegraphics[scale=1]{./diagrams/matrexp.png}
+\end{figure}
+  \end{frame}
+
+\end{document}

@@ -1,0 +1,88 @@
+% dv-06-sysintro.tex
+
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{teachbeamer}
+
+\title{Vibrations}
+\subtitle{{\CourseNumber}, BCIT}
+
+\author{\CourseName}
+
+\date{February 28, 2022}
+
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example 1}
+%
+  Consider a system of two masses and two springs, with a given
+  external force $f(t)$ acting on the right-hand mass $m_2$. We denote
+  by $x(t)$ the displacement (to the right) of the mass $m_1$ from its
+  static equilibrium position (when the system is motionless and in
+  equilibrium and $f(t)=0$) and by $y(t)$ the displacement of the mass
+  $m_2$ from its static position. Thus the two springs are neither
+  stretched nor compressed when $x$ and $y$ are zero.
+
+  The first spring is stretched or compressed by $x$ units and the
+  second by $y$ units. We apply Newton's law of motion to the system,
+  obtaining
+  \begin{align*}
+    m_1x''&=-k_1x+k_2(y-x) \\
+    m_2y''&=-k_2(y-x)+f(t)
+  \end{align*}
+  of differential equations that the position functions $x(t)$ and
+  $y(t)$ must satisfy. For instance, if $m_1=2,m_2=1,k_1=4,k_2=2$, and
+  $f(t)=40\sin(3t)$ in appropriate physical units, then the system
+  reduces to
+  \begin{align*}
+    2x''&=-6x+2y \\
+    y''&=2x-2y+40\sin(3t)
+  \end{align*}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example 2}
+  %
+  Consider two connected brine tanks, where tank 1 contains $x(t)$
+  pounds of salt in $100\,gal$ of brine and tank 2 contains $y(t)$
+  pounds of salt in $200\,gal$ of brine. The brine in each tank is
+  kept uniform by stirring, and brine is pumped from each tank to the
+  other at the rates indicated. In addition, fresh water flows into
+  tank 1 at $20\,gal/min$, and the brine in tank 2 flows out at
+  $20\,gal/min$ (so the total volume of brine in the two tanks remains
+  constant). The salt concentrations in the two tanks are $\frac{x}{100}$ pounds
+  per gallon and $\frac{y}{200}$ pounds per gallon, respectively. When we
+  compute the rates of change of the amount of salt in the two
+  tanks, we therefore get the system of differential equations that
+  $x(t)$ and $y(t)$ must satisfy:
+  \begin{align*}
+    20x'&=-6x+y \\
+    20y'&=6x-3y
+  \end{align*}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example 3}
+  %
+  Consider the electrical network shown in the diagram, where $I_1(t)$
+  denotes the current in the indicated direction through the inductor
+  $L$ and $I_2(t)$ denotes the current through the resistor $R_2$. The
+  current through the resistor $R_1$ is $I=I_1-I_2$ in the direction
+  indicates.
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{End of Lesson}
+Next Lesson: Systems of Differential Equations
+\end{frame}
+
+\end{document}

@@ -1,0 +1,435 @@
+% dv-03-nummod.tex
+
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{teachbeamer}
+
+\title{Models and Numerical Methods}
+\subtitle{{\CourseNumber}, BCIT}
+
+\author{\CourseName}
+
+\date{January 18, 2022}
+
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logistic Modeling}
+  You are familiar with uninhibited exponential growth (or decay). The
+  formula is
+  \begin{equation}
+    \label{eq:xefohvai}
+    A(t)=A(0)e^{kt}\notag
+  \end{equation}
+  where $k$ is the growth (or decay) constant. This formula solves the
+  differential equation
+  \begin{equation}
+    \label{eq:ieyeisee}
+    \frac{dA}{dt}=kA\notag
+  \end{equation}
+  However, much exponential growth is inhibited, for example by
+  limited food supply or, in the case of a virus or a rumour, by a
+  limited number of people to infect. In this case, the population is
+  proportional both to the population and to the difference between
+  the population and the carrying capacity $M$:
+  \begin{equation}
+    \label{eq:kiediete}
+    \frac{dA}{dt}=kA(M-A)\notag
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Logistic Equation}
+  A differential equation is called \alert{logistic} if it is of the
+  form
+  \begin{equation}
+    \label{eq:ujiafiem}
+    \frac{dP}{dt}=aP+bP^{2}\notag
+  \end{equation}
+  This is a separable differential equation which models bounded
+  populations. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logistic Modelling}
+  {\ubung} The US population in 1800 was $5.308$ million and in 1900
+  was $76.212$ million. The growth was approximately exponential and
+  uninhibited. Calculate the average percentage population growth per
+  year.
+
+  \bigskip
+
+  {\ubung} Between 1900 and 2000, an uninhibited exponential growth
+  model no longer works for the US population. For example, the actual
+  population in 2000 was $281.422$ million---compare this to a
+  prediction from the last exercise. Let us model the US population
+  between 1800 and 2000 using the logistic model instead. Use the 1800
+  population from the last exercise and the 1850 population of
+  $23.192$ million to find $a$ and $b$, and then predict the
+  population in 2000. Compare your prediction to the actual population
+  in 2000.
+\end{frame}
+
+\begin{frame}
+  \frametitle{US Population}
+\begin{figure}[h]
+\includegraphics[scale=.4]{./diagrams/uspoptable.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{US Population}
+\begin{figure}[h]
+\includegraphics[scale=.55]{./diagrams/uspoperror.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+% EPC 82:10
+  {\ubung} Suppose that the fish population $P(t)$ in a lake is
+  attacked by a disease at time $t=0$, with the result that the fish
+  cease to reproduce (so that the birth rate is $\beta=0$) and the
+  death rate $\delta$ (deaths per week per fish) is thereafter
+  proportional to $1/\sqrt{P}$. If there were initially $900$ fish in
+  the lake and $441$ were left after six weeks, how long did it take
+  all the fish in the lake to die?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+% EPC 82:24 and oowobood.ipynb
+  {\ubung} Suppose that a community contains 15,000 people who are
+  susceptible to Michaud's syndrome, a contagious disease. At time $t=0$
+  the number $N(t)$ of people who have developed Michaud's syndrome
+  is 5,000 and is increasing at the rate of 500 per day. Assume that
+  $N'(t)$ is proportional to the product of the numbers of those who
+  have caught the disease and of those who have not. How long will it
+  take for another 5,000 people to develop Michaud's syndrome?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Autonomous Differential Equations}
+  An autonomous differential equation is of the form
+  \begin{equation}
+    \label{eq:vubadeeh}
+    \frac{dx}{dt}=f(x)\notag
+  \end{equation}
+  $t$ does not appear explicitly on the RHS. Differential equations in
+  physics are often of this form, as they are independent of when they
+  are in effect (independent of $t$). Autonomous systems (multiple
+  autonomous differential equations solved together) are closely
+  related to dynamical systems.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Autonomous Differential Equations}
+{\ubung} Consider a lake with fish in it. The fish population $x(t)$ can be
+modelled by a logistic equation with a carrying capacity of $M=4$ (in
+hundreds). Additionally, 300 fish are harvested from this lake per
+year (evenly distributed over the year), so
+\begin{equation}
+  \label{eq:meengahj}
+  \frac{dx}{dt}=x(4-x)-3\notag
+\end{equation}
+Let the initial fish population be $x_{0}$. How many fish do you need
+at least in the lake so the lake does not get fished out? This number
+is called a \alert{critical point} of the autonomous differential
+equation. It is \alert{unstable} because it acts like a ``spout.'' If
+there are more fish, the fish population will grow to 400. If there
+are fewer fish, the fish will go extinct. $x=4$ is also a critical
+point, but it is \alert{stable} as it acts like a ``funnel.'' Some
+critical points are semi-stable: stable from above and unstable from
+below or vice versa.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Air Resistance}
+  Newton's second law tells us that $F=ma$. As a consequence, the
+  velocity of an object under the influence of gravity (neglecting air
+  resistance, for example) fulfills
+  \begin{equation}
+    \label{eq:viuwegee}
+    m\frac{dv}{dt}=F_{G}\notag
+  \end{equation}
+  Near the surface of the Earth, $F_{G}=-mg$ with
+  $g\approx{}9.8m/s^{2}$.
+
+  \bigskip
+
+  {\ubung} Suppose that a crossbow bolt is shot straight upward from
+  the ground ($y_{0}=0$) with initial velocity $v_{0}=49m/s$.
+  Calculate how far it will go before it returns to the ground. Also
+  calculate the time it will hit the ground and with what velocity.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Air Resistance}
+  Now we also want to take account of air resistance.
+  \begin{equation}
+    \label{eq:johnaeji}
+    m\frac{dv}{dt}=F_{G}+F_{R}\notag
+  \end{equation}
+  Newton showed in his \emph{Principia Mathematica} that certain simple
+  physical assumptions imply that $F_{R}$ is proportional to the square
+  of the velocity:
+  \begin{equation}
+    \label{eq:oagujeif}
+    F_{R}=kv^{2}\notag
+\end{equation}
+Empirical investigations indicate that the actual dependence of
+air resistance on velocity can be quite complicated. For many
+purposes it suffices to assume that
+\begin{equation}
+  \label{eq:shaenesh}
+  F_{R}=kv^{p}\notag
+\end{equation}
+where $1\leq{}p\leq{}2$ and the value of $k$ depends on the size and
+shape of the body, as well as the density and viscosity of the air.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Air Resistance}
+  Generally speaking, $p=1$ for relatively low speeds and $p=2$ for
+  high speeds, whereas $1<p<2$ for intermediate speeds. How slow
+  ``low speed'' and how fast ``high speed'' are depend on the same factors
+  that determine the value of the coefficient $k$. Thus air resistance
+  is a complicated physical phenomenon.
+
+  \bigskip
+
+  The simplifying assumption that $F_{R}$ is exactly of the form
+  given here, with either $p=1$ or $p=2$, yields a tractable
+  mathematical model that exhibits the most important qualitative
+  features of motion with resistance. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Air Resistance}
+% aephooxi
+  {\ubung}We again consider a bolt shot straight upward with initial velocity
+  $v_{0}=49m/s$ from a crossbow at ground level. Now we take air
+  resistance into account, with $\rho=0.04$ ($\rho=k/m$). We ask how the
+  resulting maximum height and time aloft compare with the values
+  found in in the earlier exercise.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Air Resistance}
+  If you use quadratic air resistance,
+  \begin{equation}
+    \label{eq:shuwisho}
+    F_{R}=\pm{}kv^{2}\notag
+  \end{equation}
+  The choice of signs here depends on the direction of motion, which
+  the force of resistance always opposes. You can rewrite
+  \begin{equation}
+    \label{eq:yaeghian}
+    F_{R}=kv|v|\notag
+  \end{equation}
+  and distinguish the case when the object ascends and when it descends.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+% iayeinoo
+  {\ubung} A lunar lander is free-falling toward the moon, and at an
+  altitude of $53$ kilometers above the lunar surface its downward
+  velocity is measured at $1477\,km/h$. Its retrorockets, when fired
+  in free space, provide a deceleration of $T=4\,m/s^{2}$. At what
+  height above the lunar surface should the retrorockets be activated
+  to ensure a soft touchdown ($v=0$ at impact)?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+% EPC 100:1
+  {\ubung} The acceleration of a Maserati is proportional to the
+  difference between $250\,km/h$ and the velocity of this sports car.
+  If this machine can accelerate from rest to $100\, km/h$ in $10$
+  seconds, how long will it take for the car to accelerate from rest
+  to $200\,km/h$?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+% EPC 100:10
+  {\ubung} A woman bails out of an airplane at an altitude of
+  $10,000\,ft$, falls freely for $20$ seconds, then opens her
+  parachute. How long will it take her to reach the ground? Assume
+  linear air resistance $\rho{}v\,ft/s^{2}$, taking $\rho=0.15$
+  without the parachute and $\rho=1.5$ with the parachute.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler's Method}
+%
+  It is the exception rather than the rule when a differential
+  equation of the general form
+  \begin{equation}
+    \label{eq:olawaeve}
+    \frac{dy}{dx}=f(x,y)\notag
+\end{equation}
+can be solved exactly and explicitly by elementary methods like those
+discussed so far. For example, consider the simple equation
+\begin{equation}
+  \label{eq:cohhahhi}
+  \frac{dy}{dx}=e^{-x^{2}}\notag
+\end{equation}
+A solution of this equation is simply an antiderivative of
+$e^{-x^{2}}$. It is known that every antiderivative of this function
+is a nonelementary function: one that cannot be expressed as a finite
+combination of the familiar functions of elementary calculus. Any
+attempt to use our symbolic techniques to find an
+explicit formula for a solution is therefore doomed to failure.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler's Method}
+  Given the initial value problem
+  \begin{equation}
+    \label{eq:yaengaif}
+    \frac{dy}{dx}=f(x,y)\qquad{}y(x_{0})=y_{0}\notag
+  \end{equation}
+  Euler's method with step size $h$ consists of applying the iterative
+  formula
+  \begin{equation}
+    \label{eq:ugeadain}
+    y_{n+1}=y_{n}+h\cdot{}f(x_{n},y_{n})\notag
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler's Method}
+  {\ubung} Apply Euler's method to approximate the solution of the IVP
+  \begin{equation}
+    \label{eq:uvaiquie}
+    \frac{dy}{dx}=x+\frac{1}{5}y\qquad{}y(0)=-3\notag
+  \end{equation}
+  \begin{enumerate}
+  \item first with step size $h=1$ on the interval $[0,5]$
+  \item then with step size $h=0.2$ on the interval $[0,1]$
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler's Method}
+%
+  Note that sometimes things can go wrong for any of the numerical
+  methods covered here. It is always a good idea to start with step
+  size $h$, then reduce to $h/2, h/4, h/8$ and so on to see if there
+  are any issues.
+
+  \bigskip
+
+  The error for Euler's method is of order $h$, which means that for a
+  finite number of approximations $y_{1},{\ldots},y_{k}$ there exists
+  a constant $C$ (which does not depend on $h$) such that
+  \begin{equation}
+    \label{eq:foutidai}
+    |y_{n}-y(x_{n})|\leq{}Ch\mbox{ for all }n=1,{\ldots},k\notag
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Improved Euler Method}
+  %
+  Given the initial value problem
+  \begin{equation}
+    \label{eq:ahfaetie}
+    \frac{dy}{dx}=f(x,y)\qquad{}y(x_{0})=y_{0}\notag
+  \end{equation}
+  the improved Euler method with step size $h$ consists of applying the iterative
+  formulas
+  \begin{align*}
+    \label{eq:tairaewi}
+    k_{1}&=f(x_{n},y_{n}) \\
+    u_{n+1}&=y_{n}+h\cdot{}k_{1} \\
+    k_{2}&=f(x_{n+1},u_{n+1}) \\
+    y_{n+1}&=y_{n}+\frac{h}{2}\left(k_{1}+k_{2}\right)\notag
+\end{align*}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Improved Euler Method}
+  % EPC 120:2
+  {\ubung} Plot the solution curve for the IVP
+  \begin{equation}
+    \label{eq:mughieyi}
+    \frac{dy}{dx}=-\frac{2xy}{1+x^{2}}\qquad{}y(0)=1\notag
+  \end{equation}
+  between $x=0$ and $x=1$ for various values of $h$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Runge-Kutta Method}
+The error for the improved Euler method is of order $h^{2}$ (rather
+than $h$ for Euler's method). We can do even better with the
+Runge-Kutta method ($h^{4}$). The idea is similar to Simpson's rule.
+Recall that
+\begin{equation}
+  \label{eq:dejeohaa}
+  y(x_{n+1})-y(x_{n})\approx\frac{h}{6}\left(y'(x_{n})+4y'\left(x_{n}+\frac{h}{2}\right)+y'(x_{n+1})\right)\notag
+\end{equation}
+turn this into
+\begin{equation}
+  \label{eq:oopeibah}
+  y(x_{n+1})\approx{}y(x_{n})+\notag
+\end{equation}
+\begin{equation}
+  \label{eq:sohceewi}
+  \frac{h}{6}\left(y'(x_{n})+2y'\left(x_{n}+\frac{h}{2}\right)+2y'\left(x_{n}+\frac{h}{2}\right)+y'(x_{n+1})\right)\notag
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Runge-Kutta Method}
+  Given the initial value problem
+  \begin{equation}
+    \label{eq:shohyohz}
+    \frac{dy}{dx}=f(x,y)\qquad{}y(x_{0})=y_{0}\notag
+  \end{equation}
+  the Runge-Kutta method with step size $h$ consists of applying the iterative
+  formulas
+  \begin{align*}
+    \label{eq:ohdohtoh}
+    k_{1}&=f(x_{n},y_{n}) \\
+    k_{2}&=f(x_{n}+\frac{h}{2},y_{n}+\frac{h}{2}\cdot{}k_{1}) \\
+    k_{3}&=f(x_{n}+\frac{h}{2},y_{n}+\frac{h}{2}\cdot{}k_{2}) \\
+    k_{4}&=f(x_{n+1},y_{n}+h\cdot{}k_{3}) \\
+    y_{n+1}&=y_{n}+\frac{h}{6}\left(k_{1}+2k_{2}+2k_{3}+k_{4}\right)
+\end{align*}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Runge-Kutta Method}
+% EPC 130:3
+  {\ubung} A skydiver with a mass of $60\,kg$ jumps from a helicopter
+  hovering at an initial altitude of $5$ kilometers. Assume that she
+  falls vertically with initial velocity zero and experiences an
+  upward force $F_{R}$ of air resistance given in terms of her velocity $v$
+  (in metres per second) by
+  \begin{equation}
+    \label{eq:veephoos}
+    F_{R}=(0.0096)(100v+10v^{2}+v^{3})\notag
+\end{equation}
+(in Newtons and with the coordinate axis directed downward so that
+$v>0$ during her descent to the ground). If she does not open her
+parachute, what will be her terminal velocity? How fast will she be
+falling after five seconds have elapsed? After ten seconds? After 20
+seconds? 
+\end{frame}
+
+\begin{frame}
+  \frametitle{End of Lesson}
+Next Lesson: Linear Equations of Higher Order
+\end{frame}
+
+\end{document}

@@ -1,0 +1,5 @@
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ grep -i -R 'simpson' ./*
+[35m[K./nicephorus-nypesncz.ipynb[m[K[36m[K:[m[K    "<h2>[01;31m[KSimpson[m[K's Rule</h2>"
+[35m[K./nicephorus-nypesncz.ipynb[m[K[36m[K:[m[K    "As you can appreciate now, there are integrals that are very difficult to solve. Perhaps they cannot be solved at all. In this case, we can use an approximation called [01;31m[KSimpson[m[K's Rule. The formula is \n",
+[35m[K./nicephorus-nypesncz.ipynb[m[K[36m[K:[m[K    "[01;31m[KSimpson[m[K's Rule stems from replacing the function with the parabola that goes through $f(a),f\\left(\\frac{a+b}{2}\\right),f(b)$. Let us try this for $f(x)=e^{-x^{2}}$ between $x=-\\frac{1}{2}$ and $x=1$."
+]0;~/jupyter/julia[01;34m~/jupyter/julia[00m$ 

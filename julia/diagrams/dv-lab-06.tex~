@@ -1,0 +1,66 @@
+% dv-lab-06.tex
+
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+\usepackage{syllogism} 
+\usepackage{october}
+\usepackage[table]{xcolor}
+
+\newcounter{aufg}
+\setcounter{aufg}{0}
+\newcommand{\aufgabe}[0]{\refstepcounter{aufg}\textbf{(\arabic{aufg})}}
+
+\begin{document}
+
+\textbf{Higher Order Differential Equations}
+
+% EPC 100:1
+{\ubung} The acceleration of a Maserati is proportional to the
+difference between $250\,km/h$ and the velocity of this sports car. If
+this machine can accelerate from rest to $100\,km/h$ in $10\,s$, how long
+will it take for the car to accelerate from rest to $200\,km/h$?
+
+% EPC 100:10
+{\ubung} A woman bails out of an airplane at an altitude of 10,000
+feet, falls freely for $20\,s$, then opens her parachute. How long
+will it take her to reach the ground? Assume linear air resistance
+$\rho{}v\,ft/s^{2}$, taking $\rho=0.15$ without the parachute and
+$\rho=1.5$ with the parachute.
+
+% EPC 101:26
+{\ubung} Suppose that you are stranded---your rocket engine has
+failed---on an asteroid of diameter 3 miles, with density equal to
+that of the earth with radius 3960 miles. If you have enough spring in
+your legs to jump 4 feet straight up on earth while wearing your space
+suit, can you blast off from this asteroid using leg power alone?
+
+% EPC 103:4
+The V-2 rocket that was used to attack London in World War II had an
+initial mass of 12,850 kilograms, of which 68.5\% was fuel. This fuel
+burned uniformly for 70 seconds with an exhaust velocity of $2\,km/s$.
+Assume it encounters air resistance of $1.45\,N$ per $m/s$ of
+velocity. Then find the velocity and altitude of the V-2 at burnout
+under the assumption that it is launched vertically upward from rest
+on the ground.
+
+% EPC 159:25
+Let $L$ be an operator with
+\begin{equation}
+  \label{eq:ikeeajri}
+  Ly=y''+py'+qy\notag
+\end{equation}
+Suppose that $y_{1}$ and $y_{2}$ are two functions such that
+\begin{equation}
+  \label{eq:sjuyttkw}
+  Ly_{1}=f(x)\mbox{ and }Ly_{2}=g(x)\notag
+\end{equation}
+Show that their sum $y=y_{1}+y_{2}$ satisfies the nonhomogeneous
+equation
+\begin{equation}
+  \label{eq:qhjsjent}
+  Ly=f(x)+g(x)\notag
+\end{equation}
+
+
+
+\end{document}

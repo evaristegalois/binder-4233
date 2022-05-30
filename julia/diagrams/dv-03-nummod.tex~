@@ -1,0 +1,53 @@
+% dv-03-nummod.tex
+
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{teachbeamer}
+
+\title{Models and Numerical Methods}
+\subtitle{{\CourseNumber}, BCIT}
+
+\author{\CourseName}
+
+\date{January 18, 2022}
+
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logistic Modeling}
+  You are familiar with uninhibited exponential growth (or decay). The
+  formula is
+  \begin{equation}
+    \label{eq:xefohvai}
+    A(t)=A(0)e^{kt}\notag
+  \end{equation}
+  where $k$ is the growth (or decay) constant. This formula solves the
+  differential equation
+  \begin{equation}
+    \label{eq:ieyeisee}
+    \frac{dA}{dt}=kA\notag
+  \end{equation}
+  However, much exponential growth is inhibited, for example by
+  limited food supply or, in the case of a virus or a rumour, by a
+  limited number of people to infect. In this case, the population is
+  proportional both to the population and to the difference between
+  the population and the carrying capacity $M$:
+  \begin{equation}
+    \label{eq:kiediete}
+    \frac{dA}{dx}=kA(M-A)\notag
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{End of Lesson}
+Next Lesson: Solving First-Order Differential Equations
+\end{frame}
+
+\end{document}

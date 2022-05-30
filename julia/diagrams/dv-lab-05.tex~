@@ -1,0 +1,35 @@
+% dv-lab-05.tex
+
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+\usepackage{syllogism} 
+\usepackage{october}
+\usepackage[table]{xcolor}
+
+\newcounter{aufg}
+\setcounter{aufg}{0}
+\newcommand{\aufgabe}[0]{\refstepcounter{aufg}\textbf{(\arabic{aufg})}}
+
+\begin{document}
+
+\textbf{Higher Order Differential Equations}
+
+% wgqpvroy
+{\aufgabe} A skydiver with a mass of $60\,kg$ jumps from a helicopter
+  hovering at an initial altitude of $5$ kilometers. Assume that she
+  falls vertically with initial velocity zero and experiences an
+  upward force $F_{R}$ of air resistance given in terms of her velocity $v$
+  (in metres per second) by
+  \begin{equation}
+    \label{eq:zsqfacfh}
+    F_{R}=(0.0096)(100v+10v^{2}+v^{3})\notag
+  \end{equation}
+(in Newtons and with the coordinate axis directed downward so that
+$v>0$ during her descent to the ground). If she does not open her
+parachute, what will be her terminal velocity? How fast will she be
+falling after five seconds have elapsed? After ten seconds? After 20
+seconds?
+
+{\aufgabe} 
+
+\end{document}

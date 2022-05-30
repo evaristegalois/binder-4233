@@ -1,0 +1,235 @@
+]0;~/vodoaldus/sage[01;34m~/vodoaldus/sage[00m$ cd ..
+]0;~/vodoaldus[01;34m~/vodoaldus[00m$ gg
+Already up to date.
+[master 8cd5698] i
+ 3 files changed, 26 insertions(+), 2 deletions(-)
+ create mode 100644 sage/.2022-03-26-164009.term-0.term
+ create mode 100644 sage/2022-03-26-164009.term
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 591 bytes | 591.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/wemumoom-1652
+   c4f9bef..8cd5698  master -> master
+]0;~/vodoaldus[01;34m~/vodoaldus[00m$ cd ..
+]0;~[01;34m~[00m$ ls -a -l
+total 1209
+drwxr-xr-x 41 user user    107 Mar 26 23:36 [0m[01;34m.[0m
+drwxr-xr-x  1 root root   4096 Mar 26 23:36 [01;34m..[0m
+-rw-r-----  1 user user      0 Dec  6  2015 .2015-12-06-082051.sagews.sage-chat
+-rw-r-----  1 user user  10443 Dec  6  2015 .2015-12-06-082051.sagews.sage-history
+-rw-------  1 user user      0 Nov  9  2017 .2017-11-09-081039.tex.lock
+-rw-r--r--  1 user user    257 Jan  3  2018 .2017-12-30-155258.ipynb.sage-jupyter2
+-rw-r--r--  1 user user   2376 Mar  4  2018 .2018-03-02-123837.ipynb.sage-jupyter2
+-rw-r--r--  1 user user    235 Mar 12  2018 .2018-03-09-130621.ipynb.sage-jupyter2
+-rw-r--r--  1 user user   4251 Oct 17  2018 .2018-10-08-234928.ipynb.sage-jupyter2
+-rw-r--r--  1 user user   1682 Oct 16  2018 .2018-10-10-171552.ipynb.sage-jupyter2
+-rw-r--r--  1 user user    492 Oct 16  2018 .2018-10-12-171533.ipynb.sage-jupyter2
+-rw-r--r--  1 user user     22 Oct 18  2018 .2018-10-18-065709.term-0.term
+-rw-r--r--  1 user user   8249 Oct 22  2018 .2018-10-22-112910.term-0.term
+-rw-r--r--  1 user user 128566 Nov 26  2018 .2018-11-26-114724.term-0.term
+-rw-r--r--  1 user user  14754 Dec 17  2018 .2018-12-17-105213.term-0.term
+-rw-r--r--  1 user user   2330 Jan  9  2019 .2019-01-08-174611.term-0.term
+-rw-r--r--  1 user user 132249 Apr  8  2019 .2019-01-09-202322.term-0.term
+-rw-r--r--  1 user user  18894 Mar 20  2019 .2019-03-19-173058.term-0.term
+-rw-r--r--  1 user user  14041 Oct 25  2019 .2019-10-25-111630.term-0.term
+-rw-r--r--  1 user user   1034 Apr  6  2021 .2020-01-23-210758.ipynb.sage-jupyter2
+-rw-r--r--  1 user user 296835 May 19  2020 .2020-03-02-103048.term-0.term
+-rw-r--r--  1 user user   1846 Mar  7  2020 .2020-03-04-134318.ipynb.sage-jupyter2
+-rw-r--r--  1 user user   1349 May 19  2020 .2020-05-19-131742.term-0.term
+-rw-r--r--  1 user user     45 Sep  9  2020 .2020-09-09-112724.term-0.term
+-rw-r--r--  1 user user 206104 Nov  6  2020 .2020-10-23-092008.term-0.term
+-rw-r--r--  1 user user    883 Oct 30  2020 .2020-10-28-102832.ipynb.sage-jupyter2
+-rw-r--r--  1 user user  35377 Nov  7  2020 .2020-11-07-104820.term-0.term
+-rw-r--r--  1 user user  42959 Dec 20  2020 .2020-12-20-115718.term-0.term
+-rw-r--r--  1 user user 166333 Jan 18  2021 .2021-01-16-121232.term-0.term
+-rw-r--r--  1 user user  41664 Feb 28  2021 .2021-02-28-132935.term-0.term
+-rw-r--r--  1 user user 391776 Mar 23  2021 .2021-03-14-095946.term-0.term
+-rw-r--r--  1 user user  49345 Mar 29  2021 .2021-03-29-072206.term-0.term
+-rw-r--r--  1 user user  94309 Apr  4  2021 .2021-04-03-085759.term-0.term
+-rw-r--r--  1 user user  11220 Apr  8  2021 .2021-04-06-094103.term-0.term
+-rw-r--r--  1 user user   6361 May  4  2021 .2021-05-03-185644.term-0.term
+-rw-r--r--  1 user user  30536 May 17  2021 .2021-05-17-075958.term-0.term
+-rw-r--r--  1 user user 327491 Jun 10  2021 .2021-06-05-093918.term-0.term
+-rw-r--r--  1 user user 206143 Jun 19  2021 .2021-06-08-113548.term-0.term
+-rw-r--r--  1 user user  48304 Jun 24  2021 .2021-06-24-165508.term-0.term
+-rw-r--r--  1 user user 285194 Jul  5  2021 .2021-07-03-101645.term-0.term
+-rw-r--r--  1 user user 294312 Jul 18  2021 .2021-07-08-085534.term-0.term
+-rw-r--r--  1 user user 352700 Sep 26 04:42 .2021-07-14-092632.term-0.term
+-rw-r--r--  1 user user 128253 Jul 26  2021 .2021-07-25-142033.term-0.term
+-rw-r--r--  1 user user  34342 Sep 12  2021 .2021-09-12-081333.term-0.term
+-rw-r--r--  1 user user  24485 Sep 12  2021 .2021-09-12-103125.term-0.term
+-rw-r--r--  1 user user  51634 Oct  8 00:42 .2021-10-07-173816.term-0.term
+-rw-r--r--  1 user user    380 Nov 19 03:53 .2021-11-18-193557.term-0.term
+-rw-r--r--  1 user user  19177 Dec  4 21:09 .2021-11-20-150215.term-0.term
+-rw-r--r--  1 user user 141978 Nov 29 01:07 .2021-11-20-194353.term-0.term
+-rw-r--r--  1 user user  11179 Feb 28 18:28 .2022-02-28-102803.term-0.term
+-rw-r--r--  1 user user    110 Feb  6  2019 .:631712744-fakexinerama
+-rw-r--r--  1 user user     48 Jan 13  2021 .RData
+-rw-------  1 user user     41 Jan 13  2021 .Rhistory
+-rw-------  1 user user     97 Feb  6  2019 .Xauthority
+-rw-------  1 user user  31921 Mar 26 23:50 .bash_history
+-rw-r-----  1 user user     49 Dec  6  2015 .bash_profile
+-rw-r-----  1 user user   2853 Jul 16  2019 .bashrc
+drwx------  5 user user      5 Jan 18 01:00 [01;34m.cache[0m
+drwxr-xr-x 18 user user     19 Mar 26 23:39 [01;34m.ccache[0m
+drwxr-x---  3 user user      3 May  7  2017 [01;34m.coffee[0m
+drwx------  9 user user      9 Jul 16  2019 [01;34m.config[0m
+drwx------  3 user user      3 Feb  6  2019 [01;34m.dbus[0m
+drwx------  3 user user      3 Dec 23  2017 [01;34m.emacs.d[0m
+-rw-r--r--  1 user user    110 Feb  6  2019 .fakexinerama
+-rw-------  1 user user    130 May 12  2020 .gitconfig
+-rw-r--r--  1 user user    829 May 12  2020 .gitexcludes
+drwx------  3 user user     11 Dec 13  2019 [01;34m.gnupg[0m
+drwx------  6 user user      6 Dec 11  2017 [01;34m.ipython[0m
+-rw-------  1 user user   1251 Nov 20  2020 .joe_state
+drwxr-xr-x 12 user user     12 Nov 29 02:16 [01;34m.julia[0m
+drwx------  2 user user      4 Feb  6  2019 [01;34m.jupyter[0m
+-rw-r--r--  1 user user  65536 Mar 26 23:36 .jupyter-blobs-v0.db
+drwx------  3 user user      3 Nov  8  2017 [01;34m.local[0m
+-rw-------  1 user user   6877 Nov  1  2018 .octave_hist
+-rw-------  1 user user   1672 Dec 16  2017 .octave_packages
+drwx------  3 user user      3 Feb  6  2019 [01;34m.pki[0m
+drwx------ 11 user user     11 Sep 21  2018 [01;34m.sage[0m
+lrwxrwxrwx  1 user user     12 Mar 26 23:36 [01;36m.smc[0m -> [01;34m/tmp/.cocalc[0m
+dr-xr-xr-x  2 user user      2 Mar 26 23:45 [01;34m.snapshots[0m
+drwxr-x---  2 user user     10 Mar 26 23:36 [01;34m.ssh[0m
+drwxr-xr-x  3 user user      3 Dec 23  2017 [01;34m.vim[0m
+-rw-------  1 user user  17968 Feb 19 21:53 .viminfo
+-rwxr-xr-x  1 user user  11100 Dec 23  2017 [01;32m.vimrc[0m
+drwx------  2 user user      3 Feb  6  2019 [01;34m.xpra[0m
+-rw-r--r--  1 user user      0 Mar  2 21:04 2022-02-28-102803.term
+drwx------  2 user user      3 Dec 16  2017 [01;34mProgramFiles[0m
+drwxr-xr-x  3 user user      4 Mar  8 17:58 [01;34matransfer[0m
+drwx------  2 user user     12 May  6  2021 [01;34mbin[0m
+drwxr-xr-x  4 user user    315 Nov 16  2018 [01;34mcocalc-1429[0m
+drwxr-xr-x 11 user user    463 May 26  2021 [01;34mcocalc-2269[0m
+drwxr-xr-x  5 user user     63 Feb 18  2021 [01;34mcocalc-2316[0m
+drwxr-xr-x  7 user user    317 Nov 26 03:48 [01;34mcocalc-2749[0m
+drwxr-xr-x  5 user user    137 Dec  7 17:54 [01;34mcocalc-4527[0m
+drwxr-xr-x  7 user user    165 Jun 20  2019 [01;34mcocalc-4781[0m
+drwxr-xr-x 10 user user    621 Feb 15 22:34 [01;34mcocalc-4821[0m
+drwxr-xr-x 15 user user     71 Oct  2 00:11 [01;34mcocalc-5514[0m
+drwxr-xr-x  8 user user    120 May  3  2019 [01;34mcocalc-5774[0m
+drwxr-xr-x  5 user user    162 Mar 17 23:34 [01;34mcocalc-5822[0m
+drwxr-xr-x  5 user user     24 Nov 13  2020 [01;34mcocalc-6083[0m
+drwxr-xr-x 10 user user    476 Dec  2 23:04 [01;34mcocalc-7719[0m
+drwxr-xr-x 11 user user    710 Mar 25 23:09 [01;34mcocalc-8163[0m
+drwxr-xr-x  5 user user    160 May  5  2021 [01;34mcocalc-8272[0m
+drwxr-xr-x  8 user user    178 Mar 26 23:34 [01;34mcocalc-9048[0m
+drwx------  8 user user     66 Feb 23 05:20 [01;34mdispose[0m
+drwx------  2 user user      7 Dec 13  2019 [01;34mgpg[0m
+drwxr-xr-x  5 user user      5 Jul 16  2019 [01;34mperl5[0m
+drwxr-xr-x  6 user user      8 Feb 23 05:15 [01;34mvodoaldus[0m
+]0;~[01;34m~[00m$ ls -a -l -h
+total 1.2M
+drwxr-xr-x 41 user user  107 Mar 26 23:36 [0m[01;34m.[0m
+drwxr-xr-x  1 root root 4.0K Mar 26 23:36 [01;34m..[0m
+-rw-r-----  1 user user    0 Dec  6  2015 .2015-12-06-082051.sagews.sage-chat
+-rw-r-----  1 user user  11K Dec  6  2015 .2015-12-06-082051.sagews.sage-history
+-rw-------  1 user user    0 Nov  9  2017 .2017-11-09-081039.tex.lock
+-rw-r--r--  1 user user  257 Jan  3  2018 .2017-12-30-155258.ipynb.sage-jupyter2
+-rw-r--r--  1 user user 2.4K Mar  4  2018 .2018-03-02-123837.ipynb.sage-jupyter2
+-rw-r--r--  1 user user  235 Mar 12  2018 .2018-03-09-130621.ipynb.sage-jupyter2
+-rw-r--r--  1 user user 4.2K Oct 17  2018 .2018-10-08-234928.ipynb.sage-jupyter2
+-rw-r--r--  1 user user 1.7K Oct 16  2018 .2018-10-10-171552.ipynb.sage-jupyter2
+-rw-r--r--  1 user user  492 Oct 16  2018 .2018-10-12-171533.ipynb.sage-jupyter2
+-rw-r--r--  1 user user   22 Oct 18  2018 .2018-10-18-065709.term-0.term
+-rw-r--r--  1 user user 8.1K Oct 22  2018 .2018-10-22-112910.term-0.term
+-rw-r--r--  1 user user 126K Nov 26  2018 .2018-11-26-114724.term-0.term
+-rw-r--r--  1 user user  15K Dec 17  2018 .2018-12-17-105213.term-0.term
+-rw-r--r--  1 user user 2.3K Jan  9  2019 .2019-01-08-174611.term-0.term
+-rw-r--r--  1 user user 130K Apr  8  2019 .2019-01-09-202322.term-0.term
+-rw-r--r--  1 user user  19K Mar 20  2019 .2019-03-19-173058.term-0.term
+-rw-r--r--  1 user user  14K Oct 25  2019 .2019-10-25-111630.term-0.term
+-rw-r--r--  1 user user 1.1K Apr  6  2021 .2020-01-23-210758.ipynb.sage-jupyter2
+-rw-r--r--  1 user user 290K May 19  2020 .2020-03-02-103048.term-0.term
+-rw-r--r--  1 user user 1.9K Mar  7  2020 .2020-03-04-134318.ipynb.sage-jupyter2
+-rw-r--r--  1 user user 1.4K May 19  2020 .2020-05-19-131742.term-0.term
+-rw-r--r--  1 user user   45 Sep  9  2020 .2020-09-09-112724.term-0.term
+-rw-r--r--  1 user user 202K Nov  6  2020 .2020-10-23-092008.term-0.term
+-rw-r--r--  1 user user  883 Oct 30  2020 .2020-10-28-102832.ipynb.sage-jupyter2
+-rw-r--r--  1 user user  35K Nov  7  2020 .2020-11-07-104820.term-0.term
+-rw-r--r--  1 user user  42K Dec 20  2020 .2020-12-20-115718.term-0.term
+-rw-r--r--  1 user user 163K Jan 18  2021 .2021-01-16-121232.term-0.term
+-rw-r--r--  1 user user  41K Feb 28  2021 .2021-02-28-132935.term-0.term
+-rw-r--r--  1 user user 383K Mar 23  2021 .2021-03-14-095946.term-0.term
+-rw-r--r--  1 user user  49K Mar 29  2021 .2021-03-29-072206.term-0.term
+-rw-r--r--  1 user user  93K Apr  4  2021 .2021-04-03-085759.term-0.term
+-rw-r--r--  1 user user  11K Apr  8  2021 .2021-04-06-094103.term-0.term
+-rw-r--r--  1 user user 6.3K May  4  2021 .2021-05-03-185644.term-0.term
+-rw-r--r--  1 user user  30K May 17  2021 .2021-05-17-075958.term-0.term
+-rw-r--r--  1 user user 320K Jun 10  2021 .2021-06-05-093918.term-0.term
+-rw-r--r--  1 user user 202K Jun 19  2021 .2021-06-08-113548.term-0.term
+-rw-r--r--  1 user user  48K Jun 24  2021 .2021-06-24-165508.term-0.term
+-rw-r--r--  1 user user 279K Jul  5  2021 .2021-07-03-101645.term-0.term
+-rw-r--r--  1 user user 288K Jul 18  2021 .2021-07-08-085534.term-0.term
+-rw-r--r--  1 user user 345K Sep 26 04:42 .2021-07-14-092632.term-0.term
+-rw-r--r--  1 user user 126K Jul 26  2021 .2021-07-25-142033.term-0.term
+-rw-r--r--  1 user user  34K Sep 12  2021 .2021-09-12-081333.term-0.term
+-rw-r--r--  1 user user  24K Sep 12  2021 .2021-09-12-103125.term-0.term
+-rw-r--r--  1 user user  51K Oct  8 00:42 .2021-10-07-173816.term-0.term
+-rw-r--r--  1 user user  380 Nov 19 03:53 .2021-11-18-193557.term-0.term
+-rw-r--r--  1 user user  19K Dec  4 21:09 .2021-11-20-150215.term-0.term
+-rw-r--r--  1 user user 139K Nov 29 01:07 .2021-11-20-194353.term-0.term
+-rw-r--r--  1 user user  11K Feb 28 18:28 .2022-02-28-102803.term-0.term
+-rw-r--r--  1 user user  110 Feb  6  2019 .:631712744-fakexinerama
+-rw-r--r--  1 user user   48 Jan 13  2021 .RData
+-rw-------  1 user user   41 Jan 13  2021 .Rhistory
+-rw-------  1 user user   97 Feb  6  2019 .Xauthority
+-rw-------  1 user user  32K Mar 26 23:50 .bash_history
+-rw-r-----  1 user user   49 Dec  6  2015 .bash_profile
+-rw-r-----  1 user user 2.8K Jul 16  2019 .bashrc
+drwx------  5 user user    5 Jan 18 01:00 [01;34m.cache[0m
+drwxr-xr-x 18 user user   19 Mar 26 23:39 [01;34m.ccache[0m
+drwxr-x---  3 user user    3 May  7  2017 [01;34m.coffee[0m
+drwx------  9 user user    9 Jul 16  2019 [01;34m.config[0m
+drwx------  3 user user    3 Feb  6  2019 [01;34m.dbus[0m
+drwx------  3 user user    3 Dec 23  2017 [01;34m.emacs.d[0m
+-rw-r--r--  1 user user  110 Feb  6  2019 .fakexinerama
+-rw-------  1 user user  130 May 12  2020 .gitconfig
+-rw-r--r--  1 user user  829 May 12  2020 .gitexcludes
+drwx------  3 user user   11 Dec 13  2019 [01;34m.gnupg[0m
+drwx------  6 user user    6 Dec 11  2017 [01;34m.ipython[0m
+-rw-------  1 user user 1.3K Nov 20  2020 .joe_state
+drwxr-xr-x 12 user user   12 Nov 29 02:16 [01;34m.julia[0m
+drwx------  2 user user    4 Feb  6  2019 [01;34m.jupyter[0m
+-rw-r--r--  1 user user  64K Mar 26 23:36 .jupyter-blobs-v0.db
+drwx------  3 user user    3 Nov  8  2017 [01;34m.local[0m
+-rw-------  1 user user 6.8K Nov  1  2018 .octave_hist
+-rw-------  1 user user 1.7K Dec 16  2017 .octave_packages
+drwx------  3 user user    3 Feb  6  2019 [01;34m.pki[0m
+drwx------ 11 user user   11 Sep 21  2018 [01;34m.sage[0m
+lrwxrwxrwx  1 user user   12 Mar 26 23:36 [01;36m.smc[0m -> [01;34m/tmp/.cocalc[0m
+dr-xr-xr-x  2 user user    2 Mar 26 23:45 [01;34m.snapshots[0m
+drwxr-x---  2 user user   10 Mar 26 23:36 [01;34m.ssh[0m
+drwxr-xr-x  3 user user    3 Dec 23  2017 [01;34m.vim[0m
+-rw-------  1 user user  18K Feb 19 21:53 .viminfo
+-rwxr-xr-x  1 user user  11K Dec 23  2017 [01;32m.vimrc[0m
+drwx------  2 user user    3 Feb  6  2019 [01;34m.xpra[0m
+-rw-r--r--  1 user user    0 Mar  2 21:04 2022-02-28-102803.term
+drwx------  2 user user    3 Dec 16  2017 [01;34mProgramFiles[0m
+drwxr-xr-x  3 user user    4 Mar  8 17:58 [01;34matransfer[0m
+drwx------  2 user user   12 May  6  2021 [01;34mbin[0m
+drwxr-xr-x  4 user user  315 Nov 16  2018 [01;34mcocalc-1429[0m
+drwxr-xr-x 11 user user  463 May 26  2021 [01;34mcocalc-2269[0m
+drwxr-xr-x  5 user user   63 Feb 18  2021 [01;34mcocalc-2316[0m
+drwxr-xr-x  7 user user  317 Nov 26 03:48 [01;34mcocalc-2749[0m
+drwxr-xr-x  5 user user  137 Dec  7 17:54 [01;34mcocalc-4527[0m
+drwxr-xr-x  7 user user  165 Jun 20  2019 [01;34mcocalc-4781[0m
+drwxr-xr-x 10 user user  621 Feb 15 22:34 [01;34mcocalc-4821[0m
+drwxr-xr-x 15 user user   71 Oct  2 00:11 [01;34mcocalc-5514[0m
+drwxr-xr-x  8 user user  120 May  3  2019 [01;34mcocalc-5774[0m
+drwxr-xr-x  5 user user  162 Mar 17 23:34 [01;34mcocalc-5822[0m
+drwxr-xr-x  5 user user   24 Nov 13  2020 [01;34mcocalc-6083[0m
+drwxr-xr-x 10 user user  476 Dec  2 23:04 [01;34mcocalc-7719[0m
+drwxr-xr-x 11 user user  710 Mar 25 23:09 [01;34mcocalc-8163[0m
+drwxr-xr-x  5 user user  160 May  5  2021 [01;34mcocalc-8272[0m
+drwxr-xr-x  8 user user  178 Mar 26 23:34 [01;34mcocalc-9048[0m
+drwx------  8 user user   66 Feb 23 05:20 [01;34mdispose[0m
+drwx------  2 user user    7 Dec 13  2019 [01;34mgpg[0m
+drwxr-xr-x  5 user user    5 Jul 16  2019 [01;34mperl5[0m
+drwxr-xr-x  6 user user    8 Feb 23 05:15 [01;34mvodoaldus[0m
+]0;~[01;34m~[00m$ 

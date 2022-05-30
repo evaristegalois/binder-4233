@@ -1,0 +1,3475 @@
+% mc-01-DiffReview.tex
+
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{teachbeamer}
+\newcommand{\reeq}{2.2}
+\newcommand{\aeza}{7.5}
+\newcommand{\emah}{1.9}
+\newcommand{\biet}{5.1}
+\newcommand{\hohq}{Shane}
+\newcommand{\wili}{He}
+\newcommand{\ahhi}{he}
+\newcommand{\usax}{11}
+\newcommand{\bohh}{his}
+
+\title{Differentiation Review}
+\subtitle{{\CourseNumber}, BCIT}
+
+\author{\CourseName}
+
+\date{September 13, 2021}
+
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Introduction to Calculus}
+\alert{Calculus} solves many problems for which it was not originally
+designed. The initial motivation for calculus was to find the slope of
+a tangent on a curve and the area of a region bounded by a curve.
+  \begin{figure}[h]
+    \includegraphics[scale=.35]{./diagrams/regiontangent.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{A Real-Life Example I}
+Consider a magnetic levitation train accelerating on a straight
+monorail track. The position of the train (in feet) from the origin at
+time $t$ is given by
+\begin{equation}
+  \label{eq:pupibahk}
+  s=f(t)=4t^{2}
+\end{equation}
+What is the velocity of the train at $t=2$?
+\end{frame}
+
+\begin{frame}
+  \frametitle{A Real-Life Example II}
+It appears to make sense only if we calculate the velocity given an
+interval of time rather than just one point in time. For example, the
+velocity between $t=2$ and $t=3$ is 
+\begin{equation}
+  \label{eq:einohkie}
+  v_{[2,3]}=\frac{f(3)-f(2)}{3-2}=20
+\end{equation}
+More generally,
+\begin{equation}
+  \label{eq:phaedais}
+  v_{[2,t]}=g(t)=\frac{f(t)-f(2)}{t-2}=\frac{4(t^{2}-4)}{t-2}
+\end{equation}
+$g$ is not defined at $t=2$, but it is defined all around $t=2$, so we
+can ask ourselves the question: what happens when $t\rightarrow{}2$
+from below; or when $t\rightarrow{}2$ from above? It turns out that
+either way, the number approaches 16.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Velocity at a Point}
+If we found the limit as $t\rightarrow{}2$ of
+\begin{displaymath}
+  v_{[2,t]}=g(t)=\frac{f(t)-f(2)}{t-2}=\frac{4(t^{2}-4)}{t-2}
+\end{displaymath}
+it would serve as an intuitive definition of what a velocity is at a
+point (instead of on an interval). Unfortunately, the limit has the
+\alert{indeterminate form}
+\begin{equation}
+  \label{eq:toochoir}
+  \lim_{t\rightarrow{}2}\frac{4(t^{2}-4)}{t-2}=\frac{0}{0}
+\end{equation}
+However, notice that for $t\neq{}2$,
+\begin{equation}
+  \label{eq:geeshaiz}
+  g(t)=\frac{4(t^{2}-4)}{t-2}=\frac{4(t+2)\cancel{(t-2)}}{\cancel{t-2}}=4(t+2)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tangent Lines I}
+Remember our magnetic levitation train. The distance-time function was
+\begin{equation}
+  \label{eq:leezaach}
+  s=f(t)=4t^{2}
+\end{equation}
+The velocity of the train over a given interval is
+\begin{equation}
+  \label{eq:ohgheith}
+  v_{[t_{1},t_{2}]}=\frac{f(t_{2})-f(t_{1})}{t_{2}-t_{1}}
+\end{equation}
+This velocity is also the slope of the line going through the two
+function values $f(t_{1})$ and $f(t_{2})$. We call such a line a
+\alert{secant line}. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tangent Lines II}
+Here is an example of a secant line.
+  \begin{figure}[h]
+    \includegraphics[scale=.7]{./diagrams/tangent2.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tangent Lines III}
+  Now imagine $t_{1}$ and $t_{2}$ moving closer and closer together at
+  a point $a$ (for the train, we used $a=2$). If both of these limits
+  exist and agree with each other, we have a velocity at a point,
+\begin{equation}
+  \label{eq:aixohshi}
+  \lim_{t\rightarrow{}a}v_{[a,t]}\mbox{ for }t>a
+\end{equation}
+\begin{equation}
+  \label{eq:oongahgh}
+  \lim_{t\rightarrow{}a}v_{[t,a]}\mbox{ for }t<a
+\end{equation}
+This velocity at a point is also the slope of the line that just
+touches the function graph without crossing it. We call it a
+\alert{tangent line} at $t=a$. The slope of the tangent line is
+sometimes also called the \alert{rate of change}.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tangent Lines IV}
+  Think of a tangent line as the limit of secant lines. The slope of a
+  tangent line at a point $P=(x,f(x))$, if it exists, is
+\begin{equation}
+  \label{eq:cheevooj}
+  \lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}
+\end{equation}
+  \begin{figure}[h]
+    \includegraphics[scale=.7]{./diagrams/tangent1.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives}
+The derivative of a function $f$ with respect to $x$ is the function
+$f'$ (read ``$f$ prime''),
+\begin{equation}
+  \label{eq:lohfasoe}
+f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}
+\end{equation}
+The domain of $f'$ is the set of all $x$ where the limit exists.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives Diagram I}
+  \begin{figure}[h]
+    \includegraphics[scale=1.8]{./diagrams/derivs2.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives Diagram II}
+  \begin{figure}[h]
+    \includegraphics[scale=.6]{./diagrams/derivs1.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Rules of Differentiation}
+  \begin{block}{Rule 1}
+Derivative of a Constant
+  \end{block}
+\begin{equation}
+  \label{eq:ligoovah}
+f'(x)=0\mbox{ for }f(x)=c
+\end{equation}
+Reason:
+\begin{equation}
+  \label{eq:ahnieluz}
+f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}=\lim_{h\rightarrow{}0}\frac{c-c}{h}=\lim_{h\rightarrow{}0}0=0
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Rules of Differentiation}
+  \begin{block}{Rule 2}
+The Power Rule
+  \end{block}
+\begin{equation}
+  \label{eq:oomaenee}
+f'(x)=nx^{n-1}\mbox{ for }f(x)=x^{n}
+\end{equation}
+This rule applies for any $n\in\mathbb{R}$. The proof is messy.
+However, we can show how the rule is justified for $n=2$ and
+$n=\frac{1}{2}$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Rules of Differentiation}
+Case 1: $n=2$
+\begin{equation}
+  \label{eq:eeyeejeu}
+f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}=\lim_{h\rightarrow{}0}\frac{(x+h)^{2}-x^{2}}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:wuuxaise}
+\lim_{h\rightarrow{}0}\frac{2xh+h^{2}}{h}=\lim_{h\rightarrow{}0}(2x+h)=2x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Rules of Differentiation}
+Case 2: $n=\frac{1}{2}$
+\begin{equation}
+  \label{eq:shoogaka}
+f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}=\lim_{h\rightarrow{}0}\frac{\sqrt{x+h}-\sqrt{x}}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:ohniegae}
+  \lim_{h\rightarrow{}0}\frac{(\sqrt{x+h}-\sqrt{x})\cdot(\sqrt{x+h}+\sqrt{x})}{h\cdot(\sqrt{x+h}+\sqrt{x})}=\lim_{h\rightarrow{}0}\frac{x+h-x}{h\cdot(\sqrt{x+h}+\sqrt{x})}\notag
+\end{equation}
+Using the One Disagreement Rule, this equals
+\begin{equation}
+  \label{eq:ohchoacu}
+  \lim_{h\rightarrow{}0}\frac{1}{\sqrt{x+h}+\sqrt{x}}=\frac{1}{\sqrt{x}+\sqrt{x}}=\frac{1}{2}x^{-\frac{1}{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Rules of Differentiation}
+  \begin{block}{Rule 3}
+Derivative of a Constant Multiple of a Function
+  \end{block}
+\begin{equation}
+  \label{eq:thahchae}
+g'(x)=c\cdot{}f'(x)\mbox{ for }g(x)=c\cdot{}f(x)
+\end{equation}
+Reason:
+\begin{equation}
+  \label{eq:quaipahn}
+g'(x)=\lim_{h\rightarrow{}0}\frac{g(x+h)-g(x)}{h}=\lim_{h\rightarrow{}0}\frac{c\cdot{}f(x+h)-c\cdot{}f(x)}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:mitahrei}
+\lim_{h\rightarrow{}0}c\cdot{}\frac{f(x+h)-f(x)}{h}=c\cdot\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}=c\cdot{}f'(x)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Rules of Differentiation}
+  \begin{block}{Rule 4}
+The Sum Rule
+  \end{block}
+\begin{equation}
+  \label{eq:oubajaez}
+g'(x)=f_{1}'(x)+f_{2}'(x)\mbox{ for }g(x)=f_{1}(x)+f_{2}(x)
+\end{equation}
+Reason:
+\begin{equation}
+  \label{eq:heyanaci}
+g'(x)=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:bahgosio}
+\lim_{h\rightarrow{}0}\frac{g(x+h)-g(x)}{h}=\lim_{h\rightarrow{}0}\frac{f_{1}(x+h)+f_{2}(x+h)-f_{1}(x)-f_{2}(x)}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:eceishie}
+\lim_{h\rightarrow{}0}\left(\frac{f_{1}(x+h)-f_{1}(x)}{h}+\frac{f_{2}(x+h)-f_{2}(x)}{h}\right)=f_{1}'(x)+f_{2}'(x)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+{\ubung} Find the derivatives for the following functions.
+\begin{enumerate}
+\item $f(x)=4x^{5}+3x^{4}-8x^{2}+x+3$
+\item $f(t)=\frac{t^{2}}{5}+\frac{5}{t^{3}}$
+\item $g(z)=2z-5\sqrt{z}$
+\end{enumerate}
+
+\bigskip
+
+{\ubung} Find the slope and an equation of the tangent line to the graph of
+$f(x)=2x+(1/\sqrt{x})$ at the point $(1,3)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+{\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:ohzahcer}
+  f(x)=5x^{\frac{4}{3}}-\frac{2}{3}x^{\frac{3}{2}}+x^{2}-3x+1
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+{\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:mothoofi}
+f(t)=2t^{2}+\sqrt{t^{3}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:aiquooyo}
+  f(x)=\frac{2}{x^{2}}-\frac{3}{x^{\frac{1}{3}}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:achaingo}
+f(x)=\frac{3}{x^{3}}+\frac{4}{\sqrt{x}}+1
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:coojeing}
+h(t)=\frac{t^{4}}{4}+\frac{1}{8t^{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:aurieroo}
+  f(x)=x^{2}-\frac{1}{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} Find the derivative for the following function.
+\begin{equation}
+  \label{eq:zoogheem}
+  v(w)=\frac{w^{\frac{1}{2}}}{3}-\sqrt{\frac{w}{4}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} If $f(x)=3x^{2}-5x$, find $f'(2)$ and use it to find the
+  equation of the tangent line to the parabola $y=3x^{2}-5x$ at the
+  point $(2,2)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Basic Differentiation Exercises}
+  {\ubung} If $g(x)=1-x^{3}$, find $g'(0)$ and use it to find the
+  equation of the tangent line to the curve $y=1-x^{3}$ at the point
+  $(0,1)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Outside the Domain of the Derivative}
+Consider the following functions where the domain of $f'$ is a strict
+subset of the domain of $f$ (this means that there are points in the
+domain of $f$ which are not in the domain of $f'$). 
+  % Insert a slide here with examples of critical points where $f$ is
+  % defined but $f'$ does not exist:
+  % $f(x)=x^{\frac{2}{3}},f(x)=x^{\frac{1}{3}}$, sign function,
+  % Weierstrass function.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Outside the Domain of the Derivative}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/domcrit01.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Outside the Domain of the Derivative}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/domcrit02.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Outside the Domain of the Derivative}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/domcrit03.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Weierstrass Function}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/domcrit04.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Product Rule}
+  \begin{block}{Rule 5}
+The Product Rule
+  \end{block}
+\begin{equation}
+  \label{eq:aepuaxai}
+g'(x)=f_{1}(x)f_{2}'(x)+f_{1}'(x)f_{2}(x)\mbox{ for }g(x)=f_{1}(x)f_{2}(x)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Product Rule Reason}
+Reason:
+\begin{equation}
+  \label{eq:yahtiera}
+g'(x)=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:piebaith}
+\lim_{h\rightarrow{}0}\frac{g(x+h)-g(x)}{h}=\lim_{h\rightarrow{}0}\frac{f_{1}(x+h)f_{2}(x+h)-f_{1}(x)f_{2}(x)}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:vrefznjc}
+\lim_{h\rightarrow{}0}\frac{f_{1}(x+h)f_{2}(x+h)\alert{-f_{1}(x)f_{2}(x+h)+f_{1}(x)f_{2}(x+h)}-f_{1}(x)f_{2}(x)}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:chiekeey}
+\lim_{h\rightarrow{}0}\frac{(f_{1}(x+h)-f_{1}(x))f_{2}(x+h)+f_{1}(x)(f_{2}(x+h)-f_{2}(x))}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:vaeyiewe}
+f_{1}(x)f_{2}'(x)+f_{1}'(x)f_{2}(x)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Product Rule Exercises}
+Differentiate the following functions.
+\begin{equation}
+  \label{eq:iefeiwah}
+f(x)=(2x^{2}-1)(x^{3}+3)
+\end{equation}
+\begin{equation}
+  \label{eq:recootie}
+g(t)=t^{3}\left(\sqrt{t}+1\right)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quotient Rule}
+  \begin{block}{Rule 6}
+The Quotient Rule
+  \end{block}
+\begin{equation}
+  \label{eq:roothubu}
+g'(x)=\frac{f_{1}'(x)f_{2}(x)-f_{1}(x)f_{2}'(x)}{\left(f_{2}(x)\right)^{2}}\mbox{ for }g(x)=\frac{f_{1}(x)}{f_{2}(x)}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quotient Rule Reason}
+Reason:
+\begin{equation}
+  \label{eq:iebowohc}
+g(x)=\frac{f_{1}(x)}{f_{2}(x)}
+\end{equation}
+\begin{equation}
+  \label{eq:iilahthi}
+f_{1}(x)=g(x)f_{2}(x)
+\end{equation}
+\begin{equation}
+  \label{eq:eshohhoo}
+f_{1}'(x)=g'(x)f_{2}(x)+g(x)f_{2}'(x)\mbox{ now isolate }g'(x)
+\end{equation}
+\begin{equation}
+  \label{eq:iophiewu}
+g'(x)=\frac{f_{1}'(x)-g(x)f_{2}'(x)}{f_{2}(x)}\mbox{ now substitute }g(x)=\frac{f_{1}(x)}{f_{2}(x)}
+\end{equation}
+\begin{equation}
+  \label{eq:uhushain}
+g'(x)=\frac{\frac{f_{1}'(x)f_{2}(x)}{f_{2}(x)}-\frac{f_{1}(x)f_{2}'(x)}{f_{2}(x)}}{f_{2}(x)}
+\end{equation}
+\begin{equation}
+  \label{eq:requuare}
+g'(x)=\frac{f_{1}'(x)f_{2}(x)-f_{1}(x)f_{2}'(x)}{\left(f_{2}(x)\right)^{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quotient Rule Exercises}
+Differentiate the following functions.
+\begin{equation}
+  \label{eq:xookaeji}
+f(z)=\frac{3z^{2}+5z-2}{3z-1}
+\end{equation}
+\begin{equation}
+  \label{eq:eidoogow}
+h(x)=\frac{\sqrt{x}}{x^{2}+1}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Quotient Rule Exercise Solution}
+  \begin{figure}[h]
+    \includegraphics[scale=0.575]{./diagrams/onenote_ft_09_ProductQuotientRule_02.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Problematic Functions}
+Here are some functions that we either don't know how to differentiate
+or whose differentiation would take an inordinate amount of time.
+\begin{equation}
+  \label{eq:faegeehi}
+f(x)=2^{x}
+\end{equation}
+\begin{equation}
+  \label{eq:kooteiju}
+f(x)=\sqrt{x^{2}+1}
+\end{equation}
+\begin{equation}
+  \label{eq:oochahph}
+f(x)=(x^{2}+x+1)^{100}
+\end{equation}
+\begin{equation}
+  \label{eq:bongaeza}
+f(x)=\sin(1+\sqrt{x-7})
+\end{equation}
+\begin{equation}
+  \label{eq:ooquonge}
+f(x)=\log_{10}x
+\end{equation}
+\begin{equation}
+  \label{eq:iejafaic}
+f(x)=\ln(x^{2}+1)
+\end{equation}
+\begin{equation}
+  \label{eq:eathuphe}
+  f(x)=\arcsin(x)
+\end{equation}
+\begin{equation}
+  \label{eq:aeghaivo}
+  f(x)=\arctan(x)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Chain Rule}
+  \begin{block}{Rule 7}
+The Chain Rule
+  \end{block}
+\begin{equation}
+  \label{eq:rkhnhajc}
+g'(x)=f_{1}'(f_{2}(x))f_{2}'(x)\mbox{ for }g(x)=(f_{1}\circ{}f_{2})(x)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Chain Rule Reason}
+Consider
+\begin{align}
+  \label{eq:prf}
+  (f\circ{}g)'(x)=\lim_{h\rightarrow{}0}\frac{f(g(x+h))-f(g(x))}{h}&=&\notag \\
+  \lim_{h\rightarrow{}0}\frac{f(g(x+h))-f(g(x))}{g(x+h)-g(x)}\cdot\lim_{h\rightarrow{}0}\frac{g(x+h)-g(x)}{h}&=& \\
+  f'(g(x))g'(x)&&
+\end{align}
+This is only a hint, not a rigorous proof, since we have replaced
+$g(x+h)$ by $g(x)+h$, which isn't covered by our rules and is, in
+fact, false in some situations.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+  \begin{enumerate}
+  \item<1-> Diffentiate: $f(x)=2^{x}$
+  \item<2-> Diffentiate: $f(x)=\sqrt{x^{2}+1}$
+  \item<3-> Diffentiate: $f(x)=(x^{2}+x+1)^{100}$
+  \item<4-> Diffentiate: $f(x)=\log_{10}x$
+  \item<5-> Diffentiate: $f(x)=\ln(x^{2}+1)$
+  \end{enumerate}
+How would we differentiate the logarithm? 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler's Number}
+The number $e$ is defined as follows,
+\begin{equation}
+  \label{eq:ciedaeme}
+  e=\lim_{t\rightarrow\infty}\left(1+\frac{1}{t}\right)^{t}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lemma}
+Consider two functions $f_{1}$ and $f_{2}$. They are related in so far
+as
+\begin{equation}
+  \label{eq:ohquailo}
+  f_{1}(x)=f_{2}\left(\frac{1}{x}\right)
+\end{equation}
+For example,
+\begin{equation}
+  \label{eq:seemaxah}
+  f_{1}(x)=\frac{2x+1}{5x-7}\mbox{ and }f_{2}(x)=-\frac{x+2}{7x-5}
+\end{equation}
+Then
+\begin{equation}
+  \label{eq:iebieluk}
+  \mbox{If }\lim_{x\rightarrow\infty}f_{1}(x)=a\mbox{ then }\lim_{x\rightarrow{}0}f_{2}(x)=a
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of the Logarithmic Function}
+Now consider the function $f(x)=\ln{}x$ and the definition of the
+derivative,
+\begin{equation}
+  \label{eq:eeghaphe}
+  f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}=\lim_{h\rightarrow{}0}\frac{1}{h}\ln\frac{x+h}{x}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:quanoefe}
+  \lim_{h\rightarrow{}0}\frac{1}{x}\cdot\frac{x}{h}\ln\left(1+\frac{h}{x}\right)=\lim_{h\rightarrow{}0}\frac{1}{x}\ln\left(1+\frac{1}{\frac{x}{h}}\right)^{\frac{x}{h}}
+\end{equation}
+Use the lemma of the last slide and the definition of Euler's number to see that
+\begin{equation}
+  \label{eq:oozeexei}
+  f'(x)=\frac{1}{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Inverse and Identity Function}
+Remember how we defined the logarithmic function,
+\begin{equation}
+  \label{eq:tieteiph}
+  \ln{}y=x\mbox{ if and only if }e^{x}=y
+\end{equation}
+so the logarithmic function is the inverse of the exponential
+function. Consequently, if $f(x)=e^{x}$ and $g(y)=\ln{}y$
+\begin{equation}
+  \label{eq:iewaebef}
+  (f\circ{}g)(y)=y\mbox{ and }(g\circ{}f)(x)=x
+\end{equation}
+When (\ref{eq:iewaebef}) is true we call $f$ the \alert{inverse
+  function} of $g$ and vice versa. The function $\mbox{id}(x)=x$ is called
+the \alert{identity function}. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Leibniz Notation}
+  I usually use prime notation:
+  \begin{equation}
+    \label{eq:fquoyjau}
+    f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}\notag
+  \end{equation}
+  Some people prefer Leibniz notation. Leibniz notation is especially
+  useful for the chain rule, integration, and differential equations.
+  I will use it when it is more effective than prime notation. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Leibniz Notation}
+  When you have a function $f$, it makes sense to think of $x$ as an
+  independent variable and of $y$ as a dependent variable, as
+  $y=f(x)$. Leibniz notation introduces two more variables, the
+  independent variable $dx$ and the dependent variable $dy$. $dy$
+  depends on $dx$ by the relation
+  \begin{equation}
+    \label{eq:bmwjbtir}
+    dy=f'(x)dx\notag
+  \end{equation}
+  This relation lets you go back and forth between prime notation and
+  Leibniz notation.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Leibniz Notation}
+  For an intuitive understanding of $dx$ and $dy$, think of the
+  tangent function. With derivatives, we are interested in the slope
+  of the tangent line. $f'(x)$ provides this slope in terms of rise
+  over run. Another way to express the slope would be to provide the
+  angle $\theta$ between $-90^{\circ}$ and $90^{\circ}$, where zero
+  degrees is a horizontally flat tangent line. The tangent function of
+  $\theta$ is
+  \begin{equation}
+    \label{eq:ndfcjsyf}
+    \tan\theta=f'(x)\notag
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Leibniz Notation}
+  The tangent function of $\theta$ is also
+  \begin{equation}
+    \label{eq:nullsthd}
+    \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}\notag
+  \end{equation}
+  For any independent adjacent $dx$ there is a dependent opposite
+  $dy$. Because the tangent line is linear, $dy/dx$ is constant no
+  matter where we measure ``rise over run.''
+
+  \bigskip
+  
+  It is different for $\Delta{}y/\Delta{}x$ (the slope of the secant
+  line) where $\Delta{}x=h$ and $\Delta{}y=f(x+h)-f(x)$ for any given
+  $h$. Because the function graph of $f(x)$ may be curved,
+  $\Delta{}y/\Delta{}x$ depends on $h$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Leibniz Notation}
+  Here is a little bit of magic using Leibniz notation:
+  \begin{equation}
+    \label{eq:eoolzroq}
+    f'(x)=\frac{dy}{dx}=\frac{d}{dx}y=\frac{d}{dx}f(x)\notag
+  \end{equation}
+  This isn't mathematics, it is just a notational gimmick. Now imagine
+  $z=f(x)=(2x+1)^{3}$. Then define two functions $z=y^{3}$ and $y=2x+1$.
+  Then
+  \begin{equation}
+    \label{eq:xuqdhbam}
+    f'(x)=\frac{d}{dx}f(x)=\frac{dz}{dx}=\frac{dz}{dy}\cdot\frac{dy}{dx}=3y^{2}\cdot{}2=6\cdot(2x+1)^{2}\notag
+  \end{equation}
+  The chain rule expressed in Leibniz notation just looks like we are
+  inserting $dy$ to rewrite the fraction $dz/dx$. Very elegant!
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of the Exponential Function}
+We know the derivative of the identity function.
+\begin{equation}
+  \label{eq:sivahzuw}
+  \mbox{id}'(x)=1
+\end{equation}
+Consequently,
+\begin{equation}
+  \label{eq:zeejaixu}
+  \frac{d}{dx}\ln\left(e^{x}\right)=1
+\end{equation}
+We also know that according to the chain rule
+\begin{equation}
+  \label{eq:iecheixo}
+  \frac{d}{dx}\ln\left(e^{x}\right)=\frac{1}{e^{x}}\exp'(x)
+\end{equation}
+where $\exp(x)=e^{x}$. Therefore,
+\begin{equation}
+  \label{eq:zigaewai}
+  \exp'(x)=e^{x}
+\end{equation}
+The exponential function is its own derivative!
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+Make sure to remember that the trigonometric functions (sine, cosine,
+tangent, cotangent, etc.) are functions from the real numbers into the
+real numbers. An angle is a real number in terms of its
+\alert{radian} measure. If the angle is in degrees, it can be
+converted to radians as in the following example,
+\begin{equation}
+  \label{eq:eedeehuc}
+  42^{\circ}=42\cdot\frac{\pi}{180}\approx{}0.73304
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Any right triangle whose hypotenuse is of length $c'=1$ can be
+  inserted into the unit circle so that one of the two shorter sides
+  rests on the $x$-axis and one of the vertices is at the origin
+  (reference triangle). Then the vertex $B$ in the diagram has the
+  coordinates $(\cos\alpha,\sin\alpha)$.
+    \begin{figure}[h]
+    \includegraphics[scale=.45]{./diagrams/cosine.eps}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  The remaining trigonometric functions are defined as follows.
+  \begin{equation}
+    \label{eq:eiyiexir}
+    \tan{}x=\frac{\sin{}x}{\cos{}x}
+  \end{equation}
+  \begin{equation}
+    \label{eq:dohquohb}
+    \cot{}x=\frac{\cos{}x}{\sin{}x}=\frac{1}{\tan{}x}
+  \end{equation}
+  \begin{equation}
+    \label{eq:eengohqu}
+    \csc{}x=\frac{1}{\sin{}x}
+  \end{equation}
+  \begin{equation}
+    \label{eq:eipuoxei}
+    \sec{}x=\frac{1}{\cos{}x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Here is a graph of the sine and cosine functions.
+  \begin{figure}[h]
+    \includegraphics[scale=2]{./diagrams/sinecosine.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Here is a graph of the tangent function.
+  \begin{figure}[h]
+    \includegraphics[scale=.5]{./diagrams/tangent.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Consider the following table of well-known inverse functions
+  commonly used in calculus:
+
+\bigskip
+
+  \begin{tabular}{|l|l|}\hline
+    \textbf{function} & \textbf{inverse} \\ \hline
+    $e^{x}$ & $\ln{}x$ \\ \hline
+    $\sin{}x$ & $\arcsin{}x\mbox{ or }\sin^{-1}$ \\ \hline
+    $\cos{}x$ & $\arccos{}x\mbox{ or }\cos^{-1}$ \\ \hline
+    $\tan{}x$ & $\arctan{}x\mbox{ or }\tan^{-1}$ \\ \hline
+  \end{tabular}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Consider the following most important trigonometric identities:
+  \begin{equation}
+    \label{eq:shutooth}
+    \sin^{2}x+\cos^{2}x=1
+  \end{equation}
+\begin{equation}
+  \label{eq:iegaexah}
+  \sin(-x)=-\sin{}x
+\end{equation}
+\begin{equation}
+  \label{eq:gaijohra}
+  \cos(-x)=\cos{}x
+\end{equation}
+\begin{equation}
+  \label{eq:doajeigh}
+  \tan(-x)=-\tan{}x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Consider the following most important trigonometric identities:
+\begin{equation}
+  \label{eq:dieteipa}
+  \sin(90^{\circ}-x)=\cos{}x
+\end{equation}
+\begin{equation}
+  \label{eq:oepoodoh}
+  \cos(90^{\circ}-x)=\sin{}x
+\end{equation}
+\begin{equation}
+  \label{eq:aiwatong}
+  \tan(90^{\circ}-x)=\cot{}x
+\end{equation}
+\begin{equation}
+  \label{eq:jahpeexu}
+  \sin(x+180^{\circ})=-\sin{}x
+\end{equation}
+\begin{equation}
+  \label{eq:aephuemo}
+  \cos(x+180^{\circ})=-\cos{}x
+\end{equation}
+\begin{equation}
+  \label{eq:xaiyahcu}
+  \tan(x+180^{\circ})=\tan{}x
+\end{equation}
+\begin{equation}
+  \label{eq:aitahwae}
+  \cot(x+180^{\circ})=\cot{}x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Trigonometric Functions Review}
+  Here are the angle sum identities,
+  \begin{equation}
+  \label{eq:eitaiquu}
+  \sin(x+y)=\sin{}x\cos{}y+\cos{}x\sin{}y
+\end{equation}
+\begin{equation}
+  \label{eq:iasoojou}
+  \cos(x+y)=\cos{}x\cos{}y-\sin{}x\sin{}y
+\end{equation}
+from which we have, immediately following, the double angle
+identities,
+  \begin{equation}
+    \label{eq:icuchodo}
+    \sin(2x)=2\cos{}x\sin{}x
+  \end{equation}
+  \begin{equation}
+    \label{eq:woojahtu}
+    \cos(2x)=\cos^{2}x-\sin^{2}x
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Limit of sin(x)/x}
+\begin{figure}[h]
+\includegraphics[scale=.24]{./diagrams/limsinxoverx.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Limit of sin(x)/x}
+  Let's find $\lim_{x\rightarrow{}0}\frac{\sin{}x}{x}$. On the last slide, consider the unit circle with
+  $\|\vec{OP}\|=\|\vec{OR}\|=1$ and the angle $x$ at $O$. For simplicity let's
+  assume that $0<x<\pi/2$. The angle $x$ is also the length of the arc
+  between $P$ and $R$. Consequently
+  \begin{equation}
+    \label{eq:iufoobue}
+\|\vec{RT}\|=\sin{}x\leq{}x    
+  \end{equation}
+  and therefore
+  \begin{equation}
+    \label{eq:chaveeju}
+    \frac{\sin{}x}{x}\leq{}1
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Limit of sin(x)/x}
+  \begin{equation}
+    \label{eq:uraewiha}
+    x\leq\|\vec{PS}\|+\|\vec{SR}\|\leq\|\vec{PS}\|+\|\vec{SQ}\|=\|\vec{PQ}\|=\tan{}x
+  \end{equation}
+$\|\vec{SR}\|\leq\|\vec{SQ}\|$ because the angle $QRS$ is a right angle.
+(\ref{eq:uraewiha}) means that
+\begin{equation}
+  \label{eq:uebaenih}
+  \cos{}x\leq\frac{\sin{}x}{x}
+\end{equation}
+Since $\lim_{x\rightarrow{}0}\cos{}x=1$ and $\lim_{x\rightarrow{}0}1=1$, we can use the squeeze
+theorem, (\ref{eq:chaveeju}), and (\ref{eq:uebaenih}) for
+\begin{equation}
+  \label{eq:guabighe}
+  \lim_{x\rightarrow{}0}\frac{\sin{}x}{x}=1
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Limit of (cos(x)-1)/x}
+  Consider
+  \begin{equation}
+    \label{eq:ungaeciz}
+    \lim_{x\rightarrow{}0}\frac{\cos{}x-1}{x}=\lim_{x\rightarrow{}0}\left[\frac{\cos{}x-1}{x}\cdot\frac{\cos{}x+1}{\cos{}x+1}\right]=\notag
+  \end{equation}
+  \begin{equation}
+    \label{eq:xiecahze}
+    \lim_{x\rightarrow{}0}\frac{\cos^{2}x-1}{x(\cos{}x+1)}=-\lim_{x\rightarrow{}0}\left[\frac{\sin{}x}{x}\cdot\frac{\sin{}x}{\cos{}x+1}\right]=\notag
+  \end{equation}
+  \begin{equation}
+    \label{eq:angoohee}
+    -1\cdot\left(\frac{0}{1+1}\right)=0
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivative of Sine}
+  The derivative of $f(x)=\sin{}x$ is 
+\begin{equation}
+  \label{eq:eishooro}
+  f'(x)=\lim_{h\rightarrow{}0}\frac{f(x+h)-f(x)}{h}=\lim_{h\rightarrow{}0}\frac{\sin(x+h)-\sin{}x}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:phauzelo}
+  \lim_{h\rightarrow{}0}\frac{\sin{}x\cos{}h+\cos{}x\sin{}h-\sin{}x}{h}=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:jiexeedo}
+  \lim_{h\rightarrow{}0}\left[\sin{}x\left(\frac{\cos{}h-1}{h}\right)+\cos{}x\left(\frac{\sin{}h}{h}\right)\right]=\cos{}x
+\end{equation}
+{\ubung} Differentiate $f(x)=x^{2}\sin{}x$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of Cosine}
+The derivative of $f(x)=\cos{}x$ is 
+\begin{equation}
+  \label{eq:ahfiefev}
+  f'(x)=-\sin{}x
+\end{equation}
+The proof is analogous to the proof for $\sin{}x$.
+
+{\ubung} Differentiate 
+\begin{equation}
+  \label{eq:afeizeix}
+  f(t)=\frac{1+\sin{}t}{t+\cos{}t}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of Tangent}
+The derivative of $f(x)=\tan{}x$ is 
+\begin{equation}
+  \label{eq:uulohjeo}
+  f'(x)=\sec^{2}x
+\end{equation}
+Use the quotient rule to prove this. Remember that 
+\begin{equation}
+  \label{eq:shooceid}
+  \sec{}x=\frac{1}{\cos{}x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of Arcsine}
+  {\ubung} Find the following arcsine values:
+  \begin{equation}
+    \label{eq:ahquoila}
+    \arcsin(-1)\hspace{.5in}\arcsin(1)\notag
+  \end{equation}
+  \begin{equation}
+    \label{eq:eengaine}
+    \arcsin\left(\frac{1}{2}\right)\hspace{.5in}\arcsin\left(\frac{\sqrt{3}}{2}\right)\hspace{.5in}\arcsin\left(-\frac{1}{\sqrt{2}}\right)\notag
+  \end{equation}
+  % \begin{tabular}{|l|l|}\hline
+  %   $\arcsin(-1)$ & \\ \hline
+  %   $\arcsin(1)$ & \\ \hline
+  %   $\arcsin\left(\frac{1}{2}\right)$ & \\ \hline
+  %   $\arcsin\left(\frac{\sqrt{3}}{2}\right)$ & \\ \hline
+  %   $\arcsin\left(-\frac{1}{\sqrt{2}}\right)$ & \\ \hline
+  % \end{tabular}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/arcsin.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of Arcsine}
+  We can tell from the graph that
+  \begin{enumerate}
+  \item $\frac{d}{dx}\arcsin{}x$ will be positive
+  \item $\frac{d}{dx}\arcsin{}x$ will be defined on the interval $[-1,1]$
+  \end{enumerate}
+
+  \bigskip
+
+  Let's restrict our attention to the first quadrant so that we may say
+with confidence for $f(x)=\arcsin{}x$ that
+\begin{equation}
+  \label{eq:sieheuvu}
+  sin(f(x))=x
+\end{equation}
+and therefore
+\begin{equation}
+  \label{eq:riesooni}
+  \cos{}(f(x))=\sqrt{1-\sin^{2}f(x)}=\sqrt{1-x^{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of Arcsine}
+Take the equation $\sin(f(x))=x$ and differentiate with respect to $x$
+on both sides.
+\begin{equation}
+  \label{eq:heipaeng}
+  \sin(f(x))=x
+\end{equation}
+\begin{equation}
+  \label{eq:xohtavie}
+  \frac{d}{dx}\sin(f(x))=\frac{d}{dx}x
+\end{equation}
+We know the right-hand side equals 1. For the left-hand side, we know that
+\begin{equation}
+  \label{eq:keeshoot}
+  \frac{d}{dx}\sin{}x=\cos{}x
+\end{equation}
+but be very careful here
+\begin{equation}
+  \label{eq:ungitoov}
+  \frac{d}{dx}\sin(f(x))\alert{\neq}\cos{}(f(x))
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Derivative of Arcsine}
+  \begin{equation}
+    \label{eq:eeceiloh}
+  \frac{d}{dx}\sin(f(x))=\cos{}(f(x))\alert{\cdot{}f'(x)}
+  \end{equation}
+  Now that we also have the left-hand side, (\ref{eq:xohtavie}) becomes
+  \begin{equation}
+    \label{eq:ahtiegho}
+    \cos{}(f(x))\cdot{}f'(x)=1
+  \end{equation}
+  and therefore, using (\ref{eq:sieheuvu})
+  \begin{equation}
+    \label{eq:phiquael}
+    \frac{d}{dx}\arcsin{}x=f'(x)=\frac{1}{\cos{}(f(x))}=\frac{1}{\sqrt{1-x^{2}}}
+  \end{equation}
+Use the trigonometric identity $\tan^{2}x=1+\sec^{2}x$ to show that
+  \begin{equation}
+    \label{eq:uceixiva}
+    \frac{d}{dx}\arctan{}x=\frac{1}{1+x^{2}}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives of Trigonometric Functions}
+\begin{figure}[h]
+\includegraphics[scale=.6]{./diagrams/trigdiff.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following function:
+\begin{equation}
+  \label{eq:hupuxahz}
+  f(x)=3x^{2}-2\cos{}x
+\end{equation}
+{\ubung} Find the equation of the tangent line at $(\pi/3,2)$ for
+\begin{equation}
+  \label{eq:hoirohfo}
+  y=\sec{}x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following function:
+\begin{equation}
+  \label{eq:vithooke}
+  f(x)=\sqrt{x}\sin{}x
+\end{equation}
+{\ubung} Find the equation of the tangent line at $(\pi/6,4+\frac{5}{2}\sqrt{3})$ for
+\begin{equation}
+  \label{eq:chaequin}
+  f(x)=2\csc{}x+5\cos{}x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following functions:
+\begin{equation}
+  \label{eq:hohxenoo}
+  g(t)=4\sec{}t+\tan{}t
+\end{equation}
+\begin{equation}
+  \label{eq:zichoope}
+  f(x)=\csc{}x(x+\cot{}x)
+\end{equation}
+\begin{equation}
+  \label{eq:tohsohgh}
+  v(w)=\frac{\sin{}w}{w^{2}}
+\end{equation}
+% {\ubung} Differentiate the following functions:
+% \begin{equation}
+%   \label{eq:hohxenoo}
+%   g(t)=4\sec{}t+\tan{}t
+% \end{equation}
+% \begin{equation}
+%   \label{eq:zichoope}
+%   f(x)=\csc{}x(x+\cot{}x)
+% \end{equation}
+% \begin{equation}
+%   \label{eq:tohsohgh}
+%   v(w)=\frac{\sin{}w}{w^{2}}
+% \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following functions:
+\begin{equation}
+  \label{eq:beetulae}
+f(x)=e^{\sin{}x}  
+\end{equation}
+\begin{equation}
+  \label{eq:aekephii}
+g(t)=\frac{1}{e^{t}}  
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following functions:
+\begin{equation}
+  \label{eq:uijeabai}
+v(w)=w^{2}e^{w}  
+\end{equation}
+\begin{equation}
+  \label{eq:ohzabeed}
+g(z)=\frac{e^{z}-1}{e^{z}+1}  
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate
+\begin{equation}
+  \label{eq:pimexeiz}
+  f(\vartheta)=\tan(\sin{}\vartheta)
+\end{equation}
+\begin{equation}
+  \label{eq:oogheica}
+  F(x)=\sqrt[4]{1+2x+x^{3}}
+\end{equation}
+\begin{equation}
+  \label{eq:ibagheab}
+  g(t)=\frac{\pi}{(t^{4}+1)^{3}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate
+\begin{equation}
+  \label{eq:oboohoca}
+  f(s)=\sqrt[3]{1+\tan{}s}
+\end{equation}
+\begin{equation}
+  \label{eq:choopaib}
+  y=(x^{2}+1)\sqrt[3]{x^{2}+2}
+\end{equation}
+\begin{equation}
+  \label{eq:uosiamei}
+y=e^{x\cos{}x}  
+\end{equation}
+\begin{equation}
+  \label{eq:oshaiphu}
+  y=x\sin\frac{1}{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following functions or find $dy/dx$ for the
+following curves:
+\begin{equation}
+  \label{eq:ciukaech}
+  y=\frac{1}{\arcsin{}x}
+\end{equation}
+\begin{equation}
+  \label{eq:oveagooy}
+  y=xe^{-kx}
+\end{equation}
+\begin{equation}
+  \label{eq:veeveema}
+  f(x)=x\arctan\sqrt{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following functions or find $dy/dx$ for the
+following curves:
+\begin{equation}
+  \label{eq:oyohxaif}
+  y=3\cot(nx)
+\end{equation}
+\begin{equation}
+  \label{eq:baoshana}
+  y=\arccos\left(e^{2x}\right)
+\end{equation}
+\begin{equation}
+  \label{eq:kauphiab}
+  h(t)=(t^{4}-1)^{3}(t^{3}+1)^{4}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Differentiate the following functions or find $dy/dx$ for the
+following curves:
+\begin{equation}
+  \label{eq:athaazui}
+  y=(x^{2}+1)\sqrt{x^{2}+2}
+\end{equation}
+\begin{equation}
+  \label{eq:ahgoovim}
+  G(y)=\left(\frac{y^{2}}{y+1}\right)^{5}
+\end{equation}
+\begin{equation}
+  \label{eq:gaidaime}
+  y=\tan^{2}(3\vartheta)
+\end{equation}
+\begin{equation}
+  \label{eq:iefaigho}
+  y=\arctan\left(x-\sqrt{1+x^{2}}\right)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises}
+{\ubung} Find an equation of the tangent line to the curve
+\begin{equation}
+  \label{eq:vaixohga}
+  y=\frac{2}{1+e^{-x}}
+\end{equation}
+at $x=0$.
+
+\bigskip
+
+{\ubung} Here is a model for the length of daylight (in hours) in Toronto on
+the $t$-th day of the year
+\begin{equation}
+  \label{eq:iefeuvae}
+  L(t)=12+2.8\sin\left(\frac{2\pi}{365}(t-80)\right)
+\end{equation}
+Compare how the number of hours of daylight is increasing in Toronto
+on March 21 and May 21.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Expanding the Logarithm}
+The logarithm is only defined on the positive real numbers. It turns
+out that
+\begin{equation}
+  \label{eq:feegeigu}
+  \frac{d}{dx}\ln\vert{}x\vert=\frac{1}{x}\mbox{ for all real numbers except }x=0
+\end{equation}
+Remember that the absolute value $\vert{}x\vert$ is defined as
+\begin{equation}
+  \label{eq:iegeecie}
+  \vert{}x\vert=\left\{
+    \begin{array}{l}
+      x\mbox{ for }x\geq{}0 \\
+      -x\mbox{ for }x<0
+    \end{array}\right.
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentiating the Absolute Value}
+Treat functions with an absolute value as you would treat piecewise
+defined functions. A piecewise defined function looks like this:
+\begin{equation}
+  \label{eq:iboashaz}
+  f(x)=\left\{
+    \begin{array}{l}
+      x^{2}-7\mbox{ for }x>7 \\
+      e^{1/x}\mbox{ for }x\leq{}7
+    \end{array}\right.
+\end{equation}
+Now differentiate
+\begin{equation}
+  \label{eq:aeghooki}
+  g(t)=\vert{}t^{2}+t\vert
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Absolute Value Example}
+Differentiate
+\begin{equation}
+  \label{eq:eimufosh}
+  f(x)=\vert{}x-1\vert
+\end{equation}
+You can do this two ways: (a) use the chain rule and
+\begin{equation}
+  \label{eq:agabooto}
+f(x)=\sqrt{(x-1)^{2}}
+\end{equation}
+(b) use the piecewise definition
+\begin{equation}
+  \label{eq:ephohnge}
+f(x)=\left\{
+  \begin{array}{l}
+    x-1\mbox{ for }x\geq{}1 \\
+    1-x\mbox{ for }x<1
+  \end{array}\right.
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Absolute Value Exercises}
+{\ubung} Differentiate
+\begin{equation}
+  \label{eq:ikaishup}
+  f(x)=-x+2+\vert{}-x+2\vert
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Absolute Value Exercises}
+{\ubung} Differentiate
+\begin{equation}
+  \label{eq:emaiyito}
+  f(x)=\vert{}2x-5\vert
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Absolute Value Exercises}
+{\ubung} Differentiate
+\begin{equation}
+  \label{eq:deiquohr}
+  f(x)=(x-2)^{2}+\vert{}x-2\vert
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Absolute Value Exercises}
+{\ubung} Differentiate
+\begin{equation}
+  \label{eq:leihuwee}
+  f(x)=-3\cdot\vert{}x+2\vert{}-1
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Proving the Power Rule}
+  We have shown the power rule to be true for $n=2$ and $n=0.5$
+  ($x\geq{}0$). Here is a proof that it is true for all real numbers
+  $n$. Let
+\begin{equation}
+  \label{eq:taesaeph}
+  f(x)=\ln\left({}x^{n}\right)
+\end{equation}
+On the one hand,
+\begin{equation}
+  \label{eq:uzahheir}
+  f'(x)=\frac{1}{x^{n}}\frac{d}{dx}x^{n}
+\end{equation}
+On the other hand, using $f(x)=n\cdot\ln{}x$,
+\begin{equation}
+  \label{eq:veikoowa}
+f'(x)=\frac{n}{x}  
+\end{equation}
+Consequently,
+\begin{equation}
+  \label{eq:aebiedah}
+  \frac{d}{dx}x^{n}=nx^{n-1}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation}
+Using this method, we can differentiate a function such as
+\begin{equation}
+  \label{eq:ooteiquo}
+  f(x)=x^{\sqrt{x}}\mbox{, using the helper function }g(y)=\ln{}x^{\sqrt{x}}
+\end{equation}
+Now use the chain rule for
+\begin{equation}
+  \label{eq:quuquish}
+  g'(y)=\frac{1}{x^{\sqrt{x}}}\frac{d}{dx}x^{\sqrt{x}}
+\end{equation}
+and the properties of logarithms for
+\begin{equation}
+  \label{eq:ahfahngi}
+  g'(y)=\frac{d}{dx}\left(\sqrt{x}\cdot\ln{}x\right)
+\end{equation}
+Compare the results and isolate $d/dx(x^{\sqrt{x}})$. Alternatively,
+use
+\begin{equation}
+  \label{eq:gaibahto}
+  x^{\sqrt{x}}=e^{\ln{}x^{\sqrt{x}}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation and the Quotient Rule}
+Differentiate
+\begin{equation}
+  \label{eq:jookoowo}
+  f(x)=\frac{x^{2}+2x+1}{x^{3}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation and the Quotient Rule}
+\begin{figure}[h]
+\includegraphics[scale=1]{./diagrams/logquot1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation and the Quotient Rule}
+\begin{figure}[h]
+\includegraphics[scale=.7]{./diagrams/logquot2.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation Exercises}
+  {\ubung} Differentiate
+  \begin{equation}
+    \label{eq:zofohsoi}
+    f_{1}(x)=x^{\pi}\mbox{ and }f_{2}(x)=\pi^{x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation Exercises}
+  {\ubung} Differentiate
+  \begin{equation}
+    \label{eq:ietaemai}
+    g(s)=7^{2s^{2}-s}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Logarithmic Differentiation Exercises}
+  {\ubung} Differentiate
+  \begin{equation}
+    \label{eq:aishiili}
+    f(x)=\frac{\sqrt{x-1}}{x^{2}}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Higher-Order Derivatives}
+Derivatives often have derivatives themselves, and so on. If $f$ is a
+function of time determining the position of an object, then $f'$ is
+sometimes called the velocity of the object as a function of time,
+$f''$ is called the acceleration of the object as a function of time,
+and $f'''$ is called the jerk of the object as a function of time. For
+higher-order derivatives than that, we write $f^{(n)}$, for example
+\begin{equation}
+  \label{eq:zeitohke}
+  f(x)=x^{4}+3x^{3}+7x^{2}-\pi{}x+1\mbox{ and }f^{(4)}=24
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Higher-Order Derivatives Exercise}
+{\ubung} If $g(\vartheta)=\vartheta\sin\vartheta$, find $g''(\pi/6)$.
+
+\bigskip
+
+{\ubung} Find $f^{(n)}(x)$ if $f(x)=1/(2-x)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Rate of Change}
+If $f(t)$ expresses some type of position of something dependent on
+time $t$, then the rate of change over an interval is the slope of the
+secant line. The derivative $f'(t)$ is then the instantaneous rate of
+change or the slope of the tangent line at $t$. 
+
+\bigskip
+
+Sometimes the rate of change is not with respect to a position. For
+example, acceleration is the rate of change with respect to a
+velocity. Another common example is the rate of change in numbers of a
+population. In economics, the rate of change in pricing may be of
+interest.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Position)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 8
+If a ball is given a push so that it has an initial velocity of $5$m/s
+down a certain inclined plane, then the distance it has rolled after
+$t$ seconds is $s=5t+3t^{2}$.
+  \begin{enumerate}
+  \item Find the velocity after 2 seconds.
+  \item How long does it take for the velocity to reach 35m/s?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Position)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 8
+Define $f(t)=5t+3t^{2}$. The derivative is $v(t)=f'(t)=5+6t$. Locate
+the time at which $v(t)=5$ by solving the equation $5=5+6t$. The
+initial time is $t=0$. Then
+\begin{equation}
+  \label{eq:airaiwie}
+  v(2)=f'(2)=5+6\cdot{}2=17
+\end{equation}
+The velocity after 2 seconds is 17m/s.
+\begin{equation}
+  \label{eq:zeidieba}
+  v(t)=35=5+6t\hspace{.5in}\Rightarrow\hspace{.5in}t=5
+\end{equation}
+The velocity after 5 seconds is 35m/s.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Geometry)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 8
+A stone is dropped into a lake, creating a circular ripple that
+travels outward at a speed of 60cm/s. Find the rate at which the area
+within the circle is increasing after one second; three seconds; and
+five seconds. What can you conclude?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Geometry)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 8
+  Define a function for the radius dependent on time.
+  \begin{equation}
+    \label{eq:zoozohte}
+    r(t)=60t
+  \end{equation}
+  Define a function for the area of the circle dependent on time.
+  \begin{equation}
+    \label{eq:maeneong}
+    A(t)=\pi(r(t))^{2}=\pi(60t)^{2}=3600\pi{}t^{2}
+  \end{equation}
+  Differentiate
+  \begin{equation}
+    \label{eq:cheemahv}
+    A'(t)=7200\pi{}t
+  \end{equation}
+  The circle of the area increases by $7200\pi$cm$^{2}$ per second
+  after one second; by $21600\pi$cm$^{2}$ per second after three
+  seconds; by $36000\pi$cm$^{2}$ per second after five seconds.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Physics)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 8
+Newton's Law of Gravitation says that the magnitude $F$ of the force
+exerted by a body of mass $m$ on a body of mass $M$ is 
+\begin{equation}
+  \label{eq:zeipouqu}
+  F=\frac{GmM}{r^{2}}
+\end{equation}
+where $G$ is the gravitational constant and $r$ is the distance
+between the bodies. Suppose it is known that the Earth attracts an
+object with a force that decreases at the rate of 2N/km when
+$r=20,000$km (N=kg$\cdot$m/s$^{2}$). What is the mass of the object?
+Assume the following as constants:
+% \begin{tabular}{|l|rcl|}\hline
+%   gravitational constant & $G$&=&$6.67408\cdot{}10^{−11}\mbox{m}^{3}\mbox{kg}^{−1}\mbox{s}^{−2}$ \\ \hline
+%   mass of the Earth & $m$&=&$5.9722\cdot{}10^{24}\mbox{kg}$ \\ \hline
+% \end{tabular}
+\begin{equation}
+  \label{eq:phosulee}
+  % G=6.67408\cdot{}10^{−11}\mbox{m}^{3}\mbox{kg}^{−1}\mbox{s}^{−2}
+  G=6.67408\cdot{}10^{-11}m^{3}kg^{-1}s^{-2}
+\end{equation}
+\begin{equation}
+  \label{eq:otienaix}
+  % m=5.9722\cdot{}10^{24}\mbox{kg}
+  m=5.9722\cdot{}10^{24}kg
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Physics)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 8
+  Define the force as a function of time.
+  \begin{equation}
+    \label{eq:ohseesie}
+    F(r)=\frac{GmM}{r^{2}}
+  \end{equation}
+  Differentiate to find the rate of change.
+  \begin{equation}
+    \label{eq:eiphaila}
+    F'(r)=-\frac{2GmM}{r^{3}}
+  \end{equation}
+  Fill in the details from the word problem.
+  \begin{equation}
+    \label{eq:luzielee}
+    -2\frac{\mbox{N}}{\mbox{km}}=F'(20000)=(-2)\cdot\frac{GmM}{\left(2\cdot{}10^{4}\right)^{3}\mbox{km}^{3}}
+  \end{equation}
+  $M$ is the only unknown and equals approximately $20070.78$kg.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Population)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 9
+The number of yeast cells in a laboratory culture increases rapidly
+initially but levels off eventually. The population is modeled by the
+function
+\begin{equation}
+  \label{eq:kupeivae}
+  n=f(t)=\frac{a}{1+be^{-0.7t}}
+\end{equation}
+where $t$ is measured in hours. At time $t=0$ the population is 20
+cells and is increasing at a rate of 12 cells per hour. Find the
+values of $a$ and $b$. According to this model, what happens to the
+yeast population in the long run?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Population)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 9
+  Find the rate of change for the population by differentiating,
+  \begin{equation}
+    \label{eq:mohvuthe}
+    f'(t)=\frac{0.7ab\cdot{}e^{-0.7t}}{\left(1+be^{-0.7t}\right)^{2}}
+  \end{equation}
+  Find $a$ in terms of $b$ using the equation $f(0)=20$.
+  \begin{equation}
+    \label{eq:deesaiye}
+    a=20\cdot(1+b)
+  \end{equation}
+  Find $b$ using $a=20\cdot(1+b)$ and the equation $f'(0)=12$
+  \begin{equation}
+    \label{eq:oozeeroj}
+    12=\frac{0.7\cdot{}20\cdot{}b(1+b)}{(1+b)^{2}}\hspace{.5in}\Rightarrow\hspace{.5in}b=6
+  \end{equation}
+Use $b$ and equation (\ref{eq:deesaiye}) to find $a=140$. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Economics)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 9
+The cost, in dollars, of producing $x$ yards of a certain fabric is
+\begin{equation}
+  \label{eq:uquuthae}
+  C(x)=1200+12x-0.1x^{2}+0.0005x^{3}
+\end{equation}
+\begin{enumerate}
+\item Find the marginal cost function.
+\item Find $C'(200)$ and explain its meaning. What does it
+  predict?
+\item Compare $C'(200)$ with the cost of manufacturing the 201st
+  yard of fabric.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercises for Rate of Change (Economics)}
+% James Stewart, Single Variable Calculus, Early Transcendentals, 6E,
+% page 9
+  Differentiate for the marginal cost function,
+  \begin{equation}
+    \label{eq:zingohlu}
+    C'(x)=12-0.2x+0.0015x^{2}
+  \end{equation}
+Therefore, $C'(200)=32$. At 200 yards, the cost of producing yards is
+\$32 per yard. The cost of manufacturing the 201st
+yard of fabric is
+\begin{equation}
+  \label{eq:goozahsu}
+  C(201)-C(200)=3632.2-3600=32.2
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} The total cost (in dollars) of producing x coffee machines is
+  \begin{equation}
+    \label{eq:egaireil}
+    C(x)=2100+30x-0.3x^{2}
+  \end{equation}
+  \begin{enumerate}
+  \item Find the exact cost of producing the 21st machine.
+  \item Use marginal cost to approximate the cost of producing the 21st machine.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} The quantity of charge $Q$ in coulombs (C) that has passed through a
+  point in a wire up to time $t$ (measured in seconds) is given by
+  \begin{equation}
+    \label{eq:iehahphi}
+    Q(t)=t^{3}-2t^{2}+6t+4  
+  \end{equation}
+Find the current at $t=.5$sec and $t=1$sec. The unit of current is 1
+ampere, which equals 1 coulombs per second.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} If a tank holds 4000 gallons of water, which drains from the bottom
+  of the tank in 40 minutes, then Torricelli's Law gives the volume $V$
+  of water remaining in the tank after $t$ minutes as
+  \begin{equation}
+    \label{eq:oothaich}
+  V=4000\left(1-\frac{t}{40}\right)^{2}\mbox{ for }0\leq{}t\leq{}40  
+  \end{equation}
+  Find the rate at which the water is draining out of the tank after
+  \begin{enumerate}
+  \item 5 min
+  \item 10 min
+  \item 20 min
+  \item 40 min
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} A Cephid variable star is a star whose brightness alternately
+  increases and decreases. The most easily visible such star is Delta
+  Cephei, for which the interval between times of maximal brightness
+  is $5.4$ days. The average brightness of this star is $4.0$ and its
+  brightness changes by $\pm{}0.35$. In view of these data, the
+  brightness of Delta Cephei at time $t$, where $t$ is measured in
+  days, has been modeled by the function
+  \begin{equation}
+    \label{eq:duusecho}
+    B(t)=4.0+0.35\sin\left(\frac{2\pi{}t}{5.4}\right)
+  \end{equation}
+  \begin{enumerate}
+  \item Find the rate of change of the brightness after $t$ days.
+  \item Find the rate of increase after one day.
+  \end{enumerate}
+\end{frame}
+
+% \begin{frame}
+%   \frametitle{Mixed Exercises}
+%   Poiseuille's Law tells us that the blood flow $Q$ can be calculated
+%   from the following formula
+%   \begin{equation}
+%     \label{eq:yohphohm}
+%     \Delta{}P=\frac{8\mu{}LQ}{\pi{}R^{4}}
+%   \end{equation}
+%   where $\Delta{}P$ is the pressure difference, $L$ is the length of
+%   the blood vessel, $Q$ is the volumetric flow rate, $\mu$ is the
+%   viscosity, and $R$ is the pipe radius.
+% \end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} Suppose that a bacteria population starts with 500 bacteria and
+  triples every hour.
+  \begin{enumerate}
+  \item What is the population after $t$ hours?
+  \item When will the population reach ten thousand?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} A coal-burning electrical generating plant emits sulfur dioxide into
+  the surrounding air. The concentration $C(x)$, in parts per million,
+  is approximately given by the function
+  \begin{equation}
+    \label{eq:sahtuodo}
+    C(x)=\frac{0.7}{x^{2}}
+  \end{equation}
+  where $x$ is the distance away from the plant in miles. Calculate
+  the rate of change for the sulfur dioxide concentration one mile
+  from the plant and eight miles from the plant.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} Find the first and second derivatives of the following function:
+  \begin{equation}
+    \label{eq:oophacuz}
+    h(x)=\arctan(x^{2})
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} If $g(x)=\sec{}x$, find $g'''(\pi/4)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} Let
+  \begin{equation}
+    \label{eq:roohahou}
+    f(x)=\frac{9x^{2}}{2-3x}
+  \end{equation}
+Find $f'(x)$ and $f''(x)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} Suppose that the equation of motion for a particle (where $s$ is in
+  meters and $t$ in seconds) is
+  \begin{equation}
+    \label{eq:eelajaim}
+    s=\sin{}6\pi{}t
+  \end{equation}
+  \begin{enumerate}
+  \item Find the velocity and acceleration as functions of $t$. 
+  \item Find the acceleration after 1 second.
+  \item Find the acceleration (in absolute value) at the instant when the velocity is 0.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Exercises}
+  {\ubung} The charcoal from a tree killed in the volcanic eruption
+  that formed Crater Lake in Oregon contained 44.5\% of the carbon-14
+  found in living matter. About how old is Crater Lake?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Relative Extrema}
+A function $f$ has a \alert{relative maximum} at $x=c$ if there exists
+an open interval $(a,b)$ containing $c$ such that $f(x)<f(c)$ for
+all $x$ in $(a,b)$.
+
+\bigskip
+
+A function $f$ has a \alert{relative minimum} at $x=c$ if there exists
+an open interval $(a,b)$ containing $c$ such that $f(x)>f(c)$ for
+all $x$ in $(a,b)$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives and Extrema}
+  At any number $c$ where a differentiable function $f$ has a relative
+  extremum, $f'(c)=0$. The converse is not true. Consider the
+  following two functions and their derivatives.
+\begin{equation}
+  \label{eq:thapoich}
+f_{1}(x)=x^{3}+x^{2}-5x-1
+\end{equation}
+\begin{equation}
+  \label{eq:gohshaem}
+f_{2}(x)=\left(\frac{3}{10}x\right)^{3}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives and Extrema Graph I}
+  \begin{figure}[h]
+    \includegraphics[scale=.3]{./diagrams/extrema1.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives and Extrema Graph II}
+  \begin{figure}[h]
+    \includegraphics[scale=.3]{./diagrams/extrema2.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives and Extrema Caution}
+Note that a function may have an extremum at a point where the
+derivative is not $0$ if at that point the function is not
+differentiable. Consider this function and its derivative.
+\begin{equation}
+  \label{eq:ceezukoh}
+f_{3}(x)=x^{\frac{2}{3}}
+\end{equation}
+\begin{block}{Critical Number}
+  A \alert{critical number} of a function $f$ is any number $x$ in the
+  domain of $f$ such that $f'(x)=0$ or $f'(x)$ does not exist.
+\end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Derivatives and Extrema Graph III}
+  \begin{figure}[h]
+    \includegraphics[scale=.3]{./diagrams/extrema3.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points and Extrema}
+  \begin{figure}[h]
+    \includegraphics[scale=.3]{./diagrams/opt.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:xoongohh}
+f(x)=x^{3}-4x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:aghuomoh}
+h(t)=-t^{2}+6t+6
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:yakovuap}
+f(x)=\frac{1}{2}x^{4}-x^{2}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:aweefahx}
+g(x)=\frac{x+1}{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:ebukatio}
+f(x)=x\sqrt{x-4}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:imeecohd}
+f(x)=2\tan{}x-\tan^{2}x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points Exercises}
+{\ubung} Find the critical points of the following function,
+\begin{equation}
+  \label{eq:inaidimo}
+h(s)=s^{\frac{5}{3}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx1}
+f(x)=3x^{3}-12x+5
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx2}
+f(x)=\frac{x}{x^{2}+1}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx3}
+f(t)=t\sqrt{4-t^{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx4}
+g(t)=\sqrt[3]{t}(8-t)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx5}
+g(t)=\cos{}t+\sin{}t
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx6}
+f(x)=\ln(x^{2}+x+1)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extrema Exercises}
+{\ubung} Find local maxima and minima for the following function:
+\begin{equation}
+  \label{eq:xxyxx7}
+f(x)=\ln\left(\cos{}x\right)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} A farmer has 2400ft of fencing and wants to fence off a
+  rectangular field that borders a straight river. She needs no fence
+  along the river. What are the dimensions of the field that has the
+  largest area?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} A cylindrical can is to be made to hold one litre of oil.
+  Find the dimensions that will minimize the cost of the metal to
+  manufacture the can.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find the area of the largest rectangle that can be
+  inscribed in a semicircle of radius $r$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} A cone with height $h$ and radius $r$ is inscribed in a
+  larger cone with height $H$ and radius $R$ so that its vertex is at
+  the centre of the base of the larger cone. Find $h$ in terms of the
+  dimensions of the larger cone that makes the volume of the smaller
+  cone maximal.
+\begin{figure}[h]
+\includegraphics[scale=.75]{./diagrams/coneopt.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} For a fish swimming at a speed $v$ relative to the water,
+  the energy expenditure per unit time is proportional to $v^{3}$. It
+  is believed that migrating fish try to minimize the total energy
+  required to swim a fixed distance. If the fish are swimming against
+  a current $u$ ($u<v$), then the time required to swim a distance $L$
+  is $L/(v-u)$ and the total energy $E$ required to swim the distance
+  is given by
+  \begin{equation}
+    \label{eq:aiyeiyoo}
+    E(v)=av^{3}\cdot\frac{L}{v-u}
+  \end{equation}
+  where $a$ is the proportionality constant. Determine the value of
+  $v$ that minimizes $E$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} How close does the semi-circle $y=\sqrt{16-x^{2}}$ come to
+  the point $P=(1,\sqrt{3})$?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise Solution}
+  Note that the semi-circle $y=\sqrt{16-x^{2}}$ is part of a circle
+  with a centre of $M=(0,0)$ and radius $r=4$. If $Q=(x,y)$ is the
+  point on the semi-circle closest to $P$, then the distance between
+  $P$ and $Q$ is
+\begin{equation}
+  \label{eq:aziobaeg}
+  f(x)=\sqrt{(x-1)^{2}+(y-\sqrt{3})^{2}}
+\end{equation}
+Since $Q$ is on the semi-circle, we can replace $y=\sqrt{16-x^{2}}$ to
+get 
+\begin{equation}
+  \label{eq:shahquua}
+  f(x)=\sqrt{(x-1)^{2}+(\sqrt{16-x^{2}}-\sqrt{3})^{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise Solution}
+  The distance between $P$ and $Q$ is
+\begin{equation}
+  \label{eq:ohghoote}
+  f(x)=\sqrt{(x-1)^{2}+(\sqrt{16-x^{2}}-\sqrt{3})^{2}}=\sqrt{g(x)}
+\end{equation}
+Call the expression under the square root sign $g(x)$. Then
+\begin{equation}
+  \label{eq:ouwophai}
+  f'(x)=\frac{1}{2}\cdot\left(g(x)\right)^{-\frac{1}{2}}\cdot{}g'(x)
+\end{equation}
+Of these three factors, only $g'(x)$ can be zero. Setting $f'(x)=0$ is
+therefore equivalent to $g'(x)=0$. Note that
+\begin{equation}
+  \label{eq:poqueebo}
+  g'(x)=2(x-1)+2\left(\sqrt{16-x^{2}}-\sqrt{3}\right)\cdot\left(\frac{1}{2}(16-x^{2})^{-\frac{1}{2}}\cdot(-2x)\right)\notag
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise Solution}
+Simplify and expand to
+\begin{equation}
+  \label{eq:deiquoot}
+  \frac{1}{2}g'(x)=(x-1)-x+\frac{\sqrt{3}x}{\sqrt{16-x^{2}}}
+\end{equation}
+$g'(x)=0$ just when
+\begin{equation}
+  \label{eq:xoonahju}
+  1=\frac{\sqrt{3}x}{\sqrt{16-x^{2}}}
+\end{equation}
+Square both sides for the polynomial equation
+\begin{equation}
+  \label{eq:uabaevoo}
+4x^{2}-16=0
+\end{equation}
+and the two solutions $x_{1}=-2$ and $x_{2}=2$. The first solution is
+where the distance between $P$ and $Q$ is at a maximum. The second
+solution is where the distance is at a minimum. Therefore, the point
+$Q=(2,2\sqrt{3})$ is the answer to the question in this exercise.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems}
+{\ubung} Find the area of the largest rectangle that can be inscribed
+in a semicircle of radius $r$ (two vertices of the rectangle must be
+on a diameter of the circle).
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems}
+% William Anthony Granville, page 116
+{\ubung} Find the altitude of the cylinder of maximum volume that can
+be inscribed in a given right cone.
+  \begin{figure}[h]
+    \includegraphics[scale=.3]{./diagrams/optcone.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem Hint}
+  As a hint for the last exercise, consider the angle at $B$ between
+  the height of the cone and the generating line of the cone. The
+  tangent of the angle can be expressed as two different ratios, which
+  will help you to find a function $V(x)$ and its derivative to
+  maximize the volume.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems}
+  {\ubung} A water tank is to be constructed with a square base and
+  open top and is to hold 64 cubic yards. If the cost of the sides is
+  \$1 a square yard, and of the bottom \$2 a square yard, what are the
+  dimensions when the cost is a minimum? What is the minimum cost?
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimization Word Problems}
+Between $0^{\circ}$C and $30^{\circ}$C, the volume $V$ (in cubic centimetres) of one kilogram of water at a temperature $T$ is given approximately by the formula
+\begin{equation}
+\label{eq:water}
+V=999.87-0.06426T+0.0085043T^{2}-0.0000679T^{3}
+\end{equation}
+Find the temperature at which water has its maximum density.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems}
+  % William Anthony Granville, page 120
+  % For solution consult Schmierbuch pages 2524ff
+  {\ubung} The lower corner of a leaf, whose width is $a$, is folded
+  over so as just to reach the inner edge of the page.
+  \begin{enumerate}
+  \item Find the width of the part folded over when the length of the
+    crease is a minimum.
+  \item Find the width when the area folded over is a minimum.
+  \end{enumerate}
+  \begin{figure}[h]
+    \includegraphics[scale=.4]{./diagrams/optleaf.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem Solution}
+  \begin{figure}[h]
+    \includegraphics[scale=.35]{./diagrams/optleafsol.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem Solution}
+Define a function $f(x)=b+c$. We want to minimize $f$ on the interval
+$(\frac{a}{2},a]$. Notice that $b^{2}=v^{2}-w^{2}$ and
+$c^{2}=x^{2}-w^{2}$. We need to express $v$ and $w$ by $x$ and the
+fixed number $a$. From
+\begin{equation}
+  \label{eq:jaithean}
+  \left(2w\right)^{2}=d^{2}+a^{2}
+\end{equation}
+we get
+\begin{equation}
+  \label{eq:ukohyaej}
+  w^{2}=\frac{ax}{2}
+\end{equation}
+From
+\begin{equation}
+  \label{eq:loocootu}
+  v^{2}=a^{2}+u^{2}
+\end{equation}
+we get
+\begin{equation}
+  \label{eq:zoojeefo}
+  v^{2}=\frac{ax^{2}}{2x-a}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem Solution}
+  Consequently, the function to differentiate is
+  \begin{equation}
+    \label{eq:eeguyeex}
+    f(x)=\frac{1}{\sqrt{2}}\left(\sqrt{\frac{a^{2}x}{2x-a}}+\sqrt{x(2x-a)}\right)
+  \end{equation}
+  After differentiation, it turns out that $f'(x)=0$ if and only if
+  \begin{equation}
+    \label{eq:shohyoom}
+    x=\frac{3}{4}a
+  \end{equation}
+  This answers the first question. The answer for the second question is
+  \begin{equation}
+    \label{eq:zieshaiv}
+    x=\frac{2}{3}a
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems}
+  {\ubung} A submarine telegraph cable consists of a core of copper
+  wires with a covering made of nonconducting material. If $x$ denotes
+  the ratio of the radius of the core to the thickness of the
+  covering, it is known that the speed of signaling varies as
+  \begin{equation}
+    \label{eq:ehielush}
+    x^{2}\ln\frac{1}{x}
+  \end{equation}
+Show that the greatest speed is attained when $x=\frac{1}{\sqrt{e}}$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems}
+  {\ubung} {\hohq} is {\reeq} miles offshore in a boat and wishes to
+  reach a coastal village {\aeza} miles down a straight shoreline from
+  the point nearest the boat. {\wili} can row {\emah} miles per hour
+  and can walk {\biet} miles per hour. Where should {\ahhi} land
+  {\bohh} boat to reach the village in the least amount of time?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem Solution}
+Let the variable distance that Shane would row his boat be $y$ and the
+variable distance that Shane would walk be $x$. Recall that time
+equals distance divided by velocity. Then
+\begin{equation}
+  \label{eq:chahghei}
+  T(x)=\frac{y}{1.9}+\frac{x}{5.1}
+\end{equation}
+for the time $T(x)$ that it takes Shane to get from where he is to the
+coastal village. The domain of $T$ is $[0,7.5]$. Note that
+\begin{equation}
+  \label{eq:oofoopoh}
+  y^{2}=2.2^{2}+(7.5-x)^{2}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem Solution}
+Therefore
+\begin{equation}
+  \label{eq:iegaexov}
+  T(x)=\frac{1}{1.9}\sqrt{x^{2}-15x+61.09}+\frac{1}{5.1}x
+\end{equation}
+and
+\begin{equation}
+  \label{eq:ahwohmoo}
+  T'(x)=\frac{2x-15}{3.8\sqrt{x^{2}-15x+61.09}}+\frac{1}{5.1}
+\end{equation}
+$T'(x)=0$ if and only if
+\begin{equation}
+  \label{eq:phieghen}
+  89.6x^{2}-1344x+4970.1=0
+\end{equation}
+with two solutions. The solution $x=8.3832$ falls outside the domain
+of $T$. Therefore, the time is optimized at $x=6.6168$. One should
+check using the second derivative to make sure this is a minimum.
+\end{frame}
+
+% \begin{frame}
+%   \frametitle{Optimization Word Problems}
+% See \texttt{gc-lab-09-optimization.pdf}  and
+% \texttt{gc-termtest-B-mock.pdf} for optimization problems (and many
+% other problems) with worked-out solutions.
+% \end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problem}
+  A conical tent is to have 1000ft$^{3}$ capacity. Find its dimensions
+  if the amount of canvas is to be a minimum. Disregard the floor.
+  Note that the formula for the volume of a cone is
+\begin{equation}
+\label{eq:uapaighi}
+V=\frac{1}{3}r^{2}\pi{}h\notag
+\end{equation}
+The formula for the area of the lateral surface of a cone (without the floor) is
+\begin{equation}
+\label{eq:chaekaec}
+A=\pi{}rs\notag
+\end{equation}
+where $s$ is the slant height (see diagram).
+\begin{figure}[H]
+\includegraphics[scale=0.3]{./diagrams/coneslantheight.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions I}
+To analyze a function, determine the following features:
+\begin{itemize}
+\item Domain and range of the function.
+\item Zeros (also called $x$-intercepts) of the function.
+\item Critical points, maxima, minima.
+\item Inflection points.
+\item Asymptotes.
+\item Is the function even ($f_{1}(x)=x^{2}+1$) or odd ($f_{2}(x)=x^{3}-x$)?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Step-By-Step I}
+Here is a step-by-step guide to analyzing functions.
+\begin{enumerate}
+\item Determine the $x$-intercepts (also called zeros). Set $f(x)=0$
+  and find the solution set.
+\item Determine the critical points. Find the derivative $f'(x)$ and
+  check whether there are points in the domain of $f$ that are not in
+  the domain of $f'$. Then set $f'(x)=0$ and find the solution set.
+\item Determine whether the critical points are maxima or minima or
+  neither. Find $f''(x)$ and check whether $f''$ at the critical
+  points is positive, negative, or neither. 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Step-By-Step II}
+Here is a step-by-step guide to analyzing functions.
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item Determine the inflection points. Set $f''(x)=0$ and find the
+  solution set.
+\item Determine the asymptotes. See next slide.
+\item Determine whether, for all $x$ in the domain of $f$,
+  $f(x)-f(-x)=0$ (in which case $f$ is even) or $f(x)+f(-x)=0$ (in
+  which case $f$ is odd).
+\item Using the information you have, and possibly a table of function
+  values, graph the function. Then determine the domain and range of
+  $f$.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes I}
+An asymptote is a linear function ($y=kx+d$ with slope $k$ and
+$y$-intercept $d$) which the function graph of $f$ approaches. There
+are three kinds of asymptotes.
+\begin{block}{Vertical Asymptote}
+  A vertical asymptote, strictly speaking, is not a linear function.
+  It is a curve defined by $x=c$, where $c$ is a real number (we call
+  real numbers like $c$ \alert{constants}). You can often find
+  vertical asymptotes at points where $f$ is undefined.
+\end{block}
+Find vertical asymptotes by checking points which are not in the
+domain of the function $f$. 
+\begin{equation}
+  \label{eq:peimoojo}
+f(x)=\frac{1}{x-2}+3\mbox{ has an asymptote at }x=2
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes I}
+Example:
+\begin{equation}
+  \label{eq:maugeish}
+f(x)=\frac{1}{x-2}+3\mbox{ has an asymptote at }x=2
+\end{equation}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/asymp1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes I}
+Example:
+\begin{equation}
+  \label{eq:cheodieh}
+f(x)=\ln(x+\pi)\mbox{ has an asymptote at }x=-\pi
+\end{equation}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/asymp2.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes II}
+\begin{block}{Horizontal Asymptote}
+  A horizontal asymptote is a linear function with slope $k=0$. Its
+  equation is $y=c$, where $c$ is a constant. There are horizontal
+  asymptotes for functions whose limits is a constant and for rational
+  functions whose numerator and denominator polynomials share the same
+  degree.
+\end{block}
+Find horizontal asymptotes by checking
+\begin{equation}
+  \label{eq:udaiguph}
+  \lim_{x\rightarrow\infty}f'(x)\mbox{ and }\lim_{x\rightarrow{}-\infty}f'(x)
+\end{equation}
+If the limit is $k=0$, then that is also the slope of the asymptote.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes II}
+Example
+\begin{equation}
+  \label{eq:tohwoiph}
+f(x)=e^{\frac{x}{2}}+7\mbox{ has the asymptote }y=7
+\end{equation}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/asymp3.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes II}
+Example (this example additionally has two
+  vertical asymptotes):
+\begin{equation}
+  \label{eq:ahyoimij}
+  f(x)=\frac{\pi{}x^{2}+2x-1}{-7x^{2}+3x}\mbox{ has asymptotes }y=-\frac{e}{7},x=\frac{22}{7},x=0
+\end{equation}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/asymp4.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+\begin{block}{Sloped Asymptote}
+  A sloped asymptote is a linear function with a positive or a
+  negative slope, $y=kx+d$ with $k\neq{}0$. There are sloped
+  asymptotes for rational functions where the numerator polynomial's
+  degree exceeds the denominator polynomial's degree by 1.
+\end{block}
+Find sloped asymptotes by checking
+\begin{equation}
+  \label{eq:uzuwooba}
+  \lim_{x\rightarrow\infty}f'(x)\mbox{ and }\lim_{x\rightarrow{}-\infty}f'(x)
+\end{equation}
+If the limit is $k\neq{}0$, then that is also the slope of the
+asymptote. Hyperbolas also sometimes have sloped asymptotes. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+Example:
+\begin{equation}
+  \label{eq:iboohoht}
+  f(x)=\frac{3x^{2}-6x+2}{5x+4}\mbox{ has the asymptote }y=\frac{3}{5}x-\frac{42}{25}
+\end{equation}
+Find the $y$-intercept by making sure that
+\begin{equation}
+  \label{eq:roojogai}
+  \lim_{x\rightarrow\infty}\left(f(x)-g(x)\right)=0
+\end{equation}
+where $y=g(x)=kx+d$ for the sloped asymptote. This results in an
+equation where $d$ is the only unknown.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+\begin{figure}[h]
+\includegraphics[scale=.35]{./diagrams/asymp5.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+  \beispiel{Sloped Asymptotes} Consider the hyperbola
+  \begin{equation}
+    \label{eq:jeiquaim}
+    y^{2}=x^{2}+3x-43
+  \end{equation}
+Find its asymptotes.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+  First, look at the associated function
+  \begin{equation}
+    \label{eq:quephode}
+    f(x)=\sqrt{x^{2}+3x-43}
+  \end{equation}
+The interval $[a,b]$ is not in the domain of $f$, with
+$a\approx{}-8.23$ and $b\approx{}5.23$. There are no vertical
+asymptotes at these transition points because the function is defined
+at them. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+  The derivative of the function is
+  \begin{equation}
+    \label{eq:iubaepha}
+    f'(x)=\frac{2x+3}{2\sqrt{x^{2}+3x-43}}
+  \end{equation}
+  Notice that
+  \begin{equation}
+    \label{eq:ohquieje}
+    \left(\lim_{x\rightarrow\infty}f'(x)\right)^{2}=1
+  \end{equation}
+  Consequently, $\lim_{x\rightarrow\infty}f'(x)=1$ or
+  $\lim_{x\rightarrow\infty}f'(x)=-1$. There are no horizontal asymptotes.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+  If there are sloped asymptotes $g(x)=\pm{}x+d$, the following needs to be true:
+  \begin{equation}
+    \label{eq:bohraebo}
+    \lim_{x\rightarrow-\infty}\left(g(x)-f(x)\right)=0\mbox{ or }\lim_{x\rightarrow\infty}\left(g(x)-f(x)\right)=0
+  \end{equation}
+  Multiply by the conjugate for
+  \begin{equation}
+    \label{eq:cimahwee}
+    \lim_{x\rightarrow\infty}\left(x+d-\sqrt{x^{2}+3x-43}\right)=\lim_{x\rightarrow\infty}\frac{(2d-3)x+43}{\left(x+d+\sqrt{x^{2}+3x-43}\right)}\notag
+  \end{equation}
+This will be zero for $d=\frac{3}{2}$. The two sloped asymptotes turn
+out to be
+\begin{equation}
+  \label{eq:ieyoojex}
+  y=x+\frac{3}{2}\mbox{ and }y=-x-\frac{3}{2}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/slasy.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Finding Asymptotes III}
+Example:
+\begin{equation}
+  \label{eq:waduoqui}
+  f(\vartheta)=\sinh\vartheta
+\end{equation}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/asymp6.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions}
+{\ubung} Analyze the following function:
+\begin{equation}
+  \label{eq:ohkaedoy}
+g_{1}(x)=-x^{2}+3x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions}
+{\ubung} Analyze the following function:
+\begin{equation}
+  \label{eq:teecakie}
+g_{2}(x)=3x^{\frac{2}{3}}-2x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions}
+{\ubung} Analyze the following function:
+\begin{equation}
+  \label{eq:saepaego}
+g_{3}(t)=\frac{2t^{2}}{t^{2}+3}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions}
+{\ubung} Analyze the following function:
+\begin{equation}
+  \label{eq:xohsaemu}
+g_{4}(x)=x^{3}e^{x}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Exercises Graph}
+  \begin{figure}[h]
+    \includegraphics[scale=.4]{./diagrams/ft-11-AnalyzingFunctions.eps}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Further Exercises}
+{\ubung} Analyze the following function.
+\begin{equation}
+  \label{eq:uufiexah}
+f(x)=x\cdot\ln{}x^{2}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Further Exercises}
+{\ubung} Analyze the following function.
+\begin{equation}
+  \label{eq:opeemuix}
+f(x)=\frac{2x^{2}+2}{x-3}\mbox{ (do not look for inflection points)}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Further Exercises}
+{\ubung} Analyze the following function.
+\begin{equation}
+  \label{eq:oisheith}
+f(x)=x^{3}+4x^{2}+x-6
+\end{equation}
+Note that $x=1$ is an $x$-intercept so that $(x-1)$ can be factored as
+in
+\begin{equation}
+  \label{eq:xohhafoe}
+x^{3}+4x^{2}+x-6=(x-1)(x^{2}+5x+6)
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Further Exercises}
+{\ubung} Analyze the following function.
+\begin{equation}
+  \label{eq:ahkeique}
+  f(x)=4-\frac{e^{x}+1}{e^{x}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Analyzing Functions Further Exercises}
+{\ubung} Analyze the following function.
+\begin{equation}
+  \label{eq:mohsixox}
+  f(x)=\frac{3x^{2}-5}{x-2}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Linear Approximation I}
+It would be tricky to calculate $\sqrt{3.92}$ by hand. Here is a way
+to approximate this number. Let
+\begin{equation}
+  \label{eq:eiyahqui}
+  f(x)=\sqrt{x}
+\end{equation}
+Then 
+\begin{equation}
+  \label{eq:geimaimo}
+  f'(x)=\frac{1}{2\sqrt{x}}
+\end{equation}
+and the tangent line at $P=(4,2)$ is
+\begin{equation}
+  \label{eq:oocahpoh}
+y=\frac{1}{4}x+1  
+\end{equation}
+% \begin{figure}[h]
+% \includegraphics[scale=.3]{./diagrams/extrema1.png}
+% \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Linear Approximation II}
+\begin{figure}[h]
+\includegraphics[scale=.25]{./diagrams/linapp1.png}
+\end{figure}
+Let's use how close the function is to the tangent line around the point $P=(4,2)$ to approximate $\sqrt{3.92}$.
+\begin{equation}
+  \label{eq:chairaey}
+  1.9799=\sqrt{3.92}=f(3.92)\approx{}\frac{1}{4}\cdot{}3.92+1=1.98
+\end{equation}
+% Pretty good approximation!
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentials}
+It will be useful to define an independent variable $dx$ called a
+\alert{differential}. The variable $dy$ is dependent on $dx$ and $x$.
+It is determined by
+\begin{equation}
+  \label{eq:ahngieng}
+  dy=f'(x)dx
+\end{equation}
+Now have a look at
+\begin{equation}
+  \label{eq:uzeepahv}
+  f(x+dx)\approx{}f'(x)(x+dx)+f(x)-f'(x)x=\notag
+\end{equation}
+\begin{equation}
+  \label{eq:ahghuako}
+  f(x)+f'(x)dx=f(x)+dy
+\end{equation}
+This is the linear approximation we were talking about. (Notes on this
+in \texttt{andiff.tex}.)
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentials}
+\begin{figure}[h]
+\includegraphics[scale=3]{./diagrams/differentials.jpg}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Measurement Error}
+Differentials are often used to approximate measurement errors. 
+
+\bigskip
+
+\beispiel{Volume of a Sphere}\label{ex:ootiteij} The radius of a
+sphere was measured and found to be 21 cm with a possible error in
+measurement of at most 0.05 cm. What is the maximum error in using
+this value of the radius to compute the volume of the sphere?
+
+\bigskip
+
+If $V(r)=(4/3)r^{3}\pi$, then the answer to this question can be
+approximated using (where $dr=\Delta{}r$ is the measurement error)
+\begin{equation}
+  \label{eq:faeshiur}
+  dV=V'(r)dr
+\end{equation}
+The precise answer is often called $\Delta{}V$, which is approximated
+by $dV$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentials Exercises I}
+{\ubung} Find the linearization $L(x)$ of the function at $a$ and
+use it to approximate the function value at $b$.
+\begin{enumerate}
+\item $\displaystyle f(x)=x^{4}+3x^{2},a=-1,b=-0.923$
+\item $\displaystyle f(x)=\ln{}x,a=1,b=1.1$
+\item $\displaystyle f(x)=\cos{}x,a=\pi/2,b=82^{\circ}$
+\item $\displaystyle f(x)=x^{\frac{3}{4}},a=16,b=16.3$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentials Exercises II}
+{\ubung} Find the linear approximation of the function 
+\begin{equation}
+  \label{eq:ceengaet}
+g(x)=\sqrt[3]{1+x}
+\end{equation}
+at $a=0$ and use it to approximate the numbers 
+\begin{equation}
+  \label{eq:ciaghier}
+\sqrt[3]{0.95}
+\end{equation}
+and
+\begin{equation}
+  \label{eq:woozahme}
+\sqrt[3]{1.1}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentials Exercises III}
+{\ubung} Find the differential of each function.
+\begin{enumerate}
+\item $\displaystyle y=x^{2}\sin{}2x$ 
+\item $\displaystyle y=\ln\sqrt{1+t^{2}}$
+\item $\displaystyle y=e^{-u}\cos{}u$
+\item $\displaystyle y=e^{\tan\pi{}t}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Differentials Exercises IV}
+{\ubung} The edge of a cube was found to be 30cm with a possible error
+in measurement of 0.1cm. Use differentials to estimate the error in
+computing the volume of the cube and the surface area of the cube.
+
+\bigskip
+
+{\ubung} Use differentials to estimate the amount of paint needed to
+apply a coat of paint 0.05cm thick to a hemisphere dome with diameter
+50m.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+What are the $x$-intercepts of the following function?
+\begin{equation}
+  \label{eq:ietaicie}
+f(x)=2x^{3}+5x^{2}-11x+3
+\end{equation}
+How would you solve the following equation?
+\begin{equation}
+  \label{eq:pahmaeji}
+  e^{x}\sin{}x=-1
+\end{equation}
+It may be difficult to solve these problems using an \alert{algebraic}
+method. Newton's method is a \alert{numeric} method to find
+approximations of solutions by using an iterative (repeated) procedure.
+% \begin{equation}
+%   \label{eq:quohgaiy}
+%   \mbox{The algebraic solution is approximately }1.149496\notag
+% \end{equation}
+% We have not learned how to find $x$-intercepts for polynomials with
+% degrees higher than 2. There are different methods. One method is
+% called \alert{Newton's Method} and approximates the $x$-intercept. I
+% have created an instructional video for Newton's Method which you can
+% watch here:
+% \begin{alltt}
+% https://youtu.be/a28M5f0Dk\_c
+% \end{alltt}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  Consider the following function
+\begin{equation}
+  \label{eq:achainoh}
+f(x)=2x^{3}+5x^{2}-11x+4
+\end{equation}
+It differs from the function on the previous slide because the
+constant is 4, not 3. You can guess that $x=1$ is a solution.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  Now factor as follows:
+  \begin{equation}
+    \label{eq:kohgaipa}
+    2x^{3}+5x^{2}-11x+4=2(x-1)(x^{2}+bx+c)
+  \end{equation}
+Expand the expression on the right hand side for the following system
+of equations solved by $b=\frac{7}{2}$ and $c=-2$
+\begin{equation}
+  \label{eq:oomohhah}
+  \begin{array}{rcl}
+    2b-2&=&5 \\
+    2b-2c&=&11 \\
+    2c&=&-4
+  \end{array}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  Consequently,
+  \begin{equation}
+    \label{eq:couvahji}
+    2x^{3}+5x^{2}-11x+4=2(x-1)\left(x^{2}+\frac{7}{2}x-2\right)
+  \end{equation}
+The set of $x$-intercepts of $f(x)=2x^{3}+5x^{2}-11x+4$ is
+$\{-4,\frac{1}{2},1\}$. But we were lucky by being able to guess $x=1$
+as the first solution.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  We are not so lucky with
+  \begin{equation}
+    \label{eq:celaehid}
+    f(x)=2x^{3}+5x^{2}-11x+3
+  \end{equation}
+Compare the graphs of the function with 4 and 3 as constants,
+respectively, on the next slide.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/nm-01.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+\begin{figure}[h]
+\includegraphics[scale=.5]{./diagrams/nm-02.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+If you have a function $f(x)$ and you want to find an $x$-intercept,
+pick a starting point $x_{1}$ fulfilling the following criteria:
+\begin{enumerate}
+\item $x_{1}$ is a nice number (for example, an integer)
+\item $x_{1}$ is close to an $x$-intercept
+\item $f'(x_{1})$ is not zero or very small
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  The linearization of $f(x)$ at $x_{1}$ is
+  \begin{equation}
+    \label{eq:jaekatho}
+    L_{1}(x)=f'(x_{1})x+\alert{f(x_{1})-f'(x_{1})x_{1}}
+  \end{equation}
+The expression in red is the $y$-intercept of the linearization and,
+as usual, found by plugging the point $(x_{1},f(x_{1}))$ into the line
+equation $L_{1}(x)=f'(x_{1})x+d$ to find $d$. The idea is to find the
+$x$-intercept of $L_{1}(x)$ (easy to find) instead of $f(x)$
+(difficult to find) and to hope that this new point $x_{2}$ will be
+closer to the desired $x$-intercept than $x_{1}$. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  Consequently, set $L_{1}(x)=0$ to find $x_{2}$,
+  \begin{equation}
+    \label{eq:ahhuiphe}
+    f'(x_{1})(x-x_{1})+f(x_{1})=0
+  \end{equation}
+for which the solution is $x_{2}=x=x_{1}-\frac{f(x_{1})}{f'(x_{1})}$.
+
+\bigskip
+
+You can see why it is important not to choose $x_{1}$ such that
+$f'(x_{1})=0$. 
+\end{frame}
+
+  \begin{frame}
+  \frametitle{Newton's Method}
+\begin{figure}[h]
+\includegraphics[scale=.4]{./diagrams/newtonsmethoddesmos.png}
+\end{figure}
+\end{frame}
+
+  \begin{frame}
+  \frametitle{Newton's Method}
+\begin{figure}[h]
+\includegraphics[scale=.6]{./diagrams/nmethod.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  For Newton's Method, find a plausible $x$-value $x_{1}$ and
+  approximate the $x$-intercept using the following iterative
+  procedure:
+\begin{equation}
+  \label{eq:heimioje}
+  x_{n+1}=x_{n}-\frac{f(x_{n})}{f'(x_{n})}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Newton's Method}
+  Observe what could go wrong in the following two diagrams.
+\begin{figure}[h]
+\includegraphics[scale=.6]{./diagrams/nm-05.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Approximate $\sqrt{7}$ to ten decimal places using Newton's
+  method and the function $h(x)=x^{2}-7$. 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Approximate the $x$-intercept of $f(x)=x^{3}+5x-3$ using
+  Newton's method. % 0.5641
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Factor $g(t)=24t^{3}-2t^{2}-9t+2$. Remember that if $x_{1},x_{2},x_{3}$ 
+  are $x$-intercepts of the polynomial $ax^{3}+bx^{2}+cx+d$, then
+  \begin{equation}
+    \label{eq:ahsuagha}
+    ax^{3}+bx^{2}+cx+d=a(x-x_{1})(x-x_{2})(x-x_{3})
+  \end{equation}
+% solution: (x-1/2)(x+2/3)(x-1/4)
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Find the $x$-intercepts for the following function:
+\begin{equation}
+  \label{eq:yiceepuo}
+  f(x)=x^{3}+4x^{2}+x-6
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Solve the equation
+\begin{equation}
+  \label{eq:puxeepha}
+  \cos{}x=x
+\end{equation}
+using Newton's Method.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Analyze the following function:
+\begin{equation}
+  \label{eq:aehoilao}
+  f(x)=\frac{2x^{2}+2}{x-3}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Find one solution for the following equations using
+  Newton's Method. 
+\begin{equation}
+  \label{eq:xeigheuy}
+  x^{6}-x^{5}-6x^{4}-x^{2}+x+10=0
+\end{equation}
+\begin{equation}
+  \label{eq:ohtharoh}
+  x^{2}(4-x^{2})=\frac{4}{x^{2}+1}
+\end{equation}
+\begin{equation}
+  \label{eq:iejuangi}
+  x^{2}\sqrt{2-x-x^{2}}=1
+\end{equation}
+\begin{equation}
+  \label{eq:oungiegu}
+  4e^{-x^{2}}\sin{}x=x^{2}-x+1
+\end{equation}
+\begin{equation}
+  \label{eq:ohpaejae}
+  3\sin(x^{2})=2x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Find the absolute minimum value of the following function
+correct to four decimal places.
+\begin{equation}
+  \label{eq:veiyeini}
+  f(x)=x^{6}-x^{4}+3x^{2}-2x
+\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimization Word Problems and Newton's Method}
+{\ubung} Of the infinitely many lines that are tangent to the curve
+\begin{equation}
+  \label{eq:ohtooyiv}
+  y=-\sin{}x
+\end{equation}
+and pass through the origin, there is one that has the largest slope.
+Use Newton's Method to find the slope of that line.
+\begin{figure}[h]
+\includegraphics[scale=.3]{./diagrams/optsine.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimization Word Problems and Newton's Method}
+{\ubung} Use Newton's Method to find the coordinates of the point on
+the parabola
+\begin{equation}
+  \label{eq:laingiun}
+  y=(x-1)^{2}
+\end{equation}
+that is closest to the origin.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Optimization Word Problems and Newton's Method} {\ubung}
+  Inscribe a rectangle based on the $x$-axis under the sine curve
+  between $x=0$ and $x=\pi$. Maximize the area. Provide the dimensions
+  of the rectangle. Use Newton's Method.
+\begin{figure}[h]
+\includegraphics[scale=.3]{./diagrams/boxinsine.png}
+\end{figure}
+\end{frame}
+
+% \begin{frame}
+%   \frametitle{Optimization}
+%   The last exercise gives us a nice segue to \alert{optimization}. You
+%   already have all the tools for optimization. Optimization is often a
+%   matter of finding the solutions for $f'(x)=0$ and then checking the
+%   second derivative to make sure the solution is what you were looking
+%   for. However, finding the function $f(x)$ can sometimes (as in the
+%   last exercise) be tricky! Here are some exercises.
+% \end{frame}
+
+% I have moved all optimization material to gc-09-Analyzing.tex
+
+\begin{frame}
+  \frametitle{L'H{\^o}pital's Rule}
+Evaluate the following limits:
+\begin{equation}
+  \label{eq:ohjishah}
+  \lim_{x\rightarrow{}1}\frac{x^{2}-x}{x^{2}-1}
+\end{equation}
+\begin{equation}
+  \label{eq:eighahth}
+  \lim_{x\rightarrow{}0}\frac{\sin{}x}{x}\mbox{ (it equals 1 based on geometry)}
+\end{equation}
+\begin{equation}
+  \label{eq:aiwohmae}
+  \lim_{x\rightarrow\infty}\frac{x^{2}-1}{2x^{2}+1}
+\end{equation}
+These limits have in common that they are of \alert{indeterminate
+  form} when you plug in the $a$ towards which the $x$ goes. Sometimes
+the tricks we have found don't work, for example for
+\begin{equation}
+  \label{eq:jechuith}
+  \lim_{x\rightarrow{}1}\frac{\ln{}x}{x-1}
+\end{equation}
+or for
+\begin{equation}
+  \label{eq:ieghaegh}
+  \lim_{x\rightarrow{}\infty}\frac{\ln{}x}{x-1}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{L'H{\^o}pital's Rule}
+\begin{figure}[h]
+\includegraphics[scale=.6]{./diagrams/lhopital_ed.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Find
+\begin{equation}
+  \label{eq:aimooshi}
+  \lim_{x\rightarrow{}1}\frac{\ln{}x}{x-1}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+{\ubung} Find
+\begin{equation}
+  \label{eq:awaifeif}
+  \lim_{x\rightarrow\infty}\frac{e^{x}}{x^{2}}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:ijieyoja}
+    \lim_{x\rightarrow\infty}\frac{\ln{}x}{\sqrt[3]{x}}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:iemohyua}
+    \lim_{x\rightarrow{}0}\frac{\tan{}x-x}{x^{3}}
+  \end{equation}
+% Solution is 1/3
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise Solution}
+  \begin{equation}
+    \label{eq:puyiepie}
+    \lim_{x\rightarrow{}0}\frac{\tan{}x-x}{x^{3}}\stackrel{\mbox{\tiny LHR}}{=}\lim_{x\rightarrow{}0}\frac{\sec^{2}x-1}{3x^{2}}=\frac{0}{0}
+  \end{equation}
+\bigskip
+  \begin{equation}
+    \label{eq:aedeinah}
+    \lim_{x\rightarrow{}0}\frac{\sec^{2}x-1}{3x^{2}}\stackrel{\mbox{\tiny LHR}}{=}\lim_{x\rightarrow{}0}\frac{2\tan{}x\sec^{2}x}{6x}=\frac{0}{0}
+  \end{equation}
+\bigskip
+  \begin{equation}
+    \label{eq:teipaeka}
+    \lim_{x\rightarrow{}0}\frac{\tan{}x\sec^{2}x}{3x}=\lim_{x\rightarrow{}0}\frac{\sec^{4}x+2\tan^{2}x\sec^{2}x}{3}=\frac{1}{3}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find$^{\ast}$
+  \begin{equation}
+    \label{eq:eekuyuoc}
+    % \lim_{x\rightarrow\pi^{-}}\frac{\sin{}x}{1-\cos{}x}
+    \lim_{x\rightarrow\pi}\frac{\pi-\pi\cos{}x+\sin{}x}{1-\cos{}x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{L'H{\^o}pital's Rule for Non-Fractions}
+  L'H{\^o}pital's Rule works for fractions that are indeterminate
+  forms.
+  \begin{equation}
+    \label{eq:ahgeahum}
+    \lim_{x\rightarrow{}a}\frac{f(x)}{g(x)}=\alert{\frac{0}{0}}\;\mbox{ or }\;\lim_{x\rightarrow{}a}\frac{f(x)}{g(x)}=\alert{\frac{\infty}{\infty}}
+  \end{equation}
+  It also sometimes works for non-fractions if they can be manipulated
+  into fractions. Common indeterminate forms are:
+  \begin{equation}
+    \label{eq:wohkoedi}
+    \alert{\infty-\infty}\;\mbox{ or }\;\alert{0^{0}}\;\mbox{ or }\;\alert{\infty^{0}}\;\mbox{ or }\;\alert{1^{\infty}}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:zeisahda}
+    \lim_{x\rightarrow{}0^{+}}x\ln{}x
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:ahgohgah}
+    \lim_{x\rightarrow\frac{\pi}{2}^{-}}(\sec{}x-\tan{}x)
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:mahpeilu}
+    \lim_{x\rightarrow{}0^{+}}x^{x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:oriewoqu}
+    \lim_{x\rightarrow{}0^{+}}\left(1+\frac{1}{x}\right)^{x}
+  \end{equation}
+  Note that this is a question-begging exercise. $e$ is defined to be
+  the limit in (\ref{eq:oriewoqu}); this exercise only shows that
+  l'H{\^o}pital's rule is consistent with this definition.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:xughieta}
+    \lim_{x\rightarrow{}0^{+}}(1+\sin{}4x)^{\cot{}x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:eigahrai}
+    \lim_{x\rightarrow\infty}(\sqrt{x^{2}+x}-x)\notag
+  \end{equation}
+  Note: this is an example where l'H{\^o}pital's rule does not work
+  and another method has to be used. This is not unusual for radicals.
+  Further examples include
+  \begin{equation}
+    \label{eq:pahxoquu}
+    \lim_{x\rightarrow{}\infty}\frac{x}{\sqrt{x^{2}+1}}
+  \end{equation}
+  \begin{equation}
+    \label{eq:roquaevi}
+    \lim_{x\rightarrow\infty}(\sqrt{x^{2}+1}-x)
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise Solution}
+  \begin{equation}
+    \label{eq:erahdahv}
+    \lim_{x\rightarrow\infty}(\sqrt{x^{2}+x}-x)=\lim_{x\rightarrow\infty}(\sqrt{x(x+1)}-x)=\lim_{x\rightarrow\infty}(\sqrt{x}(\sqrt{x+1}-\sqrt{x}))
+  \end{equation}
+  Multiply by the conjugate for
+  \begin{equation}
+    \label{eq:heetheer}
+    \lim_{x\rightarrow\infty}(\sqrt{x}(\sqrt{x+1}-\sqrt{x}))=\lim_{x\rightarrow{}\infty}\frac{\sqrt{x}}{\sqrt{x+1}+\sqrt{x}}
+  \end{equation}
+  Take the reciprocal for
+  \begin{equation}
+    \label{eq:quahgoec}
+    \lim_{x\rightarrow{}\infty}\frac{\sqrt{x}}{\sqrt{x+1}+\sqrt{x}}=\left(\lim_{x\rightarrow{}\infty}\left(1+\sqrt{\frac{x+1}{x}}\right)\right)^{-1}=\frac{1}{2}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:vuciecha}
+    \lim_{x\rightarrow{}1}\frac{1-x+\ln{}x}{1+\cos\pi{}x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:taihahri}
+    \lim_{x\rightarrow{}0}\frac{e^{x}-e^{-x}-2x}{x-\sin{}x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:eemeeyae}
+    \lim_{x\rightarrow{}0^{+}}\sin{}x\ln{}x
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:gasuchoh}
+    \lim_{x\rightarrow{}1}\left(\frac{x}{x-1}-\frac{1}{\ln{}x}\right)
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+% Cooley 467-7
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:guyaetae}
+\lim_{x\rightarrow{}0}\frac{x-\sin{}x}{\tan{}x-x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+% Briggs Cochran 290:30
+  {\ubung} Find
+  \begin{equation}
+    \label{eq:oofahphi}
+\lim_{x\rightarrow\pi/2}\frac{2\tan{}x}{\sec^{2}x}
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \frametitle{End of Lesson}
+Next Lesson: Fundamental Theorem of Calculus
+\end{frame}
+
+\end{document}

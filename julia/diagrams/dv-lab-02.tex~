@@ -1,0 +1,26 @@
+% dv-lab-02.tex
+
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+\usepackage{syllogism} 
+\usepackage{october}
+\usepackage[table]{xcolor}
+
+\newcounter{aufg}
+\setcounter{aufg}{0}
+\newcommand{\aufgabe}[0]{\refstepcounter{aufg}\textbf{(\arabic{aufg})}}
+
+\begin{document}
+
+\textbf{First Order Differential Equations}
+
+% EPC 8
+{\aufgabe} Find the general solution to the differential equation
+\begin{equation}
+  \label{eq:mgxnzeah}
+  x^{2}+xy+x\frac{dy}{dx}=0\notag
+\end{equation}
+x2+1xy+xdydx=0
+
+
+\end{document}
