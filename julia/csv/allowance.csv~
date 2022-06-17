@@ -1,0 +1,1526 @@
+alldate,username,amount,category
+2014-08-18,anderson,3,allowance
+2014-08-18,evelyn,2,allowance
+2014-08-25,anderson,3,allowance
+2014-08-25,evelyn,2,allowance
+2014-09-01,anderson,3,allowance
+2014-09-01,evelyn,2,allowance
+2014-09-08,anderson,3,allowance
+2014-09-08,evelyn,2,allowance
+2014-09-15,anderson,3,allowance
+2014-09-15,evelyn,2,allowance
+2014-09-22,anderson,3,allowance
+2014-09-22,evelyn,2,allowance
+2014-09-29,anderson,3,allowance
+2014-09-29,evelyn,2,allowance
+2014-10-06,anderson,3,allowance
+2014-10-06,evelyn,2,allowance
+2014-10-13,anderson,3,allowance
+2014-10-13,evelyn,2,allowance
+2014-10-15,anderson,-16.80,gem
+2014-10-15,evelyn,-11.20,gem
+2014-10-20,anderson,3,allowance
+2014-10-20,evelyn,2,allowance
+2014-10-27,anderson,3,allowance
+2014-10-27,evelyn,2,allowance
+2014-11-03,anderson,3,allowance
+2014-11-03,evelyn,2,allowance
+2014-11-10,anderson,3,allowance
+2014-11-10,evelyn,2,allowance
+2014-11-17,anderson,20,cash in
+2014-11-17,anderson,3,allowance
+2014-11-17,evelyn,2,allowance
+2014-11-19,anderson,-50.36,amazon purchase
+2014-11-24,anderson,3,allowance
+2014-11-24,evelyn,2,allowance
+2014-12-01,anderson,3,allowance
+2014-12-01,evelyn,2,allowance
+2014-12-08,anderson,3,allowance
+2014-12-08,evelyn,2,allowance
+2014-12-15,anderson,3,allowance
+2014-12-15,evelyn,2,allowance
+2014-12-22,anderson,30,refereeing
+2014-12-22,anderson,3,allowance
+2014-12-22,evelyn,2,allowance
+2014-12-28,anderson,10,cash in
+2014-12-29,anderson,3,allowance
+2014-12-29,evelyn,2,allowance
+2014-12-31,anderson,-1.1,chocolate addiction
+2015-01-01,anderson,-5.59,pokemon bank
+2015-01-05,anderson,3,allowance
+2015-01-05,evelyn,2,allowance
+2015-01-06,anderson,30,refereeing
+2015-01-12,anderson,3,allowance
+2015-01-12,evelyn,2,allowance
+2015-01-19,anderson,3,allowance
+2015-01-19,evelyn,2,allowance
+2015-01-26,anderson,3,allowance
+2015-01-26,evelyn,2,allowance
+2015-01-26,evelyn,-5,books
+2015-02-02,anderson,3,allowance
+2015-02-02,evelyn,2,allowance
+2015-02-07,anderson,30,babysitting
+2015-02-09,anderson,3,allowance
+2015-02-09,evelyn,2,allowance
+2015-02-14,anderson,5,cash in
+2015-02-16,anderson,3,allowance
+2015-02-16,evelyn,2,allowance
+2015-02-23,anderson,3,allowance
+2015-02-23,evelyn,2,allowance
+2015-02-25,anderson,7,cash in
+2015-03-02,anderson,3,allowance
+2015-03-02,evelyn,2,allowance
+2015-03-09,anderson,3,allowance
+2015-03-09,evelyn,2,allowance
+2015-03-16,anderson,18,cash in
+2015-03-16,anderson,3,allowance
+2015-03-16,evelyn,2,allowance
+2015-03-23,anderson,3,allowance
+2015-03-23,evelyn,2,allowance
+2015-03-30,anderson,3,allowance
+2015-04-01,anderson,105,refereeing
+2015-04-06,anderson,3,allowance
+2015-04-06,evelyn,2,allowance
+2015-04-13,anderson,3,allowance
+2015-04-13,evelyn,2,allowance
+2015-04-20,anderson,3,allowance
+2015-04-20,evelyn,2,allowance
+2015-04-21,anderson,14,babysitting
+2015-04-27,anderson,3,allowance
+2015-04-27,evelyn,2,allowance
+2015-05-04,anderson,3,allowance
+2015-05-04,evelyn,2,allowance
+2015-05-11,anderson,3,allowance
+2015-05-11,evelyn,2,allowance
+2015-05-18,anderson,3,allowance
+2015-05-18,evelyn,2,allowance
+2015-05-25,anderson,3,allowance
+2015-05-25,evelyn,2,allowance
+2015-06-01,anderson,3,allowance
+2015-06-01,evelyn,2,allowance
+2015-06-08,anderson,3,allowance
+2015-06-08,evelyn,2,allowance
+2015-06-15,anderson,3,allowance
+2015-06-15,evelyn,2,allowance
+2015-06-22,anderson,3,allowance
+2015-06-22,evelyn,2,allowance
+2015-06-29,anderson,3,allowance
+2015-06-29,evelyn,2,allowance
+2015-07-06,anderson,3,allowance
+2015-07-06,evelyn,2,allowance
+2015-07-13,anderson,3,allowance
+2015-07-13,evelyn,2,allowance
+2015-07-20,anderson,3,allowance
+2015-07-20,evelyn,2,allowance
+2015-07-25,evelyn,-20,cash out
+2015-07-27,anderson,3,allowance
+2015-07-27,evelyn,2,allowance
+2015-08-03,anderson,3,allowance
+2015-08-03,evelyn,2,allowance
+2015-08-10,anderson,3,allowance
+2015-08-10,evelyn,2,allowance
+2015-08-17,anderson,3,allowance
+2015-08-17,evelyn,2,allowance
+2015-08-24,anderson,3,allowance
+2015-08-24,evelyn,2,allowance
+2015-08-24,josephine,1,allowance
+2015-08-30,anderson,-4.35,chewing gum
+2015-08-31,anderson,3,allowance
+2015-08-31,evelyn,2,allowance
+2015-08-31,josephine,1,allowance
+2015-09-05,evelyn,-7.90,doggles
+2015-09-07,anderson,3,allowance
+2015-09-07,evelyn,2,allowance
+2015-09-07,josephine,1,allowance
+2015-09-08,evelyn,-20.00,earbuds
+2015-09-14,anderson,3,allowance
+2015-09-14,evelyn,2,allowance
+2015-09-14,josephine,1,allowance
+2015-09-15,evelyn,35.00,babysitting and lemonade stands
+2015-09-21,anderson,3,allowance
+2015-09-21,evelyn,2,allowance
+2015-09-21,josephine,1,allowance
+2015-09-28,anderson,3,allowance
+2015-09-28,evelyn,2,allowance
+2015-09-28,josephine,1,allowance
+2015-10-05,anderson,3,allowance
+2015-10-05,evelyn,2,allowance
+2015-10-05,josephine,1,allowance
+2015-10-12,anderson,3,allowance
+2015-10-12,evelyn,2,allowance
+2015-10-12,josephine,1,allowance
+2015-10-19,anderson,3,allowance
+2015-10-19,evelyn,2,allowance
+2015-10-19,josephine,1,allowance
+2015-10-26,anderson,32,babysitting
+2015-10-26,anderson,3,allowance
+2015-10-26,evelyn,2,allowance
+2015-10-26,josephine,1,allowance
+2015-10-29,anderson,-20,cash out halloween dance
+2015-11-02,anderson,3,allowance
+2015-11-02,evelyn,2,allowance
+2015-11-02,josephine,1,allowance
+2015-11-09,anderson,3,allowance
+2015-11-09,evelyn,2,allowance
+2015-11-09,josephine,1,allowance
+2015-11-16,anderson,3,allowance
+2015-11-16,evelyn,2,allowance
+2015-11-16,josephine,1,allowance
+2015-11-23,anderson,3,allowance
+2015-11-23,evelyn,2,allowance
+2015-11-23,josephine,1,allowance
+2015-11-30,anderson,3,allowance
+2015-11-30,evelyn,2,allowance
+2015-11-30,josephine,1,allowance
+2015-12-07,anderson,3,allowance
+2015-12-07,evelyn,2,allowance
+2015-12-07,josephine,1,allowance
+2015-12-10,anderson,-5,cash out
+2015-12-14,anderson,3,allowance
+2015-12-14,evelyn,2,allowance
+2015-12-14,josephine,1,allowance
+2015-12-21,anderson,3,allowance
+2015-12-21,evelyn,2,allowance
+2015-12-21,josephine,1,allowance
+2015-12-22,anderson,-17,cash out
+2015-12-22,evelyn,-12,cash out
+2015-12-25,anderson,-9,xmas present
+2015-12-25,evelyn,-11,xmas present
+2015-12-25,josephine,-5,xmas present
+2015-12-28,anderson,3,allowance
+2015-12-28,evelyn,2,allowance
+2015-12-28,josephine,1,allowance
+2015-12-30,evelyn,20,cash in
+2016-01-01,anderson,30,refereeing
+2016-01-04,anderson,3,allowance
+2016-01-04,evelyn,2,allowance
+2016-01-04,josephine,1,allowance
+2016-01-11,anderson,3,allowance
+2016-01-11,anderson,-5,screen cash out 
+2016-01-11,evelyn,2,allowance
+2016-01-11,josephine,1,allowance
+2016-01-18,anderson,3,allowance
+2016-01-18,evelyn,2,allowance
+2016-01-18,josephine,1,allowance
+2016-01-25,anderson,3,allowance
+2016-01-25,evelyn,2,allowance
+2016-01-25,josephine,1,allowance
+2016-02-01,anderson,3,allowance
+2016-02-01,evelyn,2,allowance
+2016-02-01,josephine,1,allowance
+2016-02-08,anderson,3,allowance
+2016-02-08,evelyn,2,allowance
+2016-02-08,josephine,1,allowance
+2016-02-15,anderson,3,allowance
+2016-02-15,anderson,3,allowance
+2016-02-15,evelyn,2,allowance
+2016-02-15,evelyn,2,allowance
+2016-02-15,josephine,1,allowance
+2016-02-15,josephine,1,allowance
+2016-02-22,anderson,3,allowance
+2016-02-22,evelyn,2,allowance
+2016-02-22,josephine,1,allowance
+2016-02-29,anderson,3,allowance
+2016-02-29,evelyn,2,allowance
+2016-02-29,josephine,1,allowance
+2016-03-07,anderson,3,allowance
+2016-03-07,evelyn,2,allowance
+2016-03-07,josephine,1,allowance
+2016-03-14,anderson,3,allowance
+2016-03-14,evelyn,2,allowance
+2016-03-14,josephine,1,allowance
+2016-03-21,anderson,3,allowance
+2016-03-21,evelyn,2,allowance
+2016-03-21,josephine,1,allowance
+2016-03-28,anderson,3,allowance
+2016-03-28,evelyn,2,allowance
+2016-03-28,josephine,1,allowance
+2016-04-04,anderson,3,allowance
+2016-04-04,evelyn,2,allowance
+2016-04-04,josephine,1,allowance
+2016-04-11,anderson,3,allowance
+2016-04-11,evelyn,2,allowance
+2016-04-11,josephine,1,allowance
+2016-04-18,anderson,3,allowance
+2016-04-18,anderson,3,allowance
+2016-04-18,anderson,45,cash in
+2016-04-18,anderson,50,Christmas present
+2016-04-18,evelyn,2,allowance
+2016-04-18,evelyn,2,allowance
+2016-04-18,evelyn,-3,cash out
+2016-04-18,josephine,1,allowance
+2016-04-18,josephine,1,allowance
+2016-04-25,anderson,3,allowance
+2016-04-25,evelyn,2,allowance
+2016-04-25,josephine,1,allowance
+2016-05-02,anderson,3,allowance
+2016-05-02,evelyn,2,allowance
+2016-05-02,josephine,1,allowance
+2016-05-07,anderson,-500,cheque 342 out
+2016-05-09,anderson,3,allowance
+2016-05-09,evelyn,2,allowance
+2016-05-09,josephine,1,allowance
+2016-05-16,anderson,-246.83,DS purchase
+2016-05-16,anderson,3,allowance
+2016-05-16,evelyn,2,allowance
+2016-05-16,evelyn,-5,icecream at Granville Island
+2016-05-16,josephine,1,allowance
+2016-05-16,josephine,-5,icecream at Granville Island
+2016-05-23,anderson,3,allowance
+2016-05-23,evelyn,2,allowance
+2016-05-23,josephine,1,allowance
+2016-05-30,anderson,3,allowance
+2016-05-30,evelyn,2,allowance
+2016-05-30,josephine,1,allowance
+2016-06-06,anderson,3,allowance
+2016-06-06,evelyn,2,allowance
+2016-06-06,josephine,1,allowance
+2016-06-13,anderson,3,allowance
+2016-06-13,evelyn,2,allowance
+2016-06-13,josephine,1,allowance
+2016-06-20,anderson,3,allowance
+2016-06-20,evelyn,2,allowance
+2016-06-20,josephine,1,allowance
+2016-06-27,anderson,3,allowance
+2016-06-27,anderson,-5,miscellany
+2016-06-27,evelyn,2,allowance
+2016-06-27,evelyn,-5,miscellany
+2016-06-27,josephine,1,allowance
+2016-07-04,anderson,3,allowance
+2016-07-04,evelyn,2,allowance
+2016-07-04,josephine,1,allowance
+2016-07-11,anderson,3,allowance
+2016-07-11,evelyn,2,allowance
+2016-07-11,josephine,1,allowance
+2016-07-18,anderson,3,allowance
+2016-07-18,evelyn,2,allowance
+2016-07-18,josephine,1,allowance
+2016-07-25,anderson,3,allowance
+2016-07-25,evelyn,2,allowance
+2016-07-25,josephine,1,allowance
+2016-08-01,anderson,3,allowance
+2016-08-01,evelyn,2,allowance
+2016-08-01,josephine,1,allowance
+2016-08-08,anderson,3,allowance
+2016-08-08,evelyn,2,allowance
+2016-08-08,josephine,1,allowance
+2016-08-15,anderson,3,allowance
+2016-08-15,evelyn,2,allowance
+2016-08-15,josephine,1,allowance
+2016-08-22,anderson,3,allowance
+2016-08-22,evelyn,2,allowance
+2016-08-22,josephine,1,allowance
+2016-08-23,evelyn,-15,Europe souvenir
+2016-08-23,josephine,-15,Europe souvenir
+2016-08-23,josephine,-9,miscellany
+2016-08-29,anderson,3,allowance
+2016-08-29,evelyn,2,allowance
+2016-08-29,josephine,1,allowance
+2016-08-31,evelyn,20,cash in
+2016-09-05,anderson,3,allowance
+2016-09-05,evelyn,2,allowance
+2016-09-05,josephine,1,allowance
+2016-09-06,anderson,-40,Sherry BD present
+2016-09-06,evelyn,-35,Sherry BD present
+2016-09-06,josephine,-30,Sherry BD present
+2016-09-12,anderson,3,allowance
+2016-09-12,evelyn,2,allowance
+2016-09-12,josephine,1,allowance
+2016-09-19,anderson,3,allowance
+2016-09-19,evelyn,2,allowance
+2016-09-19,josephine,1,allowance
+2016-09-21,anderson,90,cash in
+2016-09-25,josephine,-14,goggles
+2016-09-26,anderson,3,allowance
+2016-09-26,evelyn,3,allowance
+2016-09-26,josephine,1,allowance
+2016-10-01,anderson,-10,drink and popcorn
+2016-10-03,anderson,3,allowance
+2016-10-03,evelyn,3,allowance
+2016-10-03,josephine,1,allowance
+2016-10-04,evelyn,-2.50,lemonade at Granville Island
+2016-10-06,anderson,5,euro return
+2016-10-10,anderson,3,allowance
+2016-10-10,evelyn,3,allowance
+2016-10-10,josephine,1,allowance
+2016-10-17,anderson,3,allowance
+2016-10-17,evelyn,3,allowance
+2016-10-17,josephine,1,allowance
+2016-10-24,anderson,3,allowance
+2016-10-24,evelyn,3,allowance
+2016-10-24,josephine,1,allowance
+2016-10-31,anderson,-10,Halloween lessons
+2016-10-31,anderson,3,allowance
+2016-10-31,evelyn,-10,Halloween lessons
+2016-10-31,evelyn,3,allowance
+2016-10-31,josephine,1,allowance
+2016-10-31,josephine,20,taking care of Nia Odong
+2016-10-31,josephine,-5,Halloween lessons
+2016-11-07,anderson,3,allowance
+2016-11-07,evelyn,3,allowance
+2016-11-07,josephine,1,allowance
+2016-11-14,anderson,3,allowance
+2016-11-14,evelyn,3,allowance
+2016-11-14,josephine,1,allowance
+2016-11-21,anderson,3,allowance
+2016-11-21,evelyn,3,allowance
+2016-11-21,josephine,1,allowance
+2016-11-28,anderson,3,allowance
+2016-11-28,evelyn,3,allowance
+2016-11-28,josephine,1,allowance
+2016-12-05,anderson,3,allowance
+2016-12-05,evelyn,3,allowance
+2016-12-05,josephine,1,allowance
+2016-12-10,anderson,26,cash in
+2016-12-10,evelyn,-3.50,candy spear
+2016-12-12,anderson,3,allowance
+2016-12-12,evelyn,3,allowance
+2016-12-12,josephine,1,allowance
+2016-12-18,evelyn,218.65,cash in
+2016-12-19,anderson,3,allowance
+2016-12-19,evelyn,3,allowance
+2016-12-19,josephine,1,allowance
+2016-12-25,anderson,403.5,cash in for xmas 100 from savannah 200 from georgia
+2016-12-26,anderson,3,allowance
+2016-12-26,evelyn,3,allowance
+2016-12-26,josephine,1,allowance
+2017-01-02,anderson,3,allowance
+2017-01-02,evelyn,3,allowance
+2017-01-02,josephine,1,allowance
+2017-01-09,anderson,3,allowance
+2017-01-09,evelyn,3,allowance
+2017-01-09,josephine,1,allowance
+2017-01-11,anderson,-1396.35,Asus Computer
+2017-01-14,anderson,50,cash in
+2017-01-14,evelyn,151.00,cash in
+2017-01-16,anderson,3,allowance
+2017-01-16,evelyn,3,allowance
+2017-01-16,josephine,1,allowance
+2017-01-23,anderson,3,allowance
+2017-01-23,evelyn,3,allowance
+2017-01-23,josephine,1,allowance
+2017-01-30,anderson,3,allowance
+2017-01-30,evelyn,3,allowance
+2017-01-30,josephine,1,allowance
+2017-02-06,anderson,3,allowance
+2017-02-06,evelyn,3,allowance
+2017-02-06,josephine,1,allowance
+2017-02-11,anderson,50,cash in
+2017-02-13,anderson,3,allowance
+2017-02-13,evelyn,3,allowance
+2017-02-13,josephine,1,allowance
+2017-02-19,evelyn,27,cash in
+2017-02-20,anderson,3,allowance
+2017-02-20,evelyn,3,allowance
+2017-02-20,josephine,1,allowance
+2017-02-25,anderson,880,cash from bank
+2017-02-25,evelyn,-500,cash to bank
+2017-02-26,anderson,51.10,Savannah gift card
+2017-02-26,anderson,-60,e-cigarette
+2017-02-26,evelyn,51.10,Savannah gift card
+2017-02-26,josephine,51.10,Savannah gift card
+2017-02-27,anderson,3,allowance
+2017-02-27,anderson,3,allowance
+2017-02-27,evelyn,3,allowance
+2017-02-27,evelyn,3,allowance
+2017-02-27,evelyn,40,cash out
+2017-02-27,josephine,1,allowance
+2017-02-27,josephine,1,allowance
+2017-03-01,anderson,-33.59,Titanfall 2
+2017-03-06,anderson,3,allowance
+2017-03-06,evelyn,3,allowance
+2017-03-06,josephine,1,allowance
+2017-03-10,evelyn,-40,cash from Mommy
+2017-03-12,evelyn,30,cash in
+2017-03-13,anderson,3,allowance
+2017-03-13,evelyn,3,allowance
+2017-03-13,josephine,1,allowance
+2017-03-19,evelyn,15,cash in
+2017-03-19,evelyn,30,cash in
+2017-03-20,anderson,3,allowance
+2017-03-20,evelyn,3,allowance
+2017-03-20,josephine,1,allowance
+2017-03-26,evelyn,-100,violin cash out
+2017-03-27,anderson,3,allowance
+2017-03-27,evelyn,3,allowance
+2017-03-27,josephine,1,allowance
+2017-03-28,evelyn,-40,cash out for clothes
+2017-04-03,anderson,3,allowance
+2017-04-03,evelyn,3,allowance
+2017-04-03,josephine,1,allowance
+2017-04-08,anderson,-47.00,Stream videogame
+2017-04-08,josephine,20,cash in
+2017-04-10,anderson,3,allowance
+2017-04-10,evelyn,3,allowance
+2017-04-10,josephine,1,allowance
+2017-04-14,evelyn,-20,cash out
+2017-04-17,anderson,3,allowance
+2017-04-17,evelyn,3,allowance
+2017-04-17,josephine,1,allowance
+2017-04-24,anderson,3,allowance
+2017-04-24,evelyn,3,allowance
+2017-04-24,josephine,1,allowance
+2017-05-01,anderson,3,allowance
+2017-05-01,evelyn,3,allowance
+2017-05-01,josephine,1,allowance
+2017-05-08,anderson,3,allowance
+2017-05-08,evelyn,3,allowance
+2017-05-08,josephine,1,allowance
+2017-05-15,anderson,3,allowance
+2017-05-15,evelyn,3,allowance
+2017-05-15,josephine,1,allowance
+2017-05-22,anderson,3,allowance
+2017-05-22,evelyn,3,allowance
+2017-05-22,josephine,1,allowance
+2017-05-29,anderson,3,allowance
+2017-05-29,evelyn,3,allowance
+2017-05-29,josephine,1,allowance
+2017-06-05,anderson,3,allowance
+2017-06-05,evelyn,3,allowance
+2017-06-05,josephine,1,allowance
+2017-06-09,evelyn,55,returning money lent
+2017-06-09,josephine,40,returning money lent
+2017-06-12,anderson,3,allowance
+2017-06-12,evelyn,3,allowance
+2017-06-12,josephine,1,allowance
+2017-06-19,anderson,3,allowance
+2017-06-19,anderson,52,cash in
+2017-06-19,evelyn,3,allowance
+2017-06-19,josephine,1,allowance
+2017-06-26,anderson,3,allowance
+2017-06-26,evelyn,3,allowance
+2017-06-26,josephine,1,allowance
+2017-07-03,anderson,3,allowance
+2017-07-03,evelyn,3,allowance
+2017-07-03,josephine,1,allowance
+2017-07-10,anderson,3,allowance
+2017-07-10,evelyn,3,allowance
+2017-07-10,josephine,1,allowance
+2017-07-17,anderson,3,allowance
+2017-07-17,evelyn,3,allowance
+2017-07-17,josephine,1,allowance
+2017-07-24,anderson,3,allowance
+2017-07-24,evelyn,3,allowance
+2017-07-24,josephine,1,allowance
+2017-07-31,anderson,3,allowance
+2017-07-31,evelyn,3,allowance
+2017-07-31,josephine,1,allowance
+2017-08-04,evelyn,-5.20,Starbucks
+2017-08-05,evelyn,-20.00,cash out
+2017-08-05,evelyn,-20.00,cash out (again)
+2017-08-07,anderson,3,allowance
+2017-08-07,evelyn,3,allowance
+2017-08-07,josephine,1,allowance
+2017-08-14,anderson,3,allowance
+2017-08-14,evelyn,3,allowance
+2017-08-14,josephine,1,allowance
+2017-08-15,josephine,12.65,cash in
+2017-08-15,josephine,63.73,bday gift from Grammy
+2017-08-21,anderson,3,allowance
+2017-08-21,evelyn,3,allowance
+2017-08-21,josephine,2,allowance
+2017-08-28,anderson,3,allowance
+2017-08-28,evelyn,3,allowance
+2017-08-28,josephine,2,allowance
+2017-09-01,anderson,62.84,Oetting birthday present
+2017-09-01,evelyn,62.84,Oetting birthday present
+2017-09-01,josephine,-11.15,Sherry birthday present at Pier One
+2017-09-01,josephine,25,Ella birthday present
+2017-09-01,josephine,62.84,Oetting birthday present
+2017-09-04,anderson,3,allowance
+2017-09-04,evelyn,3,allowance
+2017-09-04,josephine,2,allowance
+2017-09-11,anderson,3,allowance
+2017-09-11,evelyn,3,allowance
+2017-09-11,josephine,2,allowance
+2017-09-17,evelyn,50,cash in
+2017-09-18,anderson,3,allowance
+2017-09-18,evelyn,3,allowance
+2017-09-18,josephine,2,allowance
+2017-09-25,anderson,3,allowance
+2017-09-25,evelyn,3,allowance
+2017-09-25,josephine,2,allowance
+2017-10-02,anderson,3,allowance
+2017-10-02,evelyn,3,allowance
+2017-10-02,josephine,2,allowance
+2017-10-09,anderson,3,allowance
+2017-10-09,evelyn,3,allowance
+2017-10-09,josephine,2,allowance
+2017-10-11,anderson,-200,bicycle repair
+2017-10-16,anderson,3,allowance
+2017-10-16,evelyn,3,allowance
+2017-10-16,josephine,2,allowance
+2017-10-23,anderson,3,allowance
+2017-10-23,evelyn,3,allowance
+2017-10-23,josephine,2,allowance
+2017-10-30,anderson,3,allowance
+2017-10-30,evelyn,3,allowance
+2017-10-30,josephine,2,allowance
+2017-11-02,evelyn,70,cash in
+2017-11-06,anderson,12,cash in
+2017-11-06,anderson,3,allowance
+2017-11-06,anderson,-51.36,cash out
+2017-11-06,evelyn,10,cash out
+2017-11-06,evelyn,3,allowance
+2017-11-06,josephine,2,allowance
+2017-11-08,anderson,15,cash in
+2017-11-13,anderson,3,allowance
+2017-11-13,evelyn,3,allowance
+2017-11-13,josephine,2,allowance
+2017-11-20,anderson,3,allowance
+2017-11-20,evelyn,3,allowance
+2017-11-20,josephine,2,allowance
+2017-11-27,anderson,3,allowance
+2017-11-27,evelyn,3,allowance
+2017-11-27,josephine,2,allowance
+2017-12-04,anderson,3,allowance
+2017-12-04,evelyn,3,allowance
+2017-12-04,josephine,2,allowance
+2017-12-11,anderson,3,allowance
+2017-12-11,evelyn,3,allowance
+2017-12-11,josephine,2,allowance
+2017-12-18,anderson,3,allowance
+2017-12-18,evelyn,3,allowance
+2017-12-18,josephine,2,allowance
+2017-12-25,anderson,3,allowance
+2017-12-25,evelyn,3,allowance
+2017-12-25,josephine,2,allowance
+2017-12-26,anderson,-140,refereeing course
+2018-01-01,anderson,3,allowance
+2018-01-01,evelyn,3,allowance
+2018-01-01,josephine,2,allowance
+2018-01-08,anderson,3,allowance
+2018-01-08,evelyn,-18,cash out
+2018-01-08,evelyn,3,allowance
+2018-01-08,josephine,2,allowance
+2018-01-15,anderson,3,allowance
+2018-01-15,evelyn,3,allowance
+2018-01-15,josephine,2,allowance
+2018-01-18,anderson,20,IB application fee
+2018-01-18,anderson,60,food for TREK
+2018-01-22,anderson,3,allowance
+2018-01-22,evelyn,3,allowance
+2018-01-22,josephine,2,allowance
+2018-01-29,anderson,3,allowance
+2018-01-29,evelyn,3,allowance
+2018-01-29,josephine,2,allowance
+2018-02-04,evelyn,-20,sushi
+2018-02-04,josephine,-10,sushi
+2018-02-05,anderson,3,allowance
+2018-02-05,evelyn,3,allowance
+2018-02-05,josephine,2,allowance
+2018-02-12,anderson,3,allowance
+2018-02-12,evelyn,3,allowance
+2018-02-12,josephine,2,allowance
+2018-02-19,anderson,-14,Black Panther
+2018-02-19,anderson,3,allowance
+2018-02-19,evelyn,3,allowance
+2018-02-19,josephine,2,allowance
+2018-02-26,anderson,5,allowance
+2018-02-26,evelyn,3,allowance
+2018-02-26,josephine,2,allowance
+2018-03-05,anderson,5,allowance
+2018-03-05,evelyn,3,allowance
+2018-03-05,josephine,2,allowance
+2018-03-09,anderson,63,Grammie birthday cheque
+2018-03-11,anderson,-63,cash out
+2018-03-12,anderson,5,allowance
+2018-03-12,evelyn,3,allowance
+2018-03-12,josephine,2,allowance
+2018-03-18,evelyn,-10,cash out
+2018-03-18,evelyn,7.60,skating
+2018-03-18,josephine,-5,cash out
+2018-03-18,josephine,7.60,skating
+2018-03-19,anderson,5,allowance
+2018-03-19,evelyn,3,allowance
+2018-03-19,josephine,2,allowance
+2018-03-26,anderson,5,allowance
+2018-03-26,evelyn,3,allowance
+2018-03-26,josephine,2,allowance
+2018-03-28,evelyn,-20,cash out
+2018-04-02,anderson,5,allowance
+2018-04-02,evelyn,3,allowance
+2018-04-02,josephine,2,allowance
+2018-04-09,anderson,5,allowance
+2018-04-09,evelyn,3,allowance
+2018-04-09,josephine,2,allowance
+2018-04-11,evelyn,10,babysitting cash in
+2018-04-11,evelyn,63,Grammie birthday
+2018-04-16,anderson,5,allowance
+2018-04-16,evelyn,-15.66,ferry purchase
+2018-04-16,evelyn,3,allowance
+2018-04-16,josephine,2,allowance
+2018-04-23,anderson,5,allowance
+2018-04-23,evelyn,3,allowance
+2018-04-23,josephine,2,allowance
+2018-04-26,evelyn,-10,cash out
+2018-04-30,anderson,5,allowance
+2018-04-30,evelyn,3,allowance
+2018-04-30,josephine,2,allowance
+2018-05-02,anderson,-13.21,fortnite
+2018-05-07,anderson,5,allowance
+2018-05-07,evelyn,3,allowance
+2018-05-07,josephine,2,allowance
+2018-05-14,anderson,5,allowance
+2018-05-14,evelyn,3,allowance
+2018-05-14,josephine,2,allowance
+2018-05-20,evelyn,-20,cash out
+2018-05-21,anderson,5,allowance
+2018-05-21,evelyn,3,allowance
+2018-05-21,josephine,2,allowance
+2018-05-28,anderson,5,allowance
+2018-05-28,evelyn,3,allowance
+2018-05-28,josephine,2,allowance
+2018-06-02,evelyn,-2.25,thor
+2018-06-02,josephine,-1.25,thor
+2018-06-04,anderson,5,allowance
+2018-06-04,evelyn,3,allowance
+2018-06-04,josephine,2,allowance
+2018-06-08,josephine,30,Nia sitting
+2018-06-11,anderson,5,allowance
+2018-06-11,evelyn,3,allowance
+2018-06-11,josephine,2,allowance
+2018-06-18,anderson,5,allowance
+2018-06-18,evelyn,3,allowance
+2018-06-18,josephine,2,allowance
+2018-06-22,evelyn,24.5,cash in
+2018-06-22,evelyn,57,cash in
+2018-06-25,anderson,5,allowance
+2018-06-25,evelyn,3,allowance
+2018-06-25,josephine,2,allowance
+2018-06-28,evelyn,8.48,cash in
+2018-07-02,anderson,5,allowance
+2018-07-02,evelyn,3,allowance
+2018-07-02,josephine,2,allowance
+2018-07-09,anderson,5,allowance
+2018-07-09,evelyn,3,allowance
+2018-07-09,josephine,2,allowance
+2018-07-16,anderson,5,allowance
+2018-07-16,evelyn,3,allowance
+2018-07-16,josephine,2,allowance
+2018-07-18,anderson,50,US cash in from Savannah Kuhns
+2018-07-18,evelyn,50,US cash in from Savannah Kuhns
+2018-07-18,josephine,25,US cash in from Savannah Kuhns
+2018-07-22,evelyn,12.00,cash in
+2018-07-23,anderson,5,allowance
+2018-07-23,evelyn,3,allowance
+2018-07-23,josephine,2,allowance
+2018-07-30,anderson,5,allowance
+2018-07-30,evelyn,3,allowance
+2018-07-30,josephine,2,allowance
+2018-08-06,anderson,5,allowance
+2018-08-06,evelyn,3,allowance
+2018-08-06,josephine,2,allowance
+2018-08-13,anderson,5,allowance
+2018-08-13,evelyn,3,allowance
+2018-08-13,josephine,2,allowance
+2018-08-20,anderson,5,allowance
+2018-08-20,evelyn,3,allowance
+2018-08-20,josephine,2,allowance
+2018-08-24,evelyn,-20.00,cash out
+2018-08-27,anderson,5,allowance
+2018-08-27,evelyn,3,allowance
+2018-08-27,josephine,2,allowance
+2018-09-03,anderson,5,allowance
+2018-09-03,evelyn,3,allowance
+2018-09-03,josephine,2,allowance
+2018-09-04,anderson,10.27,credit for McDonalds meal
+2018-09-04,anderson,-20.00,cash out
+2018-09-04,evelyn,25.00,cash in
+2018-09-04,josephine,15.42,cash in and receipts
+2018-09-04,josephine,25.00,cash in for Cineplex gift card
+2018-09-09,anderson,-16.50,cash out for Mommys bd
+2018-09-09,josephine,-13.50,cash out for Mommys bd
+2018-09-10,anderson,5,allowance
+2018-09-10,evelyn,3,allowance
+2018-09-10,josephine,2,allowance
+2018-09-17,anderson,5,allowance
+2018-09-17,evelyn,3,allowance
+2018-09-17,josephine,2,allowance
+2018-09-24,anderson,5,allowance
+2018-09-24,evelyn,3,allowance
+2018-09-24,josephine,2,allowance
+2018-10-01,anderson,5,allowance
+2018-10-01,evelyn,3,allowance
+2018-10-01,josephine,2,allowance
+2018-10-08,anderson,5,allowance
+2018-10-08,evelyn,3,allowance
+2018-10-08,josephine,2,allowance
+2018-10-15,anderson,5,allowance
+2018-10-15,evelyn,3,allowance
+2018-10-15,josephine,2,allowance
+2018-10-22,anderson,5,allowance
+2018-10-22,evelyn,3,allowance
+2018-10-22,josephine,2,allowance
+2018-10-29,anderson,5,allowance
+2018-10-29,evelyn,3,allowance
+2018-10-29,josephine,2,allowance
+2018-11-05,anderson,5,allowance
+2018-11-05,evelyn,3,allowance
+2018-11-05,josephine,2,allowance
+2018-11-12,anderson,5,allowance
+2018-11-12,evelyn,3,allowance
+2018-11-12,josephine,2,allowance
+2018-11-19,anderson,5,allowance
+2018-11-19,evelyn,3,allowance
+2018-11-19,josephine,2,allowance
+2018-11-26,anderson,5,allowance
+2018-11-26,evelyn,3,allowance
+2018-11-26,josephine,2,allowance
+2018-10-31,evelyn,-25,cash out
+2018-10-31,anderson,-20,ski club
+2018-10-31,josephine,-15,cash out
+2018-11-20,anderson,-51.5,cash out
+2018-11-20,evelyn,-300,aspen
+2018-11-20,josephine,-200,aspen
+2018-12-01,anderson,-25,cash out
+2018-12-06,anderson,24.25,Choices receipt
+2018-12-06,anderson,6.49,Choices receipt
+2018-12-07,evelyn,-3,cash out
+2018-12-10,evelyn,41,cash in
+2018-12-15,anderson,-40,cash out
+2018-12-15,evelyn,40,cash in
+2018-12-15,evelyn,22,cash in
+2018-12-24,josephine,-40,cash out
+2018-12-24,anderson,-20,cash out
+2018-12-28,anderson,-50,cash out
+2018-12-30,anderson,9.45,lunch
+2018-12-30,anderson,6.28,lunch
+2018-12-31,evelyn,-12.00,library book
+2018-12-31,evelyn,-80.00,iphone
+2018-12-03,anderson,5,allowance
+2018-12-03,evelyn,3,allowance
+2018-12-03,josephine,2,allowance
+2018-12-10,anderson,5,allowance
+2018-12-10,evelyn,3,allowance
+2018-12-10,josephine,2,allowance
+2018-12-17,anderson,5,allowance
+2018-12-17,evelyn,3,allowance
+2018-12-17,josephine,2,allowance
+2018-12-24,anderson,5,allowance
+2018-12-24,evelyn,3,allowance
+2018-12-24,josephine,2,allowance
+2018-12-31,anderson,5,allowance
+2018-12-31,evelyn,3,allowance
+2018-12-31,josephine,2,allowance
+2019-01-07,anderson,5,allowance
+2019-01-07,evelyn,3,allowance
+2019-01-07,josephine,2,allowance
+2019-01-14,anderson,5,allowance
+2019-01-14,evelyn,3,allowance
+2019-01-14,josephine,2,allowance
+2019-01-21,anderson,5,allowance
+2019-01-21,evelyn,3,allowance
+2019-01-21,josephine,2,allowance
+2019-01-28,anderson,5,allowance
+2019-01-28,evelyn,3,allowance
+2019-01-28,josephine,2,allowance
+2019-02-04,anderson,5,allowance
+2019-02-04,evelyn,3,allowance
+2019-02-04,josephine,2,allowance
+2019-02-06,anderson,63.83,allowance
+2019-02-11,anderson,5,allowance
+2019-02-11,evelyn,3,allowance
+2019-02-11,josephine,2,allowance
+2019-02-18,anderson,5,allowance
+2019-02-18,evelyn,3,allowance
+2019-02-18,josephine,2,allowance
+2019-02-25,anderson,5,allowance
+2019-02-25,evelyn,3,allowance
+2019-02-25,josephine,2,allowance
+2019-01-28,evelyn,-17,cash out for missed piano lesson
+2019-02-06,evelyn,-5,cash out
+2019-02-23,evelyn,21.50,cash in
+2019-03-02,anderson,-43.10,work shoes
+2019-03-11,anderson,8.00,dinner at Earles
+2019-03-13,anderson,15.00,Grammies cheque
+2019-03-23,evelyn,12.44,cash in
+2019-03-23,evelyn,70,cash in
+2019-03-25,anderson,-60.00,division 2
+2019-04-16,evelyn,-100,retainers
+2019-04-22,josephine,-10,minecraft
+2019-05-13,anderson,-10.50,cash out
+2019-03-04,evelyn,3,allowance
+2019-03-04,josephine,2,allowance
+2019-03-04,anderson,5,allowance
+2019-03-11,evelyn,3,allowance
+2019-03-11,josephine,2,allowance
+2019-03-11,anderson,5,allowance
+2019-03-18,evelyn,3,allowance
+2019-03-18,josephine,2,allowance
+2019-03-18,anderson,5,allowance
+2019-03-25,evelyn,3,allowance
+2019-03-25,josephine,2,allowance
+2019-03-25,anderson,5,allowance
+2019-04-01,evelyn,3,allowance
+2019-04-01,josephine,2,allowance
+2019-04-01,anderson,5,allowance
+2019-04-08,evelyn,3,allowance
+2019-04-08,josephine,2,allowance
+2019-04-08,anderson,5,allowance
+2019-04-15,evelyn,3,allowance
+2019-04-15,josephine,2,allowance
+2019-04-15,anderson,5,allowance
+2019-04-22,evelyn,3,allowance
+2019-04-22,josephine,2,allowance
+2019-04-22,anderson,5,allowance
+2019-04-29,evelyn,3,allowance
+2019-04-29,josephine,2,allowance
+2019-04-29,anderson,5,allowance
+2019-05-06,evelyn,3,allowance
+2019-05-06,josephine,2,allowance
+2019-05-06,anderson,5,allowance
+2019-05-13,evelyn,3,allowance
+2019-05-13,josephine,2,allowance
+2019-05-13,anderson,5,allowance
+2019-05-20,anderson,5,allowance
+2019-05-20,evelyn,3,allowance
+2019-05-20,josephine,2,allowance
+2019-05-27,evelyn,3,allowance
+2019-05-27,josephine,2,allowance
+2019-05-27,anderson,5,allowance
+2019-05-13,josephine,-20,cash out
+2019-05-19,evelyn,-20,cash out
+2019-05-25,josephine,-20,cash out
+2019-05-25,evelyn,-5,cash out
+2019-06-01,evelyn,-10,cash out
+2019-06-04,evelyn,-10,cash out
+2019-06-09,anderson,-20,cash out
+2019-06-23,evelyn,-10,cash out
+2019-07-02,anderson,-10,cash out
+2019-07-03,evelyn,-20,cash out
+2018-07-01,anderson,-17.99,Spiderman
+2019-07-03,evelyn,-10,cash out
+2019-07-03,josephine,-10,cash out
+2019-06-03,anderson,5,allowance
+2019-06-03,evelyn,3,allowance
+2019-06-03,josephine,2,allowance
+2019-06-10,anderson,5,allowance
+2019-06-10,evelyn,3,allowance
+2019-06-10,josephine,2,allowance
+2019-06-17,anderson,5,allowance
+2019-06-17,evelyn,3,allowance
+2019-06-17,josephine,2,allowance
+2019-06-24,anderson,5,allowance
+2019-06-24,evelyn,3,allowance
+2019-06-24,josephine,2,allowance
+2019-07-01,anderson,5,allowance
+2019-07-01,evelyn,3,allowance
+2019-07-01,josephine,2,allowance
+2019-07-08,anderson,5,allowance
+2019-07-08,evelyn,3,allowance
+2019-07-08,josephine,2,allowance
+2019-07-15,anderson,5,allowance
+2019-07-15,evelyn,3,allowance
+2019-07-15,josephine,2,allowance
+2019-07-22,anderson,5,allowance
+2019-07-22,evelyn,3,allowance
+2019-07-22,josephine,2,allowance
+2019-07-29,anderson,5,allowance
+2019-07-29,evelyn,3,allowance
+2019-07-29,josephine,2,allowance
+2019-07-31,evelyn,-20,cash out
+2019-08-04,evelyn,-20,cash out
+2019-08-15,evelyn,-8.90,lost compass card
+2019-08-15,anderson,-1.00,lost compass card
+2019-08-31,josephine,66.30,birthday money from grammie
+2019-09-01,evelyn,-40,cash out
+2019-09-16,anderson,-15.41,cash out
+2019-09-25,anderson,-224.00,cash out
+2019-09-28,anderson,100.00,cash in
+2019-09-30,anderson,-6.00,cash out
+2019-09-30,evelyn,-30.00,cash out
+2019-10-02,anderson,-75.00,cash out
+2019-10-07,josephine,-30.00,cash out
+2019-10-05,josephine,27.28,dairy queen
+2019-10-11,josephine,-10.00,cash out
+2019-10-12,anderson,-20.00,cash out
+2019-10-12,anderson,3.00,cash in
+2019-10-14,josephine,-20.00,cash out
+2019-10-16,evelyn,-1.90,cash out
+2019-11-01,anderson,-55.00,cash out
+2019-11-04,anderson,-28.00,cash out
+2019-11-04,evelyn,-28.00,cash out
+2019-11-09,anderson,14.00,cash in
+2019-11-11,josephine,-20.00,cash out
+2019-11-26,anderson,-2.00,cash out
+2019-11-28,anderson,-10.00,cash out
+2019-11-28,anderson,-20.00,cash out
+2019-12-04,evelyn,-6.00,cash out
+2019-08-05,anderson,5,allowance
+2019-08-05,evelyn,3,allowance
+2019-08-05,josephine,2,allowance
+2019-08-12,anderson,5,allowance
+2019-08-12,evelyn,3,allowance
+2019-08-12,josephine,2,allowance
+2019-08-19,anderson,5,allowance
+2019-08-19,evelyn,3,allowance
+2019-08-19,josephine,3,allowance
+2019-08-26,anderson,5,allowance
+2019-08-26,evelyn,3,allowance
+2019-08-26,josephine,2,allowance
+2019-09-02,anderson,5,allowance
+2019-09-02,evelyn,3,allowance
+2019-09-02,josephine,3,allowance
+2019-09-09,anderson,5,allowance
+2019-09-09,evelyn,3,allowance
+2019-09-09,josephine,3,allowance
+2019-09-16,anderson,5,allowance
+2019-09-16,evelyn,3,allowance
+2019-09-16,josephine,3,allowance
+2019-09-23,anderson,5,allowance
+2019-09-23,evelyn,3,allowance
+2019-09-23,josephine,3,allowance
+2019-09-30,anderson,5,allowance
+2019-09-30,evelyn,3,allowance
+2019-09-30,josephine,3,allowance
+2019-10-07,anderson,5,allowance
+2019-10-07,evelyn,3,allowance
+2019-10-07,josephine,3,allowance
+2019-10-14,anderson,5,allowance
+2019-10-14,evelyn,3,allowance
+2019-10-14,josephine,3,allowance
+2019-10-21,anderson,5,allowance
+2019-10-21,evelyn,3,allowance
+2019-10-21,josephine,3,allowance
+2019-10-28,anderson,5,allowance
+2019-10-28,evelyn,3,allowance
+2019-10-28,josephine,3,allowance
+2019-11-04,anderson,5,allowance
+2019-11-04,evelyn,3,allowance
+2019-11-04,josephine,3,allowance
+2019-11-11,anderson,5,allowance
+2019-11-11,evelyn,3,allowance
+2019-11-11,josephine,3,allowance
+2019-11-18,anderson,5,allowance
+2019-11-18,evelyn,3,allowance
+2019-11-18,josephine,3,allowance
+2019-11-25,anderson,5,allowance
+2019-11-25,evelyn,3,allowance
+2019-11-25,josephine,3,allowance
+2019-12-02,anderson,5,allowance
+2019-12-02,evelyn,3,allowance
+2019-12-02,josephine,3,allowance
+2019-12-09,anderson,5,allowance
+2019-12-09,evelyn,3,allowance
+2019-12-09,josephine,3,allowance
+2019-12-16,anderson,5,allowance
+2019-12-16,evelyn,3,allowance
+2019-12-16,josephine,3,allowance
+2019-12-23,anderson,5,allowance
+2019-12-23,evelyn,3,allowance
+2019-12-23,josephine,3,allowance
+2019-12-30,anderson,5,allowance
+2019-12-30,evelyn,3,allowance
+2019-12-30,josephine,3,allowance
+2019-12-08,anderson,-20.00,cash out
+2019-12-12,josephine,-50.00,cash out
+2019-12-18,anderson,-50.00,cash out
+2019-12-18,josephine,-5.00,cash out
+2019-12-28,anderson,4594.96,Margit gift
+2019-12-28,anderson,65.77,Savannah Kuhn xmas amazon card
+2019-12-28,anderson,-90.00,cash out
+2019-12-28,anderson,65.77,Grammie xmas cheque
+2019-12-28,anderson,197.31,Amy and Greg xmas cash
+2019-12-31,evelyn,-15,make up
+2019-12-31,anderson,-50.00,computer
+2019-12-31,anderson,-503.99,computer
+2019-12-31,anderson,-179.19,computer
+2019-12-31,anderson,-150.06,computer
+2019-12-31,anderson,-72.79,computer
+2019-12-31,anderson,-89.59,computer
+2019-12-31,anderson,-162.39,computer
+2019-12-31,anderson,-110.86,computer
+2019-12-31,anderson,-312.46,computer
+2019-12-31,anderson,-14.12,computer
+2019-01-06,evelyn,-9.50,eye lash glue
+2020-01-11,anderson,25.00,macdonalds
+2020-01-11,anderson,-100.00,youth retreat
+2020-01-15,josephine,-20.00,cash out
+2020-02-03,anderson,-20.00,cash out
+2020-02-09,evelyn,35.60,sushi
+2020-02-25,anderson,-11.55,mcdonalds
+2020-03-14,josephine,-35.00,cash out
+2020-03-15,anderson,-45,cash out
+2020-03-15,anderson,2.19,cash in
+2020-03-15,anderson,6.49,cash in
+2020-03-15,anderson,-5.00,cash out
+2020-03-15,evelyn,5.00,cash in
+2020-03-25,anderson,-20.00,cash out
+2020-03-29,josephine,-250.00,iphone
+2020-04-04,anderson,60.00,transfer
+2020-04-04,evelyn,-60.00,transfer
+2020-05-07,anderson,-15.94,a and w
+2020-05-07,evelyn,-23.40,a and w
+2020-06-08,josephine,-8.00,cash out
+2020-01-06,anderson,5,allowance
+2020-01-06,evelyn,3,allowance
+2020-01-06,josephine,3,allowance
+2020-01-13,anderson,5,allowance
+2020-01-13,evelyn,3,allowance
+2020-01-13,josephine,3,allowance
+2020-01-20,anderson,5,allowance
+2020-01-20,evelyn,3,allowance
+2020-01-20,josephine,3,allowance
+2020-01-27,anderson,5,allowance
+2020-01-27,evelyn,3,allowance
+2020-01-27,josephine,3,allowance
+2020-02-03,anderson,5,allowance
+2020-02-03,evelyn,3,allowance
+2020-02-03,josephine,3,allowance
+2020-02-10,anderson,5,allowance
+2020-02-10,evelyn,3,allowance
+2020-02-10,josephine,3,allowance
+2020-02-17,anderson,5,allowance
+2020-02-17,evelyn,3,allowance
+2020-02-17,josephine,3,allowance
+2020-02-24,anderson,5,allowance
+2020-02-24,evelyn,3,allowance
+2020-02-24,josephine,3,allowance
+2020-03-02,anderson,5,allowance
+2020-03-02,evelyn,3,allowance
+2020-03-02,josephine,3,allowance
+2020-03-09,anderson,5,allowance
+2020-03-09,evelyn,3,allowance
+2020-03-09,josephine,3,allowance
+2020-03-16,anderson,5,allowance
+2020-03-16,evelyn,3,allowance
+2020-03-16,josephine,3,allowance
+2020-03-23,anderson,5,allowance
+2020-03-23,evelyn,5,allowance
+2020-03-23,josephine,3,allowance
+2020-03-30,anderson,5,allowance
+2020-03-30,evelyn,5,allowance
+2020-03-30,josephine,3,allowance
+2020-04-06,anderson,5,allowance
+2020-04-06,evelyn,5,allowance
+2020-04-06,josephine,3,allowance
+2020-04-13,anderson,5,allowance
+2020-04-13,evelyn,5,allowance
+2020-04-13,josephine,3,allowance
+2020-04-20,anderson,5,allowance
+2020-04-20,evelyn,5,allowance
+2020-04-20,josephine,3,allowance
+2020-04-27,anderson,5,allowance
+2020-04-27,evelyn,5,allowance
+2020-04-27,josephine,3,allowance
+2020-05-04,anderson,5,allowance
+2020-05-04,evelyn,5,allowance
+2020-05-04,josephine,3,allowance
+2020-05-11,anderson,5,allowance
+2020-05-11,evelyn,5,allowance
+2020-05-11,josephine,3,allowance
+2020-05-18,anderson,5,allowance
+2020-05-18,evelyn,5,allowance
+2020-05-18,josephine,3,allowance
+2020-05-25,anderson,5,allowance
+2020-05-25,evelyn,5,allowance
+2020-05-25,josephine,3,allowance
+2020-06-01,anderson,5,allowance
+2020-06-01,evelyn,5,allowance
+2020-06-01,josephine,3,allowance
+2020-06-08,anderson,5,allowance
+2020-06-08,evelyn,5,allowance
+2020-06-08,josephine,3,allowance
+2020-06-15,josephine,-10,cash out
+2020-06-17,anderson,135.31,grammie for grad
+2020-06-29,anderson,-12.19,steam
+2020-06-29,evelyn,-20.00,cash out
+2020-06-30,evelyn,-10.00,cash out
+2020-06-30,evelyn,-28.60,LED lights
+2020-06-30,josephine,-5.00,cash out
+2020-07-02,anderson,-36.50,steam
+2020-07-05,anderson,67.68,for grad from Doris
+2020-07-08,anderson,-1.20,steam
+2020-07-08,anderson,-11.99,steam
+2020-07-11,anderson,-22,steam
+2020-07-18,josephine,-20.00,cash out
+2020-07-27,evelyn,-10,cash out
+2020-08-02,anderson,-10,cash
+2020-08-04,anderson,-10,cash
+2020-08-04,evelyn,-200,orthodontist retainer replacement
+2020-08-04,evelyn,140,Magaly catsitting
+2020-08-12,anderson,-6,compass card replacement
+2020-08-12,anderson,1337.20,500 from Oettings 500 from Savannah Kuhns
+2020-08-12,anderson,-60,steam
+2020-08-14,anderson,66.23,Grammie birthday cheque
+2020-08-14,anderson,78.35,Maria graduation present
+2020-08-18,anderson,59.85,Churchs chicken
+2020-08-19,josephine,66.08,Grammie birthday cheque
+2020-08-21,anderson,161.21,Jodi graduation amazon gift card
+2020-08-19,josephine,30.00,Russell watering
+2020-08-26,anderson,-5.50,steam
+2020-08-29,josephine,100.00,Magaly bd present
+2020-09-01,anderson,-48.86,webcam
+2020-09-01,anderson,-500,education contribution
+2020-06-15,anderson,5,allowance
+2020-06-15,evelyn,5,allowance
+2020-06-15,josephine,3,allowance
+2020-06-22,anderson,5,allowance
+2020-06-22,evelyn,5,allowance
+2020-06-22,josephine,3,allowance
+2020-06-29,anderson,5,allowance
+2020-06-29,evelyn,5,allowance
+2020-06-29,josephine,3,allowance
+2020-07-06,anderson,5,allowance
+2020-07-06,evelyn,5,allowance
+2020-07-06,josephine,3,allowance
+2020-07-13,anderson,5,allowance
+2020-07-13,evelyn,5,allowance
+2020-07-13,josephine,3,allowance
+2020-07-20,anderson,5,allowance
+2020-07-20,evelyn,5,allowance
+2020-07-20,josephine,3,allowance
+2020-07-27,anderson,5,allowance
+2020-07-27,evelyn,5,allowance
+2020-07-27,josephine,3,allowance
+2020-08-03,anderson,5,allowance
+2020-08-03,evelyn,5,allowance
+2020-08-03,josephine,3,allowance
+2020-08-10,anderson,5,allowance
+2020-08-10,evelyn,5,allowance
+2020-08-10,josephine,3,allowance
+2020-08-17,anderson,5,allowance
+2020-08-17,evelyn,5,allowance
+2020-08-17,josephine,3,allowance
+2020-08-24,anderson,5,allowance
+2020-08-24,evelyn,5,allowance
+2020-08-24,josephine,3,allowance
+2020-08-31,anderson,5,allowance
+2020-08-31,evelyn,5,allowance
+2020-08-31,josephine,3,allowance
+2020-09-05,anderson,-33.50,online purchase
+2020-09-05,anderson,-94.50,textbook
+2020-09-16,josephine,15,watering for neighbours
+2020-09-17,josephine,-50,iphone
+2020-09-17,evelyn,-300,iphone
+2020-10-01,anderson,-500,education contribution
+2020-10-01,anderson,-20,email request
+2020-10-07,anderson,-44.84,email request
+2020-10-10,evelyn,-15,cash out
+2020-10-25,evelyn,-16,skirt return
+2020-11-01,anderson,-11,steam
+2020-11-08,josephine,-6,compass card replacement
+2020-09-07,evelyn,5,allowance
+2020-09-07,josephine,3,allowance
+2020-09-14,evelyn,5,allowance
+2020-09-14,josephine,3,allowance
+2020-09-21,evelyn,5,allowance
+2020-09-21,josephine,3,allowance
+2020-09-28,evelyn,5,allowance
+2020-09-28,josephine,3,allowance
+2020-10-05,evelyn,5,allowance
+2020-10-05,josephine,3,allowance
+2020-10-12,evelyn,5,allowance
+2020-10-12,josephine,3,allowance
+2020-10-19,evelyn,5,allowance
+2020-10-19,josephine,3,allowance
+2020-10-26,evelyn,5,allowance
+2020-10-26,josephine,3,allowance
+2020-11-02,evelyn,5,allowance
+2020-11-02,josephine,3,allowance
+2020-11-09,evelyn,5,allowance
+2020-11-09,josephine,3,allowance
+2020-11-16,evelyn,5,allowance
+2020-11-16,josephine,3,allowance
+2020-11-23,evelyn,5,allowance
+2020-11-23,josephine,3,allowance
+2020-11-30,evelyn,5,allowance
+2020-11-30,josephine,3,allowance
+2020-11-01,anderson,-500,education contribution
+2020-12-01,anderson,-500,education contribution
+2020-11-05,anderson,2942,Canada GSL
+2020-11-05,anderson,-1961.30,Canada GSL sister shares
+2020-11-05,anderson,-333.33,BC scholarship sister shares
+2020-12-04,anderson,-22.02,McDonalds
+2020-12-08,anderson,-80,steam
+2020-12-09,anderson,-80,steam
+2020-12-23,anderson,-43.01,xmas present
+2020-12-25,anderson,50,Uncle John and Aunty Corey
+2020-12-25,evelyn,50,Uncle John and Aunty Corey
+2020-12-25,josephine,50,Uncle John and Aunty Corey
+2020-12-25,josephine,6,compass card return
+2020-12-26,anderson,-60,cash for skiing
+2020-12-26,anderson,60,cash returned
+2021-01-01,anderson,2943,Canada GSL
+2021-01-01,anderson,-1962,Canada GSL sister shares
+2021-01-01,anderson,-981,Canada GSL --> nine months later: why did I subtract this? but not 333.33 for BC grant?
+2020-12-25,anderson,63.60,Savannah Kuhn xmas amazon card
+2020-12-25,evelyn,63.60,Savannah Kuhn xmas amazon card
+2020-12-25,josephine,63.60,Savannah Kuhn xmas amazon card
+2021-01-19,evelyn,-20,cash out
+2021-01-26,anderson,-13,steam
+2021-02-18,evelyn,-22,sim card
+2021-03-01,anderson,-12,amazon purchase
+2021-02-20,anderson,-11.49,steam
+2021-03-07,anderson,-30,iphone purchase
+2021-03-18,anderson,62.23,Grammie bd present
+2021-03-18,anderson,-161.10,amazon prime membership
+2021-03-20,evelyn,62.23,Grammie bd present
+2021-03-20,anderson,-13.49,steam
+2021-04-10,anderson,-23.50,business name request
+2021-04-15,anderson,-5.00,paypal
+2021-04-26,josephine,-13.00,per email
+2021-04-29,josephine,-20.00,per email
+2021-04-30,anderson,-86.00,steam
+2021-05-03,anderson,-10.00,compass card
+2021-05-03,anderson,-20.00,cash
+2020-12-07,evelyn,5,allowance
+2020-12-07,josephine,3,allowance
+2020-12-14,evelyn,5,allowance
+2020-12-14,josephine,3,allowance
+2020-12-21,evelyn,5,allowance
+2020-12-21,josephine,3,allowance
+2020-12-28,evelyn,5,allowance
+2020-12-28,josephine,3,allowance
+2021-01-01,anderson,-500,education contribution
+2021-01-04,evelyn,5,allowance
+2021-01-04,josephine,3,allowance
+2021-01-11,evelyn,5,allowance
+2021-01-11,josephine,3,allowance
+2021-01-18,evelyn,5,allowance
+2021-01-18,josephine,3,allowance
+2021-01-25,evelyn,5,allowance
+2021-01-25,josephine,3,allowance
+2021-02-01,anderson,-500,education contribution
+2021-02-01,evelyn,5,allowance
+2021-02-01,josephine,3,allowance
+2021-02-08,evelyn,5,allowance
+2021-02-08,josephine,3,allowance
+2021-02-15,evelyn,5,allowance
+2021-02-15,josephine,3,allowance
+2021-02-22,evelyn,5,allowance
+2021-02-22,josephine,3,allowance
+2021-03-01,anderson,-500,education contribution
+2021-03-01,evelyn,5,allowance
+2021-03-01,josephine,3,allowance
+2021-03-08,evelyn,5,allowance
+2021-03-08,josephine,3,allowance
+2021-03-15,evelyn,5,allowance
+2021-03-15,josephine,3,allowance
+2021-03-22,evelyn,5,allowance
+2021-03-22,josephine,3,allowance
+2021-03-29,evelyn,5,allowance
+2021-03-29,josephine,3,allowance
+2021-04-01,anderson,-500,education contribution
+2021-04-05,evelyn,5,allowance
+2021-04-05,josephine,3,allowance
+2021-04-12,evelyn,5,allowance
+2021-04-12,josephine,3,allowance
+2021-04-19,evelyn,5,allowance
+2021-04-19,josephine,3,allowance
+2021-04-26,evelyn,5,allowance
+2021-04-26,josephine,3,allowance
+2021-05-01,anderson,-500,education contribution
+2021-05-03,evelyn,5,allowance
+2021-05-03,josephine,3,allowance
+2021-05-10,evelyn,5,allowance
+2021-05-10,josephine,3,allowance
+2021-05-17,evelyn,5,allowance
+2021-05-17,josephine,3,allowance
+2021-05-24,evelyn,5,allowance
+2021-05-24,josephine,3,allowance
+2021-05-31,evelyn,5,allowance
+2021-05-31,josephine,3,allowance
+2021-06-01,anderson,-500,education contribution
+2021-06-07,evelyn,5,allowance
+2021-06-07,josephine,3,allowance
+2021-06-14,evelyn,5,allowance
+2021-06-14,josephine,3,allowance
+2021-06-21,evelyn,5,allowance
+2021-06-21,josephine,3,allowance
+2021-06-28,evelyn,5,allowance
+2021-06-28,josephine,3,allowance
+2021-05-09,josephine,-20,cash out
+2021-06-06,josephine,-50,cash out
+2021-06-07,josephine,27.31,food receipts
+2021-06-14,josephine,-20,cash out
+2021-06-20,josephine,18.45,subway receipt
+2021-06-27,anderson,-36.00,steam
+2021-07-29,josephine,-7.49,shoppers drug mart
+2021-07-29,josephine,45,airbnb cleaning
+2021-07-29,josephine,45,airbnb cleaning
+2021-07-29,josephine,-20,cash out
+2021-07-29,josephine,16,cookie dough receipt
+2021-07-29,josephine,-4,cookie dough withheld from siblings
+2021-08-06,josephine,45,airbnb cleaning
+2021-08-07,evelyn,27.17,Churchs Chicken Reimbursement
+2021-07-05,evelyn,5,allowance
+2021-07-05,josephine,3,allowance
+2021-07-12,evelyn,5,allowance
+2021-07-12,josephine,3,allowance
+2021-07-19,evelyn,5,allowance
+2021-07-19,josephine,3,allowance
+2021-07-26,evelyn,5,allowance
+2021-07-26,josephine,3,allowance
+2021-08-02,evelyn,5,allowance
+2021-08-02,josephine,3,allowance
+2021-08-09,evelyn,5,allowance
+2021-08-09,josephine,3,allowance
+2021-08-16,evelyn,5,allowance
+2021-08-16,josephine,3,allowance
+2021-08-23,evelyn,5,allowance
+2021-08-23,josephine,3,allowance
+2021-08-30,evelyn,5,allowance
+2021-08-30,josephine,3,allowance
+2021-08-13,josephine,45,airbnb cleaning
+2021-08-17,josephine,-20,cash out
+2021-08-19,josephine,64.06,Grammie bd present
+2021-08-23,josephine,45,airbnb cleaning
+2021-08-26,josephine,-10,cash out
+2021-08-30,anderson,30.00,food for Barnabas week
+2021-08-31,josephine,-200,broke Mommy phone
+2021-09-03,anderson,-250.00,physics textbook deposit
+2021-09-14,anderson,-11.49,cash out
+2021-09-23,anderson,2942,Canada GSL
+2021-09-23,anderson,-1961.30,Canada GSL sister shares
+2021-09-23,anderson,-333.33,BC GSL sister shares --> Anderson received 500 dollar cheque in the mail
+2021-09-24,josephine,-8,cash out
+2021-09-24,evelyn,-6,cash out
+2021-09-24,anderson,-16,cash out
+2021-09-29,anderson,-35.55,cash out
+2021-09-29,anderson,-7.85,cash out
+2021-10-02,evelyn,-52,cash out
+2021-10-02,evelyn,20,compass card
+2021-10-13,evelyn,24.20,pair of pants
+2021-10-14,anderson,-7.83,twitch
+2021-10-15,anderson,-8.80,twitch
+2021-10-17,anderson,-15.11,steam
+2021-09-01,anderson,-125,rent holland 2021-09
+2021-10-01,anderson,-125,rent holland 2021-10
+2021-10-21,anderson,-57,cash out
+2021-11-01,anderson,-125,rent holland 2021-11
+2021-09-06,evelyn,5,allowance
+2021-09-06,josephine,3,allowance
+2021-09-13,evelyn,5,allowance
+2021-09-13,josephine,3,allowance
+2021-09-20,evelyn,5,allowance
+2021-09-20,josephine,3,allowance
+2021-09-27,evelyn,5,allowance
+2021-09-27,josephine,3,allowance
+2021-10-04,evelyn,5,allowance
+2021-10-04,josephine,3,allowance
+2021-10-11,evelyn,5,allowance
+2021-10-11,josephine,3,allowance
+2021-10-18,evelyn,5,allowance
+2021-10-18,josephine,3,allowance
+2021-10-25,evelyn,5,allowance
+2021-10-25,josephine,3,allowance
+2021-11-01,evelyn,5,allowance
+2021-11-01,josephine,3,allowance
+2021-10-01,anderson,-500,home expenses 2021-10
+2021-11-01,anderson,-500,home expenses 2021-11
+2021-11-30,evelyn,20,cash in
+2021-12-01,anderson,-125,rent holland 2021-12
+2021-12-06,josephine,-20,cash out
+2021-12-07,josephine,-10,cash out
+2021-12-24,josephine,-25,cash out
+2021-12-25,anderson,-20.05,spider man
+2021-12-26,josephine,10.60,Ramen soup
+2022-01-04,anderson,2943,Canada GSL
+2022-01-04,anderson,-1962,Canada GSL sister shares
+2022-01-04,anderson,103,BC GSL
+2022-01-04,anderson,-68.67,Canada GSL sister shares
+2022-01-01,josephine,27,airbnb cleaning
+2022-01-07,anderson,50,amazon gift card from John and Corey
+2022-01-07,evelyn,50,amazon gift card from John and Corey
+2022-01-07,josephine,50,amazon gift card from John and Corey
+2022-01-07,evelyn,-26.97,amazon purchase
+2022-01-15,anderson,-22.40,Best Buy headset
+2021-12-25,anderson,62.73,Savannah Kuhn xmas amazon card
+2021-12-25,evelyn,62.73,Savannah Kuhn xmas amazon card
+2021-12-25,josephine,62.73,Savannah Kuhn xmas amazon card
+2022-01-01,anderson,-125,rent holland 2022-01
+2022-01-21,anderson,2300,webwork project
+2021-11-08,evelyn,5,allowance
+2021-11-08,josephine,3,allowance
+2021-11-15,evelyn,5,allowance
+2021-11-15,josephine,3,allowance
+2021-11-22,evelyn,5,allowance
+2021-11-22,josephine,3,allowance
+2021-11-29,evelyn,5,allowance
+2021-11-29,josephine,3,allowance
+2021-12-06,evelyn,5,allowance
+2021-12-06,josephine,3,allowance
+2021-12-13,evelyn,5,allowance
+2021-12-13,josephine,3,allowance
+2021-12-20,evelyn,5,allowance
+2021-12-20,josephine,3,allowance
+2021-12-27,evelyn,5,allowance
+2021-12-27,josephine,3,allowance
+2022-01-03,evelyn,5,allowance
+2022-01-03,josephine,3,allowance
+2022-01-10,evelyn,5,allowance
+2022-01-10,josephine,3,allowance
+2022-01-17,evelyn,5,allowance
+2022-01-17,josephine,3,allowance
+2022-01-24,evelyn,5,allowance
+2022-01-24,josephine,3,allowance
+2022-01-31,evelyn,5,allowance
+2022-01-31,josephine,3,allowance
+2022-02-07,evelyn,5,allowance
+2022-02-07,josephine,3,allowance
+2022-02-07,josephine,-10,cash out
+2022-02-01,anderson,-125,rent holland 2022-02
+2022-02-05,evelyn,40,compass card
+2022-02-15,josephine,-10,cash out
+2022-02-15,josephine,-30,cash out
+2022-02-17,josephine,-200,Tupper window incident
+2022-02-20,anderson,-41.70,cash out
+2022-02-27,josephine,5.43,Hershey kisses
+2022-03-01,anderson,-125,rent holland 2022-03
+2022-03-05,josephine,-30,cash out
+2022-03-07,evelyn,-22,cash out
+2022-03-08,evelyn,-4,cash out
+2022-03-20,evelyn,-13,steak
+2022-03-26,evelyn,-150,los angeles
+2022-03-26,josephine,-100,los angeles
+2022-04-01,anderson,-125,rent holland 2022-04
+2022-04-20,evelyn,-23,cash out
+2022-04-22,evelyn,-116.02,cash out
+2022-04-22,anderson,63.57,Grammie bd
+2022-04-22,evelyn,63.57,Grammie bd
+2022-04-22,josephine,69.93,Amy xmas
+2022-04-26,evelyn,200,arbor tip
+2022-05-05,josephine,-20,cash out
+2022-05-14,josephine,-15,cash out
+2022-05-27,josephine,-30,cash out
+2022-05-30,evelyn,-10,cash out
+2022-06-03,anderson,-26,Uber eats from Chase CC
+2022-06-17,anderson,-2.50,compass card
+2022-02-14,evelyn,5,allowance
+2022-02-14,josephine,3,allowance
+2022-02-21,evelyn,5,allowance
+2022-02-21,josephine,3,allowance
+2022-02-28,evelyn,5,allowance
+2022-02-28,josephine,3,allowance
+2022-03-07,evelyn,5,allowance
+2022-03-07,josephine,3,allowance
+2022-03-14,evelyn,5,allowance
+2022-03-14,josephine,3,allowance
+2022-03-21,evelyn,5,allowance
+2022-03-21,josephine,3,allowance
+2022-03-28,evelyn,5,allowance
+2022-03-28,josephine,3,allowance
+2022-04-04,evelyn,5,allowance
+2022-04-04,josephine,3,allowance
+2022-04-11,evelyn,5,allowance
+2022-04-11,josephine,3,allowance
+2022-04-18,evelyn,5,allowance
+2022-04-18,josephine,3,allowance
+2022-04-25,evelyn,5,allowance
+2022-04-25,josephine,3,allowance
+2022-05-02,evelyn,5,allowance
+2022-05-02,josephine,3,allowance
+2022-05-09,evelyn,5,allowance
+2022-05-09,josephine,3,allowance
+2022-05-16,evelyn,5,allowance
+2022-05-16,josephine,3,allowance
+2022-05-23,evelyn,5,allowance
+2022-05-23,josephine,3,allowance
+2022-05-30,evelyn,5,allowance
+2022-05-30,josephine,3,allowance
+2022-06-06,evelyn,5,allowance
+2022-06-06,josephine,3,allowance
+2022-06-13,evelyn,5,allowance
+2022-06-13,josephine,3,allowance
