@@ -1,25 +1,695 @@
-asts,tla
-fvxa,KVH
-yqoq,EKS
-fvxa,GSA
-yqoq,MSN
-cdlm,JPS
-eion,CTA
-qmvi,EAG
-veiy,HOL
-oexk,DBA
-tfov,DOS
-dduv,HGG
-wfrs,JHH
-hrti,MAD
-ifai,POP
-lett,MFB
-xfqk,CTC
-prif,MFD
-bosg,BUT
-xega,VGL
-obye,BAR
-xxol,OMA
-goag,OMB
-kynz,KOL
-aeyb,RSB
+ast,courseid,astname,cont
+dqfe,675,"Lab Report 1",0.0175
+eqqr,104,"Lab Report 1",0.016153846
+purz,104,"Lab Report 2",0.016153846
+zteo,675,"Lab Report 2",0.0175
+knny,832,"Essay 1",0.25
+qrfq,675,"Lab Report 3",0.0175
+qdhd,104,"Lab Report 3",0.016153846
+svah,675,"Lab Report 4",0.0175
+pbif,104,"Lab Report 4",0.016153846
+mlnq,104,"Term Test A",0.14
+ponz,675,"Term Test A",0.14
+dacg,675,"Lab Report 5",0.0175
+yjcq,104,"Lab Report 5",0.016153846
+eump,675,"Lab Report 6",0.0175
+nnuc,104,"Lab Report 6",0.016153846
+scaf,104,"Lab Report 7",0.016153846
+rzgq,675,"Lab Report 7",0.0175
+jqln,104,"Term Test B",0.14
+azvd,104,"Lab Report 8",0.016153846
+czsr,675,"Term Test B",0.14
+kmdt,675,"Lab Report 8",0.0175
+grfl,104,"Lab Report 9",0.016153846
+mbks,832,"Attendance",0.05
+vxve,832,"Reading Assessment",0.2
+ptyo,104,"Term Test C",0.14
+yzyj,104,"Lab Report 10",0.016153846
+lnai,104,"Lab Report 11",0.016153846
+tmmw,675,"Lab Report 9",0.0175
+ufao,675,"Lab Report 10",0.0175
+zuxl,832,"Final Exam Essay",0.1125
+gxxl,832,"Final Exam Quotes",0.125
+bsps,832,"Final Exam Ranking",0.0125
+aftj,832,"Final Essay",0.25
+lfcs,675,"Term Test C",0.14
+zvct,104,"Lab Report 12",0.016153846
+jvpl,104,"Lab Report 13",0.016153846
+tqnt,675,"Lab Report 11",0.0175
+xzxi,675,"Lab Report 12",0.0175
+lirj,675,"Attendance",0.07
+umnf,104,"Attendance",0.07
+iezo,526,"Reading Assessment 2017-05-23",0.00
+anpf,526,"Participation 2017-05-23",0.00
+qdme,526,"Reading Assessment 2017-05-25",0.00
+agkh,526,"Participation 2017-05-25",0.00
+zsdy,675,"Final Exam",0.3
+qysi,104,"Final Exam",0.3
+qkeo,526,"Reading Assessment 2017-05-30",0.00
+wtef,526,"Participation 2017-05-30",0.00
+sfsx,526,"Reading Assessment 2017-06-01",0.00
+ddcb,526,"Participation 2017-06-01",0.00
+kafu,526,"Extra Points (out of 6)",0.00
+fraf,526,"Essay 1",0.25
+ydcm,526,"Reading Assessment 2017-06-06",0.00
+uwgh,526,"Participation 2017-06-06",0.00
+fkub,526,"Reading Assessment 2017-06-08",0.00
+isfo,526,"Participation 2017-06-08",0.00
+kvwo,526,"Reading Assessment 2017-06-13",0.00
+gesq,526,"Participation 2017-06-13",0.00
+ymxg,526,"Reading Assessment 2017-06-15",0.00
+avcr,526,"Participation 2017-06-15",0.00
+kgqw,526,"Reading Assessment 2017-06-20",0.00
+ftrn,526,"Participation 2017-06-20",0.00
+elqp,526,"Reading Assessment 2017-06-22",0.00
+qeii,526,"Participation 2017-06-22",0.00
+vftr,526,"Final Exam Author Matching",0.125
+iczy,526,"Final Exam Short Essay",0.1125
+jnza,526,"Final Exam Ranking",0.0125
+cmbu,526,"Final Essay",0.25
+bllo,508,"Reading Assessment 2017-09-14",0.00
+josy,508,"Participation 2017-09-14",0.00
+auuu,508,"Essay 1",0.25
+oldw,508,"Reading Assessment 2017-09-19",0.00
+tvyi,508,"Participation 2017-09-19",0.00
+wqdv,508,"Reading Assessment 2017-09-21",0.00
+fphz,508,"Participation 2017-09-21",0.00
+vibi,508,"Reading Assessment 2017-09-26",0.00
+phqi,508,"Participation 2017-09-26",0.00
+kjtz,508,"Reading Assessment 2017-09-28",0.00
+cuyk,508,"Participation 2017-09-28",0.00
+cafz,508,"Reading Assessment 2017-10-03",0.00
+hoam,508,"Participation 2017-10-03",0.00
+lzvn,508,"Reading Assessment 2017-10-05",0.00
+tcsk,508,"Participation 2017-10-05",0.00
+nxzx,508,"Reading Assessment 2017-10-10",0.00
+pllq,508,"Participation 2017-10-10",0.00
+pcnb,508,"Reading Assessment 2017-10-12",0.00
+ksnm,508,"Participation 2017-10-12",0.00
+tbll,818,"Term Test A",0.11
+fqjh,806,"Term Test A",0.15
+movr,818,"Lab Report 1",0.018
+ttmw,818,"Lab Report 2",0.018
+ykje,818,"Lab Report 3",0.018
+zllk,818,"Lab Report 4",0.018
+wcam,806,"Lab Report 1",0.02
+mpwj,806,"Lab Report 2",0.02
+wvjl,806,"Lab Report 3",0.02
+jidq,806,"Lab Report 4",0.02
+hlky,806,"Lab Report 5",0.02
+zyrz,508,"Reading Assessment 2017-10-17",0.00
+dcpy,508,"Participation 2017-10-17",0.00
+gakt,508,"Reading Assessment 2017-10-19",0.00
+wjou,508,"Participation 2017-10-19",0.00
+oeav,508,"Reading Assessment 2017-10-24",0.00
+jcqa,508,"Participation 2017-10-24",0.00
+kdro,508,"Reading Assessment 2017-10-26",0.00
+emvy,508,"Participation 2017-10-26",0.00
+kydr,508,"Reading Assessment 2017-10-31",0.00
+hgpf,508,"Participation 2017-10-31",0.00
+eqba,508,"Reading Assessment 2017-11-02",0.00
+hsbz,508,"Participation 2017-11-02",0.00
+kcgk,818,"Term Test B",0.11
+pfay,806,"Term Test B",0.15
+fwxr,818,"Lab Report 5",0.018
+obfq,818,"Lab Report 6",0.018
+upia,806,"Lab Report 6",0.02
+brew,508,"Reading Assessment 2017-11-07",0.00
+lolc,508,"Participation 2017-11-07",0.00
+rehw,508,"Reading Assessment 2017-11-09",0.00
+vwbq,508,"Participation 2017-11-09",0.00
+hgyk,508,"Participation 2017-11-14",0.00
+yvmh,508,"Reading Assessment 2017-11-16",0.00
+ttog,508,"Participation 2017-11-16",0.00
+imnw,508,"Reading Assessment 2017-11-21",0.00
+mrtp,508,"Participation 2017-11-21",0.00
+etod,508,"Reading Assessment 2017-11-23",0.00
+xodq,508,"Participation 2017-11-23",0.00
+jhvo,818,"Term Test C",0.11
+hjtt,806,"Term Test C",0.15
+ybhh,806,"Lab Report 7",0.02
+bxqu,818,"Lab Report 7",0.018
+sxgz,806,"Lab Report 8",0.02
+atdf,818,"Lab Report 8",0.018
+uvkr,508,"Reading Assessment 2017-11-28",0.00
+pjvc,508,"Participation 2017-11-28",0.00
+klyi,508,"Reading Assessment 2017-11-30",0.00
+ktzf,508,"Participation 2017-11-30",0.00
+guri,508,"Final Exam",0.25
+dybd,818,"Excel Project",0.1
+nzqk,806,"Lab Report 9",0.02
+blch,818,"Lab Report 9",0.018
+bdeq,806,"Lab Report 10",0.02
+wxop,818,"Lab Report 10",0.018
+zhte,818,"Final Exam",0.3
+otbr,806,"Final Exam",0.3
+iube,818,"Attendance",0.07
+gjwd,806,"Attendance",0.07
+lnuo,192,"Term Test A",0.14
+viyc,218,"Term Test A",0.14
+ppeo,192,"Lab Report 1",0.015
+vhss,192,"Lab Report 2",0.015
+fach,192,"Lab Report 3",0.015
+osdc,192,"Lab Report 4",0.015
+mlkq,192,"Lab Report 5",0.015
+gvdl,218,"Lab Report 1",0.015
+lsxa,218,"Lab Report 2",0.015
+lzcs,218,"Lab Report 3",0.015
+iumb,218,"Lab Report 4",0.015
+rapu,218,"Lab Report 5",0.015
+tbnq,192,"Attendance",0.07
+akbx,218,"Attendance",0.07
+bxbw,192,"Term Test B",0.14
+xjuj,218,"Term Test B",0.14
+yzdo,192,"Lab Report 6",0.015
+nzxf,192,"Lab Report 7",0.015
+fwoe,192,"Lab Report 8",0.015
+logr,192,"Lab Report 9",0.015
+jkvk,192,"Lab Report 10",0.015
+vyfi,192,"Lab Report 11",0.015
+ixkg,218,"Lab Report 6",0.015
+wwfp,218,"Lab Report 7",0.015
+ogzl,218,"Lab Report 8",0.015
+inir,218,"Lab Report 9",0.015
+xhmn,218,"Lab Report 10",0.015
+xbtb,192,"Term Test C",0.14
+ybut,218,"Term Test C",0.14
+qknj,152,"Reading Assessment 2018-05-17",0.0
+nqlp,152,"Reading Assessment 2018-05-22",0.0
+cpyq,192,"Final Exam",0.3
+yimn,218,"Final Exam",0.3
+onem,192,"Lab Report 12",0.015
+fkpu,192,"Lab Report 13",0.015
+dvzf,192,"Lab Report 14",0.015
+dqjs,192,"Lab Report 15",0.015
+bhzt,192,"Lab Report 16",0.015
+bieq,218,"Lab Report 11",0.015
+rqpn,218,"Lab Report 12",0.015
+exfj,218,"Lab Report 13",0.015
+xbqd,218,"Lab Report 14",0.015
+caet,152,"Reading Assessment 2018-05-24",0.0
+umcf,152,"Essay 1",0.25
+hyft,152,"Reading Assessment 2018-05-29",0.0
+wgqv,152,"Reading Assessment 2018-05-31",0.0
+mqyw,152,"Reading Assessment 2018-06-05",0.0
+dxzf,152,"Reading Assessment 2018-06-07",0.0
+vcan,152,"Reading Assessment 2018-06-12",0.0
+mfif,152,"Reading Assessment 2018-06-14",0.0
+jbnj,152,"Reading Assessment 2018-06-19",0.0
+sogy,152,"Reading Assessment 2018-06-21",0.0
+fgdp,152,"Reading Assessments and Attendance",0.25
+qieh,152,"Final Exam Short Answer",0.125
+iequ,152,"Final Exam Essay",0.1125
+ymld,152,"Final Exam Ranking",0.0125
+zerg,152,"Final Essay",0.25
+yies,776,"Term Test A",0.11
+qbxw,503,"Term Test A",0.1333333
+fgwn,503,"Lab Report 1",0.024
+dowp,503,"Lab Report 2",0.024
+vtlx,503,"Lab Report 3",0.024
+wbwl,503,"Lab Report 4",0.024
+yrnd,503,"Lab Report 5",0.024
+qlqa,503,"Lab Report 6",0.024
+kalz,776,"Lab Report 1",0.02
+vyjs,776,"Lab Report 2",0.02
+scbj,776,"Lab Report 3",0.02
+xrnq,776,"Lab Report 4",0.02
+boes,776,"Lab Report 5",0.02
+xgkt,503,"Attendance",0.06
+wgsc,776,"Attendance",0.07
+ppxr,776,"Term Test B",0.11
+wxgp,503,"Term Test B",0.1333333
+mnnv,776,"Term Test C",0.11
+gjrb,503,"Term Test C",0.1333333
+zqyi,776,"Final Exam",0.3
+ozjp,503,"Final Exam",0.3
+hjwy,503,"Lab Report 7",0.024
+hywu,503,"Lab Report 8",0.024
+tgly,503,"Lab Report 9",0.024
+vbes,503,"Lab Report 10",0.024
+ttmh,776,"Lab Report 6",0.02
+rmoe,776,"Lab Report 7",0.02
+jqvu,776,"Lab Report 8",0.02
+dtof,776,"Lab Report 9",0.02
+wivg,776,"Lab Report 10",0.02
+orvo,776,"Excel Project",0.1
+bteb,522,"Term Test A",0.14
+ckip,522,"Lab Report 1",0.015
+rahb,522,"Lab Report 2",0.015
+lfxb,522,"Lab Report 3",0.015
+hoie,522,"Lab Report 4",0.015
+mmtp,522,"Lab Report 5",0.015
+wchn,522,"Lab Report 6",0.015
+xrcx,522,"Lab Report 7",0.015
+jpyn,522,"Lab Report 8",0.015
+dftj,522,"Lab Report 9",0.015
+fuvl,522,"Lab Report 10",0.015
+knjd,522,"Lab Report 11",0.015
+mqeh,522,"Lab Report 12",0.015
+yhvx,522,"Lab Report 13",0.015
+tpyh,522,"Lab Report 14",0.015
+hrto,638,"Lab Report 1",0.015
+fwcm,638,"Lab Report 2",0.015
+ouiz,638,"Lab Report 3",0.015
+ixgg,638,"Lab Report 4",0.015
+iqxl,638,"Lab Report 5",0.015
+opve,638,"Lab Report 6",0.015
+upwq,638,"Lab Report 7",0.015
+qojl,638,"Lab Report 8",0.015
+mxjd,638,"Lab Report 9",0.015
+egpk,638,"Lab Report 10",0.015
+fblu,638,"Lab Report 11",0.015
+qctx,638,"Lab Report 12",0.015
+gahu,638,"Lab Report 13",0.015
+tczd,638,"Lab Report 14",0.015
+kuhz,638,"Lab Report 15",0.015
+baov,638,"Term Test A",0.14
+bvrp,522,"Term Test B",0.14
+zzmr,638,"Term Test B",0.14
+lwmg,360,"Essay 1",0.25
+nizs,360,"Final Exam Short Answer",0.125
+jqkp,360,"Final Exam Essay",0.125
+bszy,360,"Reading Assessments and Attendance",0.25
+jvdx,360,"Final Essay",0.25
+rfjg,522,"Term Test C",0.14
+wndk,638,"Term Test C",0.14
+odyx,701,"Reading Assessment 2019-05-09",0.00
+yuhk,701,"Participation 2019-05-09",0.00
+gtxw,701,"Reading Assessment 2019-05-14",0.00
+siyw,701,"Participation 2019-05-14",0.00
+hunk,701,"Reading Assessment 2019-05-16",0.00
+gkfu,701,"Participation 2019-05-16",0.00
+ysry,701,"Essay 1",0.25
+kczt,701,"Reading Assessment 2019-05-21",0.00
+tcbo,701,"Participation 2019-05-21",0.00
+pmbf,522,"Attendance",0.07
+mjkb,638,"Attendance",0.07
+zcsp,701,"Reading Assessment 2019-05-23",0.00
+fftu,701,"Participation 2019-05-23",0.00
+crpq,522,"Final Exam",0.3
+cqto,638,"Final Exam",0.3
+qhxg,701,"Reading Assessment 2019-05-28",0.00
+aodd,701,"Participation 2019-05-28",0.00
+bbsq,701,"Reading Assessment 2019-05-30",0.00
+nlpc,701,"Participation 2019-05-30",0.00
+shuw,701,"Reading Assessment 2019-06-11",0.00
+hqwa,701,"Participation 2019-06-11",0.00
+info,701,"Reading Assessment 2019-06-13",0.00
+szvh,701,"Participation 2019-06-13",0.00
+aumr,701,"Final Exam Short Answer",0.125
+ddnr,701,"Final Exam Essay",0.1125
+dfmj,701,"Final Exam Ranking",0.0125
+ezpi,701,"Final Essay",0.25
+dwfr,182,"Term Test A",0.11
+nlso,287,"Term Test A",0.1333333
+jnlt,182,"Term Test B",0.11
+spbd,287,"Term Test B",0.1333333
+mbbw,182,"Lab Report 1",0.018
+knmg,182,"Lab Report 2",0.018
+xzub,182,"Lab Report 3",0.018
+yxfx,182,"Lab Report 4",0.018
+uykz,182,"Lab Report 5",0.018
+upbp,182,"Lab Report 6",0.018
+avsr,182,"Lab Report 7",0.018
+atjo,182,"Lab Report 8",0.018
+tkdu,182,"Lab Report 9",0.018
+gcjt,182,"Lab Report 10",0.018
+zkkj,182,"Lab Report 11",0.018
+yvvm,287,"Lab Report 1",0.0267
+tifp,287,"Lab Report 2",0.0267
+wyrt,287,"Lab Report 3",0.0267
+sozi,287,"Lab Report 4",0.0267
+falp,287,"Lab Report 5",0.0267
+yfge,287,"Lab Report 6",0.0267
+slgf,287,"Lab Report 7",0.0267
+xkvr,287,"Lab Report 8",0.0267
+zyyw,287,"Lab Report 9",0.0267
+tpbm,182,"Term Test C",0.11
+tnjd,287,"Term Test C",0.1333333
+turf,182,"Attendance",0.07
+lupp,287,"Attendance",0.06
+dhgf,287,"Final Exam",0.3
+kykp,182,"Final Exam",0.3
+uriv,182,"Excel Project",0.1
+ncss,944,"Essay 1",0.25
+ktql,944,"Reading Assessment 2020-01-09",0.00
+jlwy,944,"Participation 2020-01-09",0.00
+gyiy,944,"Reading Assessment 2020-01-14",0.01
+jeqm,944,"Participation 2020-01-14",0.0025
+pyfm,944,"Reading Assessment 2020-01-16",0.01
+htcc,944,"Participation 2020-01-16",0.0025
+yhmn,944,"Reading Assessment 2020-01-21",0.01
+piwl,944,"Participation 2020-01-21",0.0025
+oggj,944,"Reading Assessment 2020-01-23",0.01
+ecfz,944,"Participation 2020-01-23",0.0025
+pgbg,944,"Reading Assessment 2020-01-28",0.01
+hrzz,944,"Participation 2020-01-28",0.0025
+pqki,944,"Reading Assessment 2020-01-30",0.01
+odmm,944,"Participation 2020-01-30",0.0025
+sccl,944,"Participation 2020-02-04",0.0125
+cvww,944,"Reading Assessment 2020-02-06",0.01
+koia,944,"Participation 2020-02-06",0.0025
+ykyh,944,"Reading Assessment 2020-02-11",0.01
+chgt,944,"Participation 2020-02-11",0.0025
+gbwq,944,"Reading Assessment 2020-02-13",0.01
+ofgz,944,"Participation 2020-02-13",0.0025
+mflb,917,"Term Test A",0.13
+kujh,795,"Term Test A",0.13
+pvxo,795,"Attendance",0.07
+ilog,917,"Attendance",0.07
+njso,944,"Reading Assessment 2020-02-25",0.01
+aowa,944,"Participation 2020-02-25",0.0025
+axli,944,"Reading Assessment 2020-02-27",0.01
+ppzr,944,"Participation 2020-02-27",0.0025
+vaph,944,"Reading Assessment 2020-03-03",0.01
+lime,944,"Participation 2020-03-03",0.0025
+wmoo,944,"Reading Assessment 2020-03-05",0.01
+qfez,944,"Participation 2020-03-05",0.0025
+dgej,944,"Post-COVID-19 Quiz Score",0.0
+eogo,944,"Post-COVID-19 Discussion Score",0.0
+tsqw,917,"Term Test B",0.13
+xzkg,795,"Term Test B",0.13
+vdku,944,"Final Exam Interview",0.15
+leyn,944,"Final Exam Quiz",0.1
+ogps,944,"Final Essay",0.25
+fthc,944,"Reading Assessment 2020-03-10",0.01
+usks,944,"Participation 2020-03-10",0.0025
+vglx,944,"Reading Assessment 2020-03-12",0.01
+tlnj,944,"Participation 2020-03-12",0.0025
+vuxy,795,"Term Test C",0.13
+mdeq,917,"Term Test C",0.13
+sany,795,"Final Exam",0.3
+cwnm,917,"Final Exam",0.3
+scuc,795,"Lab Report 1",0.016
+ufwr,795,"Lab Report 2",0.016
+vypv,795,"Lab Report 3",0.016
+peeu,795,"Lab Report 4",0.016
+gnzw,795,"Lab Report 5",0.016
+boet,795,"Lab Report 6",0.016
+snpu,795,"Lab Report 7",0.016
+axie,795,"Lab Report 8",0.016
+vjlg,795,"Lab Report 9",0.016
+tspj,795,"Lab Report 10",0.016
+qtri,795,"Lab Report 11",0.016
+jefa,795,"Lab Report 12",0.016
+dzup,795,"Lab Report 13",0.016
+jbks,795,"Lab Report 14",0.016
+tljp,795,"Lab Report 15",0.016
+cion,917,"Lab Report 1",0.017143
+nwkm,917,"Lab Report 2",0.017143
+nefv,917,"Lab Report 3",0.017143
+jjnl,917,"Lab Report 4",0.017143
+stia,917,"Lab Report 5",0.017143
+eftm,917,"Lab Report 6",0.017143
+dmij,917,"Lab Report 7",0.017143
+dvda,917,"Lab Report 8",0.017143
+eidn,917,"Lab Report 9",0.017143
+jwjv,917,"Lab Report 10",0.017143
+xrig,917,"Lab Report 11",0.017143
+ipks,917,"Lab Report 12",0.017143
+nsyq,917,"Lab Report 13",0.017143
+olfa,917,"Lab Report 14",0.017143
+ykjf,774,"Acadly Quiz 2",0.0055
+sxwm,774,"Acadly Quiz 3",0.0055
+ybxj,774,"Acadly Quiz 4",0.0055
+abok,774,"Acadly Quiz 5",0.0055
+axiu,774,"Acadly Quiz 6",0.0055
+evyj,774,"Acadly Quiz 7",0.0055
+pkew,774,"Acadly Quiz 8",0.0055
+rzdm,774,"Acadly Quiz 9",0.0055
+xtty,774,"Acadly Quiz 10",0.0055
+napt,774,"Acadly Quiz 11",0.0055
+ethz,774,"Acadly Quiz 12",0.0055
+hnsu,774,"Acadly Quiz 13",0.0055
+jepu,774,"Acadly Quiz 14",0.0055
+iovm,774,"Acadly Quiz 15",0.0055
+cdhc,774,"Online Discussion Forum Dostoyevsky",0.004285714
+rdwi,774,"Online Discussion Forum Heidegger",0.004285714
+olxf,774,"Online Discussion Forum Mill",0.004285714
+kmgg,774,"Online Discussion Forum Parfit",0.004285714
+srlo,774,"Online Discussion Forum Sartre",0.004285714
+ifyc,774,"Online Discussion Forum Schechtman",0.004285714
+rkqv,774,"Online Discussion Forum Sedgwick",0.004285714
+paio,774,"Online Discussion Forum Strawson",0.004285714
+xyqd,774,"Online Discussion Forum Taylor Human Agency",0.004285714
+nvli,774,"Essay 1",0.25
+uput,774,"Online Discussion Forum Gadamer",0.004285714
+knwf,774,"Online Discussion Forum Habermas",0.004285714
+yskf,774,"Online Discussion Forum Maddy",0.004285714
+pxlm,774,"Online Discussion Forum Popper",0.004285714
+squw,774,"Final Exam",0.25
+jomy,774,"Acadly Quiz 16",0.0055
+tese,774,"Acadly Quiz 17",0.0055
+kwpg,774,"Acadly Quiz 18",0.0055
+vslk,774,"Acadly Quiz 19",0.0055
+cvfg,774,"Acadly Quiz 20",0.0055
+xyfy,774,"Acadly Quiz 21",0.0055
+vorp,774,"Attendance",0.05
+tttg,774,"Online Discussion Forum Foucault",0.004285714
+dsfl,774,"Online Discussion Forum Taylor Freedom Truth",0.004285714
+ecki,774,"Online Discussion Forum Solnit",0.004285714
+dumb,774,"Online Discussion Forum Barthes",0.004285714
+murv,774,"Online Discussion Forum Butler",0.004285714
+pusv,774,"Online Discussion Forum Kolakowski",0.004285714
+icjd,774,"Online Discussion Forum Marquard",0.004285714
+tbed,774,"Online Discussion Forum Vogler",0.004285714
+adna,774,"Final Essay",0.25
+svou,632,"Essay 1",0.25
+tigd,665,"Essay 1",0.25
+wkfc,632,"Attendance",0.05
+vgdw,665,"Attendance",0.05
+njpr,632,"Discussion",0.09
+tzfa,665,"Discussion",0.09
+onpm,597,"Term Test A",0.11
+jzsm,597,"Attendance",0.07
+hbab,335,"Attendance",0.06
+qlfz,335,"Term Test A",0.1333333
+hxux,597,"Term Test B",0.11
+zcgt,335,"Term Test B",0.1333333
+axqa,597,"Term Test C",0.11
+rhxc,335,"Term Test C",0.1333333
+ztui,665,"Reading Assessment Quizzes",0.11
+wzzx,632,"Reading Assessment Quizzes",0.11
+ytvs,597,"Lab Report 1",0.0222
+rlbq,597,"Lab Report 2",0.0222
+weqo,597,"Lab Report 3",0.0222
+zwoh,597,"Lab Report 4",0.0222
+zcbq,597,"Lab Report 5",0.0222
+ymep,597,"Lab Report 6",0.0222
+xdke,597,"Lab Report 7",0.0222
+prus,597,"Lab Report 8",0.0223
+eono,597,"Lab Report 9",0.0223
+ijfr,335,"Lab Report 1",0.0266
+imox,335,"Lab Report 2",0.0266
+tgzm,335,"Lab Report 3",0.0266
+gqbf,335,"Lab Report 4",0.0267
+oita,335,"Lab Report 5",0.0267
+nknf,335,"Lab Report 6",0.0267
+rjsr,335,"Lab Report 7",0.0267
+htma,335,"Lab Report 8",0.0267
+dtpn,335,"Lab Report 9",0.0267
+hygi,335,"Final Exam",0.3
+jrdh,597,"Final Exam",0.3
+teky,597,"Excel Project",0.1
+npsw,632,"Final Essay",0.25
+fkjo,632,"Final Exam",0.25
+qhnj,665,"Final Essay",0.25
+gton,665,"Final Exam",0.25
+crzv,496,"Essay 1",0.25
+imgk,667,"Term Test A",0.13
+jvtv,880,"Term Test A",0.13
+boii,667,"Attendance",0.07
+ixrf,880,"Attendance",0.07
+pvaf,667,"Term Test B",0.13
+fqwv,880,"Term Test B",0.13
+cbcj,496,"Quizzes",0.11
+jdxm,496,"Tutorial Attendance",0.05
+vpim,496,"Final Exam",0.25
+jqoh,496,"Discussion",0.09
+mcry,667,"Term Test C",0.13
+imzo,880,"Term Test C",0.13
+lutk,496,"Final Essay",0.25
+ddpv,667,"Lab Report 1",0.015
+rqrg,667,"Lab Report 2",0.015
+ozpt,667,"Lab Report 3",0.015
+qstp,667,"Lab Report 4",0.015
+aidi,667,"Lab Report 5",0.015
+pfwa,667,"Lab Report 6",0.015
+hmol,667,"Lab Report 7",0.015
+sgfa,667,"Lab Report 8",0.015
+oyyk,667,"Lab Report 9",0.015
+zety,667,"Lab Report 10",0.015
+fduh,667,"Lab Report 11",0.015
+pkbp,667,"Lab Report 12",0.015
+qaxg,667,"Lab Report 13",0.015
+hclu,667,"Lab Report 14",0.015
+smsh,667,"Lab Report 15",0.015
+optf,667,"Lab Report 16",0.015
+mutt,880,"Lab Report 1",0.017143
+kjaz,880,"Lab Report 2",0.017143
+xtdt,880,"Lab Report 3",0.017143
+vkvs,880,"Lab Report 4",0.017143
+euqw,880,"Lab Report 5",0.017143
+dlal,880,"Lab Report 6",0.017143
+mplq,880,"Lab Report 7",0.017143
+aogd,880,"Lab Report 8",0.017143
+ogtc,880,"Lab Report 9",0.017143
+sldf,880,"Lab Report 10",0.017143
+llqp,880,"Lab Report 11",0.017143
+vcml,880,"Lab Report 12",0.017143
+gmxb,880,"Lab Report 13",0.017143
+hzuy,880,"Lab Report 14",0.017143
+gyit,667,"Final Exam",0.3
+ount,880,"Final Exam",0.3
+ctoh,582,"Essay 1",0.25
+lrmk,582,"Reading Assessment Quiz 1",0.005
+pekw,582,"Reading Assessment Quiz 2",0.005
+ejer,582,"Reading Assessment Quiz 3",0.005
+cttv,582,"Reading Assessment Quiz 4",0.005
+twih,582,"Reading Assessment Quiz 5",0.005
+yofq,582,"Reading Assessment Quiz 6",0.005
+rdsj,582,"Reading Assessment Quiz 7",0.005
+vjir,582,"Reading Assessment Quiz 8",0.005
+hami,582,"Reading Assessment Quiz 9",0.005
+wsdt,582,"Reading Assessment Quiz 10",0.005
+zeaf,582,"Reading Assessment Quiz 11",0.005
+yasu,582,"Reading Assessment Quiz 12",0.005
+hyxl,582,"Reading Assessment Quiz 13",0.005
+pscy,582,"Reading Assessment Quiz 14",0.005
+csko,582,"Reading Assessment Quiz 15",0.005
+nwub,582,"Reading Assessment Quiz 16",0.005
+iloo,582,"Reading Assessment Quiz 17",0.005
+zdau,582,"Reading Assessment Quiz 18",0.005
+rjki,582,"Reading Assessment Quiz 20",0.005
+ozao,582,"Reading Assessment Quiz 21",0.005
+motv,582,"Reading Assessment Quiz 22",0.005
+ibeq,582,"Reading Assessment Quiz 23",0.005
+daah,582,"Tutorial Attendance",0.05
+qksg,582,"Final Exam",0.25
+ltwa,582,"Final Essay",0.25
+mxla,582,"Discussion",0.09
+eawz,396,"Essay 1",0.25
+kmlc,396,"Reading Assessment Quiz 1 GSA",0.009090909
+bhqr,396,"Reading Assessment Quiz 2 MSN",0.009090909
+biqg,396,"Reading Assessment Quiz 3 JPS",0.009090909
+hoew,396,"Reading Assessment Quiz 4 CTA",0.009090909
+zpjs,396,"Reading Assessment Quiz 5 EAG",0.009090909
+zlvi,396,"Reading Assessment Quiz 6 HOL",0.009090909
+qcfr,396,"Reading Assessment Quiz 7 DBA",0.009090909
+ggrp,396,"Reading Assessment Quiz 8 DOS",0.009090909
+mdrk,396,"Reading Assessment Quiz 9 HGG",0.009090909
+vsep,396,"Reading Assessment Quiz 10 JHH",0.009090909
+jjgh,396,"Reading Assessment Quiz 11 MAD",0.009090909
+cxxv,396,"Reading Assessment Quiz 12 POP",0.009090909
+onyu,396,"Reading Assessment Quiz 13 MFB",0.009090909
+mdap,396,"Reading Assessment Quiz 14 CTC",0.009090909
+hhph,396,"Reading Assessment Quiz 15 MFD",0.009090909
+ljdw,396,"Reading Assessment Quiz 16 BUT",0.009090909
+pizs,396,"Reading Assessment Quiz 17 VGL",0.009090909
+aijl,396,"Reading Assessment Quiz 18 BAR",0.009090909
+qwlw,396,"Reading Assessment Quiz 19 OMA",0.009090909
+xwpd,396,"Reading Assessment Quiz 20 OMB",0.009090909
+eols,396,"Reading Assessment Quiz 21 KOL",0.009090909
+gqpg,396,"Reading Assessment Quiz 22 RSB",0.009090909
+pbpu,120,"Term Test A",0.165
+wocr,666,"Term Test A",0.2
+iorz,898,"Term Test A",0.2
+pipl,120,"Lab Report 1",0.025
+fkyx,120,"Lab Report 2",0.025
+pxki,120,"Lab Report 3",0.025
+airo,120,"Lab Report 4",0.025
+zhtt,120,"Lab Report 5",0.025
+qicf,120,"Lab Report 6",0.025
+asam,120,"Lab Report 7",0.025
+khbu,120,"Lab Report 8",0.025
+zals,898,"Lab Report 1",0.024
+cneo,898,"Lab Report 2",0.024
+lcfw,898,"Lab Report 3",0.024
+oeix,898,"Lab Report 4",0.024
+ekvf,898,"Lab Report 5",0.024
+stxf,120,"Term Test B",0.165
+jcbo,666,"Term Test B",0.2
+zlak,898,"Term Test B",0.2
+tghb,898,"Lab Report 6",0.024
+ugng,898,"Lab Report 7",0.024
+lvtd,898,"Lab Report 8",0.024
+xnfu,898,"Lab Report 9",0.024
+seuq,898,"Lab Report 10",0.024
+quxe,120,"Excel Project",0.1
+hjuw,898,"Attendance",0.06
+cdxc,120,"Attendance",0.07
+jpwi,120,"Final Exam",0.3
+vnyf,666,"Final Exam",0.3
+xfdg,898,"Final Exam",0.3
+omvj,396,"Final Exam",0.25
+xbkv,396,"Final Essay",0.25
+unjz,396,"Attendance",0.05
+pego,894,"Term Test A",0.2
+bbzf,894,"Term Test B",0.195
+hvha,894,"Term Test C",0.195
+ijrt,157,"Term Test A",0.13
+ljaf,157,"Term Test B",0.13
+gkff,157,"Term Test C",0.13
+yqtx,157,"Lab Report 1",0.016
+qzjh,157,"Lab Report 2",0.016
+kfyr,157,"Lab Report 3",0.016
+jkww,157,"Lab Report 4",0.016
+xcrg,157,"Lab Report 5",0.016
+lwaq,157,"Lab Report 6",0.016
+grhm,157,"Lab Report 7",0.016
+ijhy,157,"Lab Report 8",0.016
+cbls,157,"Lab Report 9",0.016
+bdys,157,"Lab Report 10",0.016
+hurw,157,"Lab Report 11",0.016
+woiv,157,"Lab Report 12",0.016
+nleq,157,"Lab Report 13",0.016
+oola,157,"Lab Report 14",0.016
+fhcg,157,"Lab Report 15",0.016
+mnll,326,"Essay 1",0.25
+nvxk,326,"Final Exam",0.25
+bemh,326,"Final Essay",0.25
+tcbq,326,"Attendance",0.05
+zijh,326,"Reading Assessment Quizzes",0.2
+hpfx,157,"Attendance",0.07
+gyqm,894,"Attendance",0.06
+fvxa,514,"Reading Assessment Quiz 1 KVH",0
+yqoq,514,"Reading Assessment Quiz 2 EKS",0
+lqyc,514,"Reading Assessment Quiz 3 GSA",0
+jzck,514,"Reading Assessment Quiz 4 MSN",0
+cdlm,514,"Reading Assessment Quiz 5 JPS",0
+eion,514,"Reading Assessment Quiz 6 CTA",0
+qmvi,514,"Reading Assessment Quiz 7 EAG",0
+veiy,514,"Reading Assessment Quiz 8 HOL",0
+oexk,514,"Reading Assessment Quiz 9 DBA",0
+tfov,514,"Reading Assessment Quiz 10 DOS",0
+hrti,514,"Reading Assessment Quiz 11 CTH",0
+ifai,514,"Reading Assessment Quiz 12 POP",0
+lett,514,"Reading Assessment Quiz 13 MAD",0
+xfqk,514,"Reading Assessment Quiz 14 MFB",0
+prif,514,"Reading Assessment Quiz 15 BAR",0
+bosg,514,"Reading Assessment Quiz 16 BUT",0
+xega,514,"Reading Assessment Quiz 17 VGL",0
+xxol,514,"Reading Assessment Quiz 18 OMA",0
+goag,514,"Reading Assessment Quiz 19 OMB",0
+bjle,514,"Reading Assessment Quizzes and Attendance",0.25
+fzpy,157,"Final Exam",0.3
+ssub,894,"Final Exam",0.2
+xyhj,894,"Lab Report 1",0.008333333
+ojcx,894,"Lab Report 2",0.008333333
+pohm,894,"Lab Report 3",0.008333333
+rnxe,894,"Lab Report 4",0.008333333
+wvzl,894,"Lab Report 5",0.008333333
+vgbv,894,"Lab Report 6",0.008333333
+vzdt,894,"Lab Report 7",0.008333333
+pzva,894,"Lab Report 8",0.008333333
+dvkf,894,"Lab Report 9",0.008333333
+ytqm,894,"Lab Report 10",0.008333333
+nhls,894,"Lab Report 11",0.008333333
+vdhk,894,"Lab Report 12",0.008333333
+vebv,894,"Lab Report 13",0.008333333
+jwpd,894,"Lab Report 14",0.008333333
+eehn,894,"Lab Report 15",0.008333333
+qpic,894,"Lab Report 16",0.008333333
+tozt,894,"Lab Report 17",0.008333333
+lwbr,894,"Lab Report 18",0.008333333
+zrys,514,"Essay 1",0.25
