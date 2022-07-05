@@ -1,4 +1,4 @@
-ast,courseid,astname,cont
+ast,course,astname,cont
 dqfe,675,"Lab Report 1",0.0175
 eqqr,104,"Lab Report 1",0.016153846
 purz,104,"Lab Report 2",0.016153846
@@ -693,3 +693,5 @@ qpic,894,"Lab Report 16",0.008333333
 tozt,894,"Lab Report 17",0.008333333
 lwbr,894,"Lab Report 18",0.008333333
 zrys,514,"Essay 1",0.25
+zbzs,514,"Essay 2",0.25
+yqne,514,"Final Exam",0.25
